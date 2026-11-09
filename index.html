@@ -160,6 +160,55 @@ footer.foot{background:var(--abyss);color:rgba(255,255,255,.8);margin-top:60px;p
 .foot a:hover{color:#fff;text-decoration:underline}
 .foot .copy{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.15);font-size:.85rem}
 
+
+/* ---------- Panel detail kapal ---------- */
+.card{cursor:pointer}
+.cta-line{color:var(--lagoon);font-weight:600;font-size:.9rem;margin-top:4px}
+.card:hover .cta-line{text-decoration:underline}
+.overlay{position:fixed;inset:0;background:rgba(3,24,34,.55);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s;z-index:50}
+.overlay.on{opacity:1;visibility:visible}
+.panel{position:fixed;top:0;right:0;height:100%;width:min(520px,100%);background:#fff;z-index:60;transform:translateX(100%);transition:transform .3s ease;display:flex;flex-direction:column;box-shadow:-18px 0 40px rgba(3,24,34,.25)}
+.panel.on{transform:none}
+.panel .scroll{overflow-y:auto;flex:1;padding-bottom:20px}
+.p-hero{height:210px;position:relative;display:grid;place-items:center;color:rgba(255,255,255,.9)}
+.p-hero svg{width:110px;height:110px}
+.p-close{position:absolute;right:14px;top:14px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(6,41,58,.7);color:#fff;font-size:1.4rem;cursor:pointer;line-height:1}
+.p-close:hover{background:var(--coral)}
+.p-body{padding:22px 24px 0}
+.p-body h2{font-size:1.6rem}
+.p-sub{color:var(--muted);margin-top:2px}
+.p-score{display:flex;align-items:center;gap:8px;margin-top:10px;color:var(--muted);font-size:.9rem}
+.p-score b{background:var(--lagoon);color:#fff;border-radius:8px;padding:2px 8px;font-family:var(--head)}
+.p-body p.desc{margin-top:14px}
+.p-body h3{font-family:var(--head);font-size:1.05rem;margin:22px 0 10px}
+.spec{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.spec div{background:var(--foam);border-radius:12px;padding:10px 12px}
+.spec small{display:block;color:var(--muted);font-size:.78rem}
+.spec b{font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+.chips li{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.88rem}
+.itin{list-style:none;border-left:3px solid var(--lagoon);margin-left:6px}
+.itin li{padding:0 0 14px 16px;position:relative}
+.itin li::before{content:"";position:absolute;left:-9px;top:6px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid var(--lagoon)}
+.itin b{display:block;font-size:.95rem}
+.itin span{color:var(--muted);font-size:.9rem}
+.inc{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:480px){.inc{grid-template-columns:1fr}}
+.inc ul{list-style:none;font-size:.9rem}
+.inc li{padding:3px 0 3px 22px;position:relative}
+.inc .y li::before{content:"✓";color:var(--lagoon);position:absolute;left:0;font-weight:700}
+.inc .n li::before{content:"✕";color:var(--coral);position:absolute;left:0;font-weight:700}
+.book{border-top:1px solid var(--line);padding:14px 24px;display:flex;align-items:center;gap:14px;background:#fff}
+.book .price{flex:1}
+.book select{border:1px solid var(--line);background:#f6fafa;border-radius:10px;padding:10px;font:inherit;max-width:150px}
+.book .btn{padding:12px 18px;white-space:nowrap}
+@media(max-width:600px){
+  .panel{top:auto;bottom:0;height:90%;width:100%;border-radius:20px 20px 0 0;transform:translateY(100%)}
+  .panel.on{transform:none}
+  .book{flex-wrap:wrap}.book select{max-width:none;flex:1}
+}
+body.lock{overflow:hidden}
+
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -244,12 +293,13 @@ footer.foot{background:var(--abyss);color:rgba(255,255,255,.8);margin-top:60px;p
 
     <!-- Data di bawah hanya contoh. Ganti nama, harga, dan skor dengan data asli Anda. -->
     <div class="cards">
-      <article class="card">
+      <article class="card" data-boat="0" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Lihat detail kapal">
         <div class="thumb t1"><span class="tag">Phinisi</span>
           <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6v36M32 8l18 28H32M32 14L18 36h14M8 46h48l-6 10H14z"/></svg></div>
         <div class="body">
           <h3>Komodo Phinisi Explorer</h3>
           <div class="where">Labuan Bajo, Flores</div>
+          <div class="cta-line">Lihat detail kapal</div>
           <div class="meta">
             <div class="score"><b>9,4</b> Luar biasa · 126 ulasan</div>
             <div class="price"><small>mulai dari / hari</small><strong>Rp 7,2 jt</strong></div>
@@ -257,12 +307,13 @@ footer.foot{background:var(--abyss);color:rgba(255,255,255,.8);margin-top:60px;p
         </div>
       </article>
 
-      <article class="card">
+      <article class="card" data-boat="1" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Lihat detail kapal">
         <div class="thumb t2"><span class="tag">Pelayaran mewah</span>
           <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6v36M32 8l18 28H32M32 14L18 36h14M8 46h48l-6 10H14z"/></svg></div>
         <div class="body">
           <h3>Sang Naga Laut</h3>
           <div class="where">Labuan Bajo – Bali</div>
+          <div class="cta-line">Lihat detail kapal</div>
           <div class="meta">
             <div class="score"><b>9,3</b> Luar biasa · 116 ulasan</div>
             <div class="price"><small>mulai dari / hari</small><strong>Rp 7,9 jt</strong></div>
@@ -270,12 +321,13 @@ footer.foot{background:var(--abyss);color:rgba(255,255,255,.8);margin-top:60px;p
         </div>
       </article>
 
-      <article class="card">
+      <article class="card" data-boat="2" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Lihat detail kapal">
         <div class="thumb t3"><span class="tag">Hemat</span>
           <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42h48l-6 12H14zM20 42V28h24v14M28 28v-8h8v8"/></svg></div>
         <div class="body">
           <h3>Pari Manta Dua</h3>
           <div class="where">Labuan Bajo, Flores</div>
+          <div class="cta-line">Lihat detail kapal</div>
           <div class="meta">
             <div class="score"><b>9,1</b> Luar biasa · 39 ulasan</div>
             <div class="price"><small>mulai dari / hari</small><strong>Rp 6,3 jt</strong></div>
@@ -283,12 +335,13 @@ footer.foot{background:var(--abyss);color:rgba(255,255,255,.8);margin-top:60px;p
         </div>
       </article>
 
-      <article class="card">
+      <article class="card" data-boat="3" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Lihat detail kapal">
         <div class="thumb t4"><span class="tag">Fotografer</span>
           <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42h48l-6 12H14zM20 42V28h24v14M28 28v-8h8v8"/></svg></div>
         <div class="body">
           <h3>Putri Karang</h3>
           <div class="where">Labuan Bajo, Flores</div>
+          <div class="cta-line">Lihat detail kapal</div>
           <div class="meta">
             <div class="score"><b>9,2</b> Luar biasa · 123 ulasan</div>
             <div class="price"><small>mulai dari / hari</small><strong>Rp 6,0 jt</strong></div>
@@ -296,12 +349,13 @@ footer.foot{background:var(--abyss);color:rgba(255,255,255,.8);margin-top:60px;p
         </div>
       </article>
 
-      <article class="card">
+      <article class="card" data-boat="4" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Lihat detail kapal">
         <div class="thumb t5"><span class="tag">Phinisi</span>
           <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6v36M32 8l18 28H32M32 14L18 36h14M8 46h48l-6 10H14z"/></svg></div>
         <div class="body">
           <h3>Senja Padar</h3>
           <div class="where">Labuan Bajo, Flores</div>
+          <div class="cta-line">Lihat detail kapal</div>
           <div class="meta">
             <div class="score"><b>9,3</b> Luar biasa · 43 ulasan</div>
             <div class="price"><small>mulai dari / hari</small><strong>Rp 7,6 jt</strong></div>
@@ -309,12 +363,13 @@ footer.foot{background:var(--abyss);color:rgba(255,255,255,.8);margin-top:60px;p
         </div>
       </article>
 
-      <article class="card">
+      <article class="card" data-boat="5" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Lihat detail kapal">
         <div class="thumb t6"><span class="tag">Favorit tamu</span>
           <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42h48l-6 12H14zM20 42V28h24v14M28 28v-8h8v8"/></svg></div>
         <div class="body">
           <h3>Solitude Bahari</h3>
           <div class="where">Labuan Bajo, Flores</div>
+          <div class="cta-line">Lihat detail kapal</div>
           <div class="meta">
             <div class="score"><b>9,6</b> Istimewa · 51 ulasan</div>
             <div class="price"><small>mulai dari / hari</small><strong>Rp 6,8 jt</strong></div>
@@ -425,11 +480,121 @@ footer.foot{background:var(--abyss);color:rgba(255,255,255,.8);margin-top:60px;p
   </div>
 </footer>
 
+
+<div class="overlay" id="overlay"></div>
+<aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="p-title" aria-hidden="true">
+  <div class="scroll" id="p-content"></div>
+  <div class="book">
+    <div class="price"><small>mulai dari / hari</small><strong id="p-price"></strong></div>
+    <select id="p-date" aria-label="Pilih keberangkatan"></select>
+    <a class="btn" id="p-wa" href="#" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+  </div>
+</aside>
+
 <script>
   // Tombol "Cari trip": gulir ke daftar kapal
   document.getElementById('cari').addEventListener('submit', function (e) {
     e.preventDefault();
     document.getElementById('paket').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // ===== Data detail kapal (contoh, ganti dengan data asli) =====
+  var SHIP='<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6v36M32 8l18 28H32M32 14L18 36h14M8 46h48l-6 10H14z"/></svg>';
+  var BOAT='<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42h48l-6 12H14zM20 42V28h24v14M28 28v-8h8v8"/></svg>';
+  var DATES=['Pilih keberangkatan','Nov 2026','Des 2026','Jan 2027','Feb 2027','Mar 2027','Apr 2027','Mei 2027'];
+  var BOATS=[
+   {n:'Komodo Phinisi Explorer',w:'Labuan Bajo, Flores',t:'t1',i:SHIP,s:'9,4 · Luar biasa',r:126,p:'Rp 7,2 jt',
+    d:'Kapal phinisi kayu tradisional dengan dek luas untuk bersantai di antara penyelaman. Cocok untuk penyelam yang ingin suasana klasik dengan kenyamanan modern.',
+    sp:[['Tipe','Phinisi kayu'],['Panjang','42 m'],['Kapasitas','16 tamu'],['Kabin','8 kabin ber-AC'],['Durasi','4 – 7 hari'],['Rute','Komodo Utara & Selatan']],
+    f:['Nitrox','Stasiun kamera','Wi-Fi satelit','Kompresor','Dek berjemur','Alat selam sewa'],
+    it:[['Hari 1','Naik kapal di Labuan Bajo, check dive di Kanawa'],['Hari 2','Batu Balong dan Crystal Rock'],['Hari 3','Manta Alley dan Manta Point'],['Hari 4','Pulau Rinca: trekking melihat komodo']],
+    y:['Kabin & makan 3x','Pemandu selam','Tank & pemberat','Transfer pelabuhan'],x:['Tiket taman nasional','Penerbangan','Sewa alat lengkap','Tip kru']},
+   {n:'Sang Naga Laut',w:'Labuan Bajo – Bali',t:'t2',i:SHIP,s:'9,3 · Luar biasa',r:116,p:'Rp 7,9 jt',
+    d:'Pelayaran mewah dengan rute penyeberangan satu arah antara Labuan Bajo dan Bali, melewati Moyo dan Satonda. Pilihan terbaik untuk yang ingin rute lebih panjang.',
+    sp:[['Tipe','Phinisi mewah'],['Panjang','50 m'],['Kapasitas','12 tamu'],['Kabin','6 kabin suite'],['Durasi','7 – 10 hari'],['Rute','Komodo – Moyo – Bali']],
+    f:['Nitrox standar','Spa di kapal','Wi-Fi satelit','Chef pribadi','Ruang kamera','Kayak'],
+    it:[['Hari 1–2','Komodo Selatan: arus dan hiu karang'],['Hari 3–4','Taman Nasional Komodo bagian tengah'],['Hari 5–6','Sangeang: gelembung gunung api bawah laut'],['Hari 7+','Bima, Moyo, Satonda, turun di Bali']],
+    y:['Kabin suite & makan penuh','Pemandu selam','Tank & pemberat','Minuman non-alkohol'],x:['Tiket taman nasional','Penerbangan','Sewa alat lengkap','Tip kru']},
+   {n:'Pari Manta Dua',w:'Labuan Bajo, Flores',t:'t3',i:BOAT,s:'9,1 · Luar biasa',r:39,p:'Rp 6,3 jt',
+    d:'Kapal motor dengan dek selam di bagian belakang, praktis dan lebih hemat. Pilihan tepat untuk penyelam yang mengutamakan jumlah penyelaman.',
+    sp:[['Tipe','Kapal motor'],['Panjang','36 m'],['Kapasitas','14 tamu'],['Kabin','7 kabin ber-AC'],['Durasi','3 – 6 hari'],['Rute','Komodo Utara']],
+    f:['Dek selam belakang','Nitrox berbayar','Tempat bilas kamera','Ruang makan ber-AC'],
+    it:[['Hari 1','Check dive dan malam di teluk tenang'],['Hari 2','Manta Alley, Gili Lawa'],['Hari 3','Batu Balong, Pulau Komodo (trekking)'],['Hari 4','Dive terakhir, kembali ke Labuan Bajo']],
+    y:['Kabin & makan 3x','Pemandu selam','Tank & pemberat'],x:['Tiket taman nasional','Nitrox','Penerbangan','Tip kru']},
+   {n:'Putri Karang',w:'Labuan Bajo, Flores',t:'t4',i:BOAT,s:'9,2 · Luar biasa',r:123,p:'Rp 6,0 jt',
+    d:'Kapal untuk fotografer bawah air, dengan meja kamera khusus, colokan di setiap kabin, dan pemandu yang paham posisi satwa makro.',
+    sp:[['Tipe','Kapal motor'],['Panjang','38 m'],['Kapasitas','14 tamu'],['Kabin','7 kabin'],['Durasi','4 – 8 hari'],['Rute','Komodo & Bima']],
+    f:['Meja kamera & rinse','Colokan tiap kabin','Pemandu makro','Nitrox','Wi-Fi'],
+    it:[['Hari 1','Check dive, briefing kamera'],['Hari 2','Manta Point dan Castle Rock'],['Hari 3','Rinca: nudibranch dan critter'],['Hari 4','Bima: muck diving, gurita cincin biru']],
+    y:['Kabin & makan 3x','Pemandu selam','Tank & pemberat','Pengisian baterai'],x:['Tiket taman nasional','Sewa kamera','Penerbangan','Tip kru']},
+   {n:'Senja Padar',w:'Labuan Bajo, Flores',t:'t5',i:SHIP,s:'9,3 · Luar biasa',r:43,p:'Rp 7,6 jt',
+    d:'Phinisi bergaya santai dengan jadwal tidak terburu-buru. Cocok untuk pasangan atau keluarga yang menggabungkan selam, trekking Padar, dan snorkeling.',
+    sp:[['Tipe','Phinisi kayu'],['Panjang','40 m'],['Kapasitas','12 tamu'],['Kabin','6 kabin'],['Durasi','3 – 5 hari'],['Rute','Padar, Rinca, Pink Beach']],
+    f:['Snorkeling','Kayak & paddle','Trekking Padar','Nitrox','Dek sunset'],
+    it:[['Hari 1','Naik kapal, snorkeling di Kanawa'],['Hari 2','Padar saat matahari terbit, Pink Beach'],['Hari 3','Rinca dan Manta Point'],['Hari 4','Batu Balong, kembali ke Labuan Bajo']],
+    y:['Kabin & makan 3x','Pemandu selam & trekking','Alat snorkeling','Kayak'],x:['Tiket taman nasional','Sewa alat selam','Penerbangan','Tip kru']},
+   {n:'Solitude Bahari',w:'Labuan Bajo, Flores',t:'t6',i:BOAT,s:'9,6 · Istimewa',r:51,p:'Rp 6,8 jt',
+    d:'Favorit tamu dengan skor tertinggi. Kelompok kecil, kru ramah, dan jadwal selam yang disusun mengikuti kondisi arus dan pasang surut.',
+    sp:[['Tipe','Kapal motor'],['Panjang','34 m'],['Kapasitas','10 tamu'],['Kabin','5 kabin ber-AC'],['Durasi','4 – 7 hari'],['Rute','Komodo Utara & Selatan']],
+    f:['Grup kecil','Nitrox standar','Reef hook & DSMB','Wi-Fi','Dek santai'],
+    it:[['Hari 1','Check dive dan briefing arus'],['Hari 2','Batu Balong dan Cauldron'],['Hari 3','Manta Alley, Taka Makassar'],['Hari 4','Rinca dan penyelaman terakhir']],
+    y:['Kabin & makan 3x','Pemandu selam','Tank & pemberat','Reef hook & DSMB'],x:['Tiket taman nasional','Penerbangan','Sewa alat lengkap','Tip kru']}
+  ];
+
+  var panel=document.getElementById('panel'),overlay=document.getElementById('overlay'),
+      content=document.getElementById('p-content'),dateSel=document.getElementById('p-date'),
+      wa=document.getElementById('p-wa'),priceEl=document.getElementById('p-price'),
+      current=null,lastFocus=null;
+
+  function li(a){return a.map(function(x){return '<li>'+x+'</li>'}).join('')}
+
+  function openBoat(id){
+    var b=BOATS[id];current=b;lastFocus=document.activeElement;
+    content.innerHTML=
+      '<div class="p-hero '+b.t+'">'+b.i+'<button class="p-close" id="p-close" aria-label="Tutup panel">×</button></div>'+
+      '<div class="p-body"><h2 id="p-title">'+b.n+'</h2><div class="p-sub">'+b.w+'</div>'+
+      '<div class="p-score"><b>'+b.s.split(' · ')[0]+'</b>'+b.s.split(' · ')[1]+' · '+b.r+' ulasan</div>'+
+      '<p class="desc">'+b.d+'</p>'+
+      '<h3>Spesifikasi</h3><div class="spec">'+b.sp.map(function(x){return '<div><small>'+x[0]+'</small><b>'+x[1]+'</b></div>'}).join('')+'</div>'+
+      '<h3>Fasilitas</h3><ul class="chips">'+li(b.f)+'</ul>'+
+      '<h3>Contoh rute</h3><ul class="itin">'+b.it.map(function(x){return '<li><b>'+x[0]+'</b><span>'+x[1]+'</span></li>'}).join('')+'</ul>'+
+      '<h3>Termasuk &amp; tidak termasuk</h3><div class="inc"><ul class="y">'+li(b.y)+'</ul><ul class="n">'+li(b.x)+'</ul></div></div>';
+    dateSel.innerHTML=DATES.map(function(d,i){return '<option value="'+(i?d:'')+'">'+d+'</option>'}).join('');
+    priceEl.textContent=b.p;
+    updateWA();
+    panel.classList.add('on');overlay.classList.add('on');
+    panel.setAttribute('aria-hidden','false');document.body.classList.add('lock');
+    content.scrollTop=0;
+    document.getElementById('p-close').focus();
+    document.getElementById('p-close').onclick=closeBoat;
+  }
+  function closeBoat(){
+    panel.classList.remove('on');overlay.classList.remove('on');
+    panel.setAttribute('aria-hidden','true');document.body.classList.remove('lock');
+    if(lastFocus)lastFocus.focus();
+  }
+  function updateWA(){
+    var t='Halo Komodo Season Trip, saya tertarik dengan kapal '+current.n+(dateSel.value?' untuk keberangkatan '+dateSel.value:'')+'. Mohon info ketersediaan dan harga.';
+    wa.href='https://wa.me/6281234567890?text='+encodeURIComponent(t);
+  }
+  dateSel.addEventListener('change',updateWA);
+  overlay.addEventListener('click',closeBoat);
+
+  document.querySelectorAll('.card[data-boat]').forEach(function(c){
+    c.addEventListener('click',function(){openBoat(+c.dataset.boat)});
+    c.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();openBoat(+c.dataset.boat)}
+    });
+  });
+  document.addEventListener('keydown',function(e){
+    if(!panel.classList.contains('on'))return;
+    if(e.key==='Escape')closeBoat();
+    if(e.key==='Tab'){ // jaga fokus tetap di dalam panel
+      var f=panel.querySelectorAll('button,select,a[href]');
+      var first=f[0],last=f[f.length-1];
+      if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+      else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+    }
   });
 </script>
 </body>
