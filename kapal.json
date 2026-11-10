@@ -85,6 +85,78 @@
    "on": true
   },
   {
+   "n": "Half Day Trip · Kelor, Manjarite & Kalong",
+   "w": "Labuan Bajo · berangkat sore",
+   "tag": "Half day",
+   "ik": "motor",
+   "p": "Rp 700.000",
+   "pu": "per orang",
+   "s": "",
+   "r": 0,
+   "d": "Perjalanan setengah hari yang santai: berlayar dari Labuan Bajo sore hari, singgah di pantai alami Pulau Kelor, snorkeling di Manjarite, lalu menutup hari dengan matahari terbenam dan ribuan kelelawar terbang di Pulau Kalong. Penjemputan dan pengantaran hotel sudah termasuk.",
+   "sp": [
+    [
+     "Durasi",
+     "Setengah hari (13.30–20.00)"
+    ],
+    [
+     "Kapal",
+     "Transportasi kapal"
+    ],
+    [
+     "Destinasi",
+     "3 titik: Kelor, Manjarite, Kalong"
+    ],
+    [
+     "Perlengkapan",
+     "Alat snorkeling tersedia (opsional)"
+    ]
+   ],
+   "f": [
+    "Antar-jemput hotel",
+    "Minuman & snack",
+    "Pemandu berpengalaman",
+    "Snorkeling",
+    "Sunset di Kalong"
+   ],
+   "it": [
+    [
+     "13.30–14.00",
+     "Penjemputan dari hotel menuju titik kumpul"
+    ],
+    [
+     "14.00–15.00",
+     "Berangkat dari Labuan Bajo menuju Pulau Kelor, pantai alami yang masih asri"
+    ],
+    [
+     "16.00–17.00",
+     "Teluk/Pulau Manjarite: snorkeling, berenang, dan menikmati pantainya"
+    ],
+    [
+     "18.00–19.00",
+     "Pulau Kalong: menikmati matahari terbenam dan menyaksikan ribuan kelelawar terbang"
+    ],
+    [
+     "19.00–20.00",
+     "Tiba kembali di Labuan Bajo dan diantar ke hotel. Tur selesai"
+    ]
+   ],
+   "y": [
+    "Transportasi kapal",
+    "Minuman dan snack",
+    "Pemandu wisata berpengalaman",
+    "Peralatan snorkeling (tersedia, opsional)",
+    "Antar-jemput hotel"
+   ],
+   "x": [
+    "Tiket masuk taman nasional / retribusi area (bila ada, dibayar terpisah)",
+    "Makanan berat (hanya minuman dan snack)",
+    "Pengeluaran pribadi dan tip untuk kru/pemandu"
+   ],
+   "img": "",
+   "on": true
+  },
+  {
    "n": "Private Charter Speedboat",
    "w": "Labuan Bajo · Taman Nasional Komodo",
    "tag": "Privat",
