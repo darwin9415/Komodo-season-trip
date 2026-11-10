@@ -215,58 +215,92 @@
    "on": true
   },
   {
-   "n": "Dokumentasi Pribadi",
-   "w": "Tambahan untuk semua paket",
-   "tag": "Tambahan",
-   "ik": "motor",
-   "p": "Tanya harga",
-   "pu": "",
+   "n": "City Tour Labuan Bajo · Hidden Cave & Sunset",
+   "w": "Labuan Bajo · Flores",
+   "tag": "Tur darat privat",
+   "ik": "darat",
+   "p": "Rp 800.000",
+   "pu": "per orang",
    "s": "",
    "r": 0,
-   "d": "Operator drone, GoPro, dan kamera yang khusus mendampingi rombongan Anda sepanjang perjalanan, sehingga Anda bebas menikmati hari tanpa sibuk memegang kamera.",
+   "d": "Satu hari privat menjelajahi sisi daratan Labuan Bajo: menyusuri Gua Batu Cermin, berenang di kolam jernih Gua Rangko, lalu menutup hari dengan matahari terbenam di Bukit Sylvia. Tiga pengalaman dalam satu perjalanan untuk 2–6 tamu.",
    "sp": [
     [
      "Durasi",
-     "Sepanjang perjalanan"
+     "± 8 jam"
     ],
     [
-     "Kapal",
-     "Ikut kapal Anda"
+     "Penjemputan",
+     "10.00 WITA dari hotel"
     ],
     [
-     "Grup",
-     "Khusus rombongan Anda"
+     "Peserta",
+     "2–6 tamu (tur privat)"
+    ],
+    [
+     "Transportasi",
+     "Kendaraan privat dengan sopir, perahu lokal"
     ],
     [
      "Destinasi",
-     "Semua destinasi"
+     "Gua Batu Cermin, Gua Rangko, Bukit Sylvia"
+    ]
+   ],
+   "pt": [
+    [
+     "2 tamu",
+     "Rp 1.500.000"
     ],
     [
-     "Dokumentasi",
-     "Drone, GoPro & kamera"
+     "4 tamu",
+     "Rp 900.000"
     ],
     [
-     "Perlengkapan",
-     "Disiapkan operator"
+     "6 tamu",
+     "Rp 800.000"
     ]
    ],
    "f": [
-    "Operator khusus",
-    "Drone",
-    "GoPro",
-    "Kamera"
+    "Kendaraan privat & sopir",
+    "Pemandu",
+    "Perahu lokal pulang-pergi",
+    "Air mineral",
+    "Tiket kedua gua"
    ],
    "it": [
     [
-     "Sepanjang hari",
-     "Operator mendampingi rombongan dari keberangkatan hingga kembali"
+     "10.00",
+     "Penjemputan dari hotel"
+    ],
+    [
+     "10.15–11.30",
+     "Gua Batu Cermin (± 75 menit)"
+    ],
+    [
+     "12.15–14.15",
+     "Gua Rangko: naik perahu dan berenang"
+    ],
+    [
+     "15.15",
+     "Istirahat / makan siang"
+    ],
+    [
+     "16.30–18.15",
+     "Bukit Sylvia: menikmati matahari terbenam"
     ]
    ],
    "y": [
-    "Operator dokumentasi pribadi"
+    "Kendaraan privat dan sopir",
+    "Pemandu",
+    "Perahu lokal pulang-pergi",
+    "Air mineral",
+    "Tiket masuk kedua gua (dikonfirmasi saat pemesanan)"
    ],
    "x": [
-    "Harga dikonfirmasi tertulis sebelum Anda memesan"
+    "Makan siang",
+    "Tip dan pengeluaran pribadi",
+    "Biaya tambahan di luar rincian paket",
+    "Jadwal bersifat tentatif: kondisi Gua Rangko dapat berubah mengikuti cuaca dan pasang surut"
    ],
    "img": "",
    "on": true
