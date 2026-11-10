@@ -1,67 +1,495 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BAJO TRAVEL GUIDE – Labuan Bajo</title>
-<meta name="description" content="Guide, local business directory, and tourism services in Labuan Bajo, Flores.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Komodo Season Trip · One Day Trip Komodo dengan Speedboat Luxury</title>
+<meta name="description" content="Satu hari di Taman Nasional Komodo dengan speedboat luxury, grup kecil, enam destinasi, dan dokumentasi drone, GoPro, serta mirrorless.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#08151f;--navy2:#0f2a3c;--gold:#b8955a;--gold2:#dcc08c;--ivory:#f6f3ed;--stone:#ebe5d9;--ink:#101c27;--muted:#67727c;--line:#e0d9ca;
+--serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Inter","Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ivory);color:var(--ink);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1140px,90%);margin-inline:auto}
+.hide{display:none!important}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.005em;line-height:1.1}
+h2{font-size:clamp(2rem,4.2vw,3rem)}
+.btn{display:inline-block;background:var(--gold);color:#08151f;border:0;border-radius:2px;padding:14px 28px;font:600 .82rem var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--gold2)}
+.btn.ghost{background:transparent;color:inherit;border:1px solid currentColor}
+.btn.ghost:hover{background:rgba(184,149,90,.12)}
+
+/* header */
+header.top{position:absolute;inset:0 0 auto;z-index:10;color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;padding-block:24px;gap:20px}
+.logo{font-family:var(--serif);font-size:1.45rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.logo i{width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+nav.menu{display:flex;gap:34px;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}
+nav.menu a{opacity:.85;padding:4px 0;border-bottom:1px solid transparent}
+nav.menu a:hover{opacity:1;border-color:var(--gold)}
+.top .btn{padding:10px 20px}
+@media(max-width:860px){nav.menu{display:none}}
+
+/* hero */
+.hero{position:relative;color:#fff;min-height:720px;padding:190px 0 0;overflow:hidden;
+  background:linear-gradient(180deg,#08151f 0%,#0d2a3c 48%,#14485a 82%,#0a2233 100%)}
+.glow{position:absolute;right:10%;top:150px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(220,192,140,.55),rgba(184,149,90,0) 66%);pointer-events:none}
+.hero svg.scene{position:absolute;left:0;right:0;bottom:0;width:100%;height:42%;min-height:200px}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.8rem,7vw,5.6rem);max-width:12ch;margin-top:18px;font-weight:500}
+.hero h1 em{color:var(--gold2);font-style:italic}
+.hero .lead{margin-top:22px;max-width:50ch;font-size:1.06rem;color:rgba(255,255,255,.82)}
+.facts{display:flex;gap:34px;margin-top:34px;flex-wrap:wrap}
+.facts div b{display:block;font-family:var(--serif);font-size:2.1rem;font-weight:600;color:var(--gold2);line-height:1}
+.facts div span{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+.cari{position:relative;z-index:3;margin-top:56px;margin-bottom:-52px;background:#fff;color:var(--ink);padding:10px;display:grid;grid-template-columns:1fr 1fr 1.5fr auto;gap:0;box-shadow:0 30px 60px rgba(4,12,20,.35)}
+.cari > div{padding:12px 20px;border-right:1px solid var(--line)}
+.cari label{display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.cari input,.cari select{width:100%;border:0;background:transparent;font:500 1rem var(--sans);color:var(--ink);padding:4px 0}
+.cari .btn{align-self:stretch;border-radius:0;padding-inline:34px}
+@media(max-width:900px){.cari{grid-template-columns:1fr 1fr;margin-bottom:-90px}.cari > div{border-bottom:1px solid var(--line)}.cari .btn{grid-column:1/-1;padding-block:16px}}
+@media(max-width:520px){.cari{grid-template-columns:1fr}.cari > div{border-right:0}}
+
+/* pilar */
+.pillars{padding:150px 0 70px}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px}
+@media(max-width:900px){.pgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.pgrid{grid-template-columns:1fr}}
+.pil{border-top:1px solid var(--gold);padding-top:18px}
+.pil b{font-family:var(--serif);font-size:1rem;color:var(--gold)}
+.pil h3{font-size:1.5rem;margin:6px 0 8px}
+.pil p{color:var(--muted);font-size:.95rem}
+
+section{padding-block:80px}
+.sec-head{max-width:640px;margin-bottom:42px}
+.sec-head p{color:var(--muted);margin-top:12px}
+
+/* paket */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media(max-width:960px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.cards{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);cursor:pointer;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 22px 40px rgba(8,21,31,.12)}
+.thumb{height:220px;position:relative;display:grid;place-items:center;color:var(--gold2)}
+.has-photo{background-size:cover;background-position:center}.has-photo svg{display:none}
+.t1{background:linear-gradient(145deg,#0f2a3c,#08151f)}
+.t2{background:linear-gradient(145deg,#14485a,#0a2233)}
+.t3{background:linear-gradient(145deg,#1d3a4a,#0a1b27)}
+.thumb svg{width:84px;height:84px;opacity:.9}
+.tag{position:absolute;left:16px;top:16px;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--gold);color:var(--gold2);padding:4px 10px}
+.card .body{padding:24px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:1.65rem}
+.where{color:var(--muted);font-size:.88rem}
+.score{font-size:.88rem;color:var(--muted)}.score b{color:var(--gold)}
+.meta{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:end;gap:10px}
+.price small{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.price strong{font-family:var(--serif);font-size:1.6rem;font-weight:600}
+.price em{font-style:normal;color:var(--muted);font-size:.85rem}
+.more{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--gold)}
+.note{margin-top:22px;font-size:.88rem;color:var(--muted)}
+
+/* rute */
+.rute{background:#fff;border-block:1px solid var(--line)}
+.rgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}
+@media(max-width:860px){.rgrid{grid-template-columns:1fr;gap:30px}}
+.rgrid .sec-head{position:sticky;top:40px;align-self:start}
+@media(max-width:860px){.rgrid .sec-head{position:static}}
+.stops{list-style:none}
+.stops li{display:grid;grid-template-columns:70px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.stops li:first-child{padding-top:0}
+.stops b{font-family:var(--serif);font-size:2.4rem;color:var(--gold);line-height:1;font-weight:500}
+.stops h3{font-size:1.5rem}
+.stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
+
+/* termasuk */
+.inc{background:var(--navy);color:#fff}
+.igrid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+@media(max-width:860px){.igrid{grid-template-columns:1fr;gap:34px}}
+.inc ul{list-style:none;margin-top:22px}
+.inc li{padding:14px 0 14px 30px;border-bottom:1px solid rgba(255,255,255,.12);position:relative}
+.inc li::before{content:"";position:absolute;left:2px;top:23px;width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+.inc p.sub{color:rgba(255,255,255,.7);margin-top:14px;max-width:46ch}
+
+/* cara pesan */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
+@media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.step{counter-increment:s;border-top:1px solid var(--gold);padding-top:16px}
+.step::before{content:"0" counter(s);font-family:var(--serif);font-size:2rem;color:var(--gold)}
+.step h3{font-size:1.35rem;margin:4px 0 6px}
+.step p{color:var(--muted);font-size:.93rem}
+
+/* faq */
+.faq{max-width:820px;margin-inline:auto}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-family:var(--serif);font-size:1.4rem;font-weight:600}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-size:1.6rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px;max-width:66ch}
+
+/* cta */
+.cta{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;text-align:center}
+.cta h2{max-width:18ch;margin:12px auto 0}
+.cta p{color:rgba(255,255,255,.75);margin:16px auto 28px;max-width:48ch}
+footer.foot{background:#050e15;color:rgba(255,255,255,.7);padding:46px 0 30px;font-size:.9rem}
+.foot .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px}
+.foot .logo{color:#fff;font-size:1.2rem}
+.foot a:hover{color:var(--gold2)}
+.foot .copy{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:.8rem}
+
+/* panel detail */
+.overlay{position:fixed;inset:0;background:rgba(4,12,20,.6);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s;z-index:50}
+.overlay.on{opacity:1;visibility:visible}
+.panel{position:fixed;top:0;right:0;height:100%;width:min(540px,100%);background:#fff;z-index:60;transform:translateX(100%);transition:transform .3s ease;display:flex;flex-direction:column;box-shadow:-18px 0 40px rgba(4,12,20,.3)}
+.panel.on{transform:none}
+.panel .scroll{overflow-y:auto;flex:1;padding-bottom:20px}
+.p-hero{height:230px;position:relative;display:grid;place-items:center;color:var(--gold2)}
+.p-hero svg{width:100px;height:100px}
+.p-close{position:absolute;right:14px;top:14px;width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);background:rgba(8,21,31,.6);color:#fff;font-size:1.4rem;cursor:pointer;line-height:1}
+.p-body{padding:26px 28px 0}
+.p-body h2{font-size:2.1rem}
+.p-sub{color:var(--muted);margin-top:4px}
+.p-score{margin-top:10px;color:var(--muted);font-size:.9rem}.p-score b{color:var(--gold)}
+.p-body p.desc{margin-top:16px}
+.p-body h3{font-size:1.35rem;margin:28px 0 12px}
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.spec div{background:#fff;padding:12px 14px}
+.spec small{display:block;color:var(--muted);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase}
+.spec b{font-size:.93rem;font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+.chips li{border:1px solid var(--line);padding:5px 14px;font-size:.84rem}
+.itin{list-style:none;border-left:1px solid var(--gold);margin-left:6px}
+.itin li{padding:0 0 16px 20px;position:relative}
+.itin li::before{content:"";position:absolute;left:-5px;top:8px;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+.itin b{display:block;font-weight:600;font-size:.95rem}.itin span{color:var(--muted);font-size:.9rem}
+.pinc{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:480px){.pinc{grid-template-columns:1fr}}
+.pinc ul{list-style:none;font-size:.9rem}
+.pinc li{padding:4px 0 4px 20px;position:relative}
+.pinc .y li::before{content:"✓";color:var(--gold);position:absolute;left:0;font-weight:700}
+.pinc .n li::before{content:"–";color:var(--muted);position:absolute;left:3px}
+.book{border-top:1px solid var(--line);padding:14px 28px;display:flex;align-items:center;gap:14px;background:#fff;flex-wrap:wrap}
+.book .price{flex:1;min-width:120px}
+.book input[type=date]{border:1px solid var(--line);padding:9px;font:inherit;background:#fff;max-width:160px}
+.book .btn{padding:12px 20px}
+@media(max-width:600px){.panel{top:auto;bottom:0;height:90%;width:100%;transform:translateY(100%)}.panel.on{transform:none}.book input[type=date]{flex:1;max-width:none}}
+body.lock{overflow:hidden}
+
+/* dialog pesanan */
+dialog.od{border:0;width:min(480px,94vw);padding:0;margin:auto;color:var(--ink);background:#fff}
+dialog.od::backdrop{background:rgba(4,12,20,.65)}
+.od form,.od .o-done{padding:30px;display:grid;gap:14px}
+.od h2{font-size:2rem}
+.od .o-boat{color:var(--gold);font-weight:600;margin-top:-6px}
+.od label{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.od input,.od textarea{width:100%;border:1px solid var(--line);padding:11px 12px;font:inherit;background:#fff;color:var(--ink)}
+.od textarea{min-height:76px;resize:vertical}
+.o-two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:420px){.o-two{grid-template-columns:1fr}}
+.o-err{color:#b3261e;font-size:.9rem}
+.o-act{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+.od .btn.ghost{color:var(--ink)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
 </head>
 <body>
-<header class="nav" id="nav">
- <a class="logo" href="#top">⚓ BAJO TRAVEL GUIDE</a>
- <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
- <nav id="menu">
-  <a href="#top" data-i18n="home"></a>
-  <a href="#destinations" data-i18n="explore"></a>
-  <a href="#businesses" data-cat="hotel" data-i18n="hotels"></a>
-  <a href="#businesses" data-cat="resto" data-i18n="restaurants"></a>
-  <a href="#businesses" data-cat="car" data-i18n="transport"></a>
-  <a href="#services" data-i18n="services"></a>
-  <a href="#about" data-i18n="about"></a>
-  <button class="lang" id="lang" aria-label="Language">ID</button>
-  <button class="btn sm" id="login" data-i18n="login"></button>
- </nav>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#"><i></i>Komodo Season Trip</a>
+    <nav class="menu" aria-label="Menu utama">
+      <a href="#paket">Paket</a><a href="#rute">Rute</a><a href="#cara">Cara memesan</a><a href="#faq">Tanya jawab</a>
+    </nav>
+    <a class="btn ghost" data-wa href="https://wa.me/6285337591753" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
 </header>
-<main id="top">
-<section class="hero">
- <div class="hero-in">
-  <h1 data-i18n="heroTitle"></h1>
-  <p data-i18n="heroSub"></p>
-  <form class="search" id="searchForm">
-   <input id="q" type="search" data-i18n-ph="searchPh" aria-label="Search">
-   <select id="cat" aria-label="Category"></select>
-   <button class="btn" type="submit" data-i18n="search"></button>
-  </form>
-  <a class="btn light" href="#destinations" data-i18n="exploreNow"></a>
- </div>
+
+<div class="hero">
+  <div class="glow" aria-hidden="true"></div>
+  <svg class="scene" viewBox="0 0 1440 300" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 215 L120 160 L210 190 L340 120 L450 180 L540 150 L700 205 L700 300 L0 300Z" fill="#0a2535" opacity=".9"/>
+    <path d="M760 225 L900 165 L1000 200 L1140 135 L1250 185 L1440 155 L1440 300 L760 300Z" fill="#0a2535" opacity=".8"/>
+    <path d="M0 240 C240 215 420 268 720 244 C1020 220 1200 268 1440 238 L1440 300 L0 300Z" fill="#0f3a4b"/>
+    <path d="M0 266 C260 246 460 290 760 270 C1040 250 1220 290 1440 266 L1440 300 L0 300Z" fill="#08151f"/>
+  </svg>
+  <div class="wrap">
+    <div class="eyebrow">One day trip · Taman Nasional Komodo</div>
+    <h1>Sehari di Komodo, <em>tanpa terburu-buru.</em></h1>
+    <p class="lead">Speedboat luxury, rombongan kecil, dan pemandu lokal yang mengenal pulau-pulaunya. Dari puncak Padar hingga perairan Manta Point, semuanya dalam satu hari yang lega.</p>
+    <div class="facts"><div><b>6</b><span>Destinasi</span></div><div><b>1</b><span>Hari penuh</span></div><div><b>Kecil</b><span>Ukuran grup</span></div></div>
+
+    <form class="cari" id="cari" aria-label="Cek ketersediaan">
+      <div><label for="h-date">Tanggal trip</label><input type="date" id="h-date" required></div>
+      <div><label for="h-guests">Jumlah tamu</label><select id="h-guests"></select></div>
+      <div><label for="h-pkg">Pilihan paket</label><select id="h-pkg"></select></div>
+      <button class="btn" type="submit">Cek ketersediaan</button>
+    </form>
+  </div>
+  <div style="height:70px"></div>
+</div>
+
+<main>
+<div class="pillars"><div class="wrap">
+  <div class="pgrid">
+    <div class="pil"><b>01</b><h3>Speedboat luxury</h3><p>Kelas kapal dan namanya kami konfirmasi sebelum keberangkatan, jadi tidak ada kejutan di dermaga.</p></div>
+    <div class="pil"><b>02</b><h3>Grup kecil</h3><p>Dek lebih lega, antrean lebih singkat, dan setiap pantai terasa milik Anda sendiri.</p></div>
+    <div class="pil"><b>03</b><h3>Dokumentasi lengkap</h3><p>Drone, GoPro, dan kamera mirrorless sudah termasuk. Anda menikmati, kami mengabadikan.</p></div>
+    <div class="pil"><b>04</b><h3>Perlengkapan premium</h3><p>Alat snorkeling berkualitas dan pemandu lokal yang menemani sepanjang hari.</p></div>
+  </div>
+</div></div>
+
+<section id="paket" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Pilihan perjalanan</div><h2 style="margin-top:10px">Pilih cara Anda menjelajah</h2><p>Satu rute, beberapa cara menikmatinya. Ketuk kartu untuk melihat rincian.</p></div>
+    <div class="cards" id="cards"></div>
+    <p class="note">Harga per orang. Besarannya dapat berbeda menurut tanggal dan jumlah tamu; penawaran pasti kami konfirmasi secara tertulis.</p>
+  </div>
 </section>
-<section class="sec" id="destinations"><h2 data-i18n="popular"></h2><p class="sub" data-i18n="popularSub"></p><div class="grid" id="destGrid"></div></section>
-<section class="sec sand" id="services"><h2 data-i18n="findSvc"></h2><p class="sub" data-i18n="findSvcSub"></p><div class="chips" id="catGrid"></div></section>
-<section class="sec" id="businesses"><h2 data-i18n="featured"></h2><p class="sub"><span data-i18n="featuredSub"></span> <b id="count"></b></p><div class="grid" id="bizGrid"></div></section>
-<section class="sec sand" id="about"><h2 data-i18n="info"></h2><p class="sub" data-i18n="infoSub"></p><div class="grid" id="artGrid"></div></section>
+
+<section class="rute" id="rute">
+  <div class="wrap rgrid">
+    <div class="sec-head"><div class="eyebrow">Rute sehari</div><h2 style="margin-top:10px">Enam destinasi, satu hari yang utuh</h2><p>Urutan singgah dapat disesuaikan dengan cuaca, arus, dan pasang surut demi kenyamanan dan keselamatan.</p></div>
+    <ol class="stops">
+      <li><b>01</b><div><h3>Pulau Padar</h3><p>Mendaki singkat menuju titik pandang yang menyuguhkan tiga teluk berpasir dalam satu bingkai.</p></div></li>
+      <li><b>02</b><div><h3>Pink Beach</h3><p>Pantai berpasir kemerahan dengan air jernih, tempat yang pas untuk berenang dan snorkeling santai.</p></div></li>
+      <li><b>03</b><div><h3>Pulau Komodo</h3><p>Berjalan bersama ranger untuk melihat komodo di habitat aslinya.</p></div></li>
+      <li><b>04</b><div><h3>Manta Point</h3><p>Perairan tempat pari manta kerap melintas. Mereka satwa liar, sehingga kemunculannya tidak dapat dipastikan.</p></div></li>
+      <li><b>05</b><div><h3>Taka Makassar</h3><p>Gosong pasir putih di tengah laut, dikelilingi air biru yang tenang.</p></div></li>
+      <li><b>06</b><div><h3>Siaba / Sebayur</h3><p>Penutup hari dengan snorkeling di terumbu yang tenang, dengan kemungkinan berjumpa penyu.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="inc">
+  <div class="wrap igrid">
+    <div>
+      <div class="eyebrow">Sudah termasuk</div>
+      <h2 style="margin-top:10px">Semua yang Anda perlukan di atas air</h2>
+      <p class="sub">Biaya di luar paket kami sebutkan secara tertulis sebelum Anda memutuskan.</p>
+    </div>
+    <ul>
+      <li>Speedboat luxury</li>
+      <li>Pemandu lokal berpengalaman</li>
+      <li>Alat snorkeling premium</li>
+      <li>Dokumentasi drone, GoPro, dan kamera mirrorless</li>
+    </ul>
+  </div>
+</section>
+
+<section id="cara">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Cara memesan</div><h2 style="margin-top:10px">Empat langkah, tanpa ribet</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Kirim rencana Anda</h3><p>Sampaikan tanggal dan jumlah tamu lewat form atau WhatsApp.</p></div>
+      <div class="step"><h3>Terima konfirmasi tertulis</h3><p>Kami menjelaskan kapal, harga, dan ketentuan sebelum Anda memutuskan.</p></div>
+      <div class="step"><h3>Selesaikan pembayaran</h3><p>Opsi dan ketentuan pembayaran kami sampaikan di awal.</p></div>
+      <div class="step"><h3>Bertemu di Labuan Bajo</h3><p>Titik penjemputan kami konfirmasi sehari sebelum berangkat.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap faq">
+    <div class="sec-head" style="margin-inline:auto;text-align:center"><div class="eyebrow">Tanya jawab</div><h2 style="margin-top:10px">Yang sering ditanyakan</h2></div>
+    <details><summary>Kapal apa yang akan saya naiki?</summary><p>Anda memilih kelas kapal. Nama kapal yang bertugas kami konfirmasi sebelum keberangkatan dan selalu sesuai kelas yang dipesan.</p></details>
+    <details><summary>Bolehkah membawa anak atau yang belum bisa berenang?</summary><p>Boleh. Beri tahu usia anak agar jaket pelampung dan lokasi snorkeling dapat disiapkan. Tamu yang belum bisa berenang tetap dapat ikut dengan jaket pelampung, di perairan yang aman, dan pemandu ikut mendampingi.</p></details>
+    <details><summary>Apakah pasti melihat komodo dan satwa lain?</summary><p>Komodo hidup liar di habitatnya. Pemandu dan ranger tahu area terbaik, namun perjumpaan dengan satwa liar, termasuk pari manta, penyu, dan kalong, tidak dapat dijanjikan.</p></details>
+    <details><summary>Apa yang sebaiknya saya bawa?</summary><p>Tabir surya ramah terumbu, topi, kacamata hitam, pakaian ganti, handuk, alas kaki yang nyaman untuk trekking ringan, serta obat pribadi bila diperlukan.</p></details>
+    <details><summary>Bagaimana cara memesan?</summary><p>Isi form pesanan atau hubungi kami lewat WhatsApp. Kami mengonfirmasi ketersediaan, harga, dan ketentuan secara tertulis sebelum Anda membayar.</p></details>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="eyebrow">Mulai rencanakan</div>
+    <h2>Pilih tanggal, sisanya kami atur.</h2>
+    <p>Ceritakan jumlah tamu dan tanggal yang Anda inginkan. Kami balas dengan ketersediaan dan penawaran tertulis.</p>
+    <a class="btn" data-wa href="https://wa.me/6285337591753" target="_blank" rel="noopener">Hubungi lewat WhatsApp</a>
+  </div>
+</section>
 </main>
+
 <footer class="foot">
- <div><b>⚓ BAJO TRAVEL GUIDE</b><p data-i18n="footAbout"></p></div>
- <div class="links">
-  <a href="#about" data-i18n="about"></a><a href="#" data-soon data-i18n="contact"></a><a href="#" data-soon data-i18n="privacy"></a>
-  <a href="#" data-soon data-i18n="terms"></a><a href="#" data-soon data-i18n="social"></a><a href="#" data-soon data-i18n="register"></a>
- </div>
+  <div class="wrap">
+    <div class="row">
+      <div><a class="logo" href="#"><i></i>Komodo Season Trip</a><p style="margin-top:10px">Trip ke Taman Nasional Komodo<br>dari Labuan Bajo, Flores.</p></div>
+      <div><p>WhatsApp<br><a data-wa id="wa-text" href="https://wa.me/6285337591753" target="_blank" rel="noopener">0853-3759-1753</a></p></div>
+    </div>
+    <div class="copy">© 2026 Komodo Season Trip. Semua hak dilindungi.</div>
+  </div>
 </footer>
-<dialog id="modal"><div class="m-head" id="mHead"></div><div class="m-body"><h3 id="mTitle"></h3><p class="loc" id="mLoc"></p><p id="mText"></p><p class="meta" id="mCredit"></p>
-<form id="bookForm" hidden>
- <input id="fName" required minlength="2" maxlength="60" data-i18n-ph="fName">
- <input id="fDate" type="date" required aria-label="date">
- <input id="fPeople" type="number" min="1" max="100" value="2" required aria-label="people">
- <textarea id="fNotes" rows="2" maxlength="300" data-i18n-ph="fNotes"></textarea>
- <button class="btn" type="submit" data-i18n="fSend"></button>
- <small class="meta" data-i18n="fNote"></small>
-</form>
-<button class="btn out" id="mClose" data-i18n="close"></button></div></dialog>
-<div class="toast" id="toast" role="status"></div>
-<script src="data.js"></script>
-<script src="script.js"></script>
+
+<div class="overlay" id="overlay"></div>
+<aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="p-title" aria-hidden="true">
+  <div class="scroll" id="p-content"></div>
+  <div class="book">
+    <div class="price"><small id="p-from"></small><strong id="p-price"></strong> <em id="p-unit"></em></div>
+    <input type="date" id="p-date" aria-label="Tanggal trip">
+    <button type="button" class="btn hide" id="p-order">Pesan sekarang</button>
+    <a class="btn" id="p-wa" href="#" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+  </div>
+</aside>
+
+<dialog class="od" id="od" aria-labelledby="o-title">
+  <form id="ofm">
+    <h2 id="o-title">Pesan perjalanan</h2>
+    <p class="o-boat" id="o-boat"></p>
+    <div><label for="o-name">Nama lengkap</label><input type="text" id="o-name" required maxlength="80" autocomplete="name"></div>
+    <div><label for="o-phone">Nomor WhatsApp</label><input type="tel" id="o-phone" required placeholder="08xxxxxxxxxx" autocomplete="tel"></div>
+    <div class="o-two">
+      <div><label for="o-guests">Jumlah tamu</label><input type="number" id="o-guests" min="1" max="50" value="2" required></div>
+      <div><label for="o-date">Tanggal trip</label><input type="date" id="o-date" required></div>
+    </div>
+    <div><label for="o-note">Catatan (opsional)</label><textarea id="o-note" maxlength="500" placeholder="Usia anak, kebutuhan khusus, dll."></textarea></div>
+    <input type="text" id="o-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+    <p class="o-err hide" id="o-err"></p>
+    <div class="o-act"><button type="button" class="btn ghost" id="o-cancel">Batal</button><button class="btn" id="o-send">Kirim pesanan</button></div>
+  </form>
+  <div class="o-done hide" id="o-done">
+    <h2>Pesanan terkirim</h2>
+    <p>Terima kasih. Kami akan menghubungi Anda lewat WhatsApp untuk mengonfirmasi ketersediaan dan pembayaran.</p>
+    <div class="o-act"><a class="btn" id="o-wa" href="#" target="_blank" rel="noopener">Konfirmasi lewat WhatsApp</a><button type="button" class="btn ghost" id="o-close">Tutup</button></div>
+  </div>
+</dialog>
+
+<script>
+var WA='6285337591753', ORDER_URL='';
+var BOATS=[{"n": "One Day Trip Komodo · Speedboat Luxury", "w": "Labuan Bajo · Taman Nasional Komodo", "tag": "Grup kecil", "ik": "motor", "p": "Rp 1.500.000", "pu": "per orang", "s": "", "r": 0, "d": "Satu hari penuh menjelajahi enam destinasi ikonik Taman Nasional Komodo dengan speedboat luxury. Rombongan dibatasi kecil agar setiap pemberhentian terasa lega, dan seluruh momen diabadikan dengan drone, GoPro, serta kamera mirrorless.", "sp": [["Durasi", "Satu hari penuh"], ["Kapal", "Speedboat luxury"], ["Grup", "Grup kecil"], ["Destinasi", "6 destinasi"], ["Dokumentasi", "Drone, GoPro & mirrorless"], ["Perlengkapan", "Alat snorkeling premium"]], "f": ["Speedboat luxury", "Pemandu lokal", "Snorkeling premium", "Foto & video drone", "GoPro", "Kamera mirrorless"], "it": [["01 · Pulau Padar", "Mendaki singkat ke titik pandang tiga teluk"], ["02 · Pink Beach", "Pantai berpasir kemerahan, berenang dan snorkeling"], ["03 · Pulau Komodo", "Berjalan bersama ranger melihat komodo di habitat aslinya"], ["04 · Manta Point", "Snorkeling di perairan tempat pari manta kerap melintas"], ["05 · Taka Makassar", "Gosong pasir putih di tengah laut"], ["06 · Siaba / Sebayur", "Snorkeling penutup di terumbu yang tenang"]], "y": ["Speedboat luxury", "Pemandu lokal", "Alat snorkeling premium", "Dokumentasi drone, GoPro & mirrorless"], "x": ["Biaya lain di luar paket dikonfirmasi tertulis sebelum Anda memesan"], "img": "", "on": true}, {"n": "Private Charter Speedboat", "w": "Labuan Bajo · Taman Nasional Komodo", "tag": "Privat", "ik": "motor", "p": "Sesuai penawaran", "pu": "", "s": "", "r": 0, "d": "Sewa satu speedboat penuh khusus untuk keluarga atau rombongan Anda. Rute mengikuti paket utama, sementara tempo dan lama singgah di tiap destinasi menyesuaikan keinginan Anda.", "sp": [["Durasi", "Satu hari penuh"], ["Kapal", "Satu speedboat khusus rombongan"], ["Grup", "Hanya rombongan Anda"], ["Destinasi", "Mengikuti rute utama"], ["Dokumentasi", "Dapat ditambahkan"], ["Perlengkapan", "Alat snorkeling premium"]], "f": ["Kapal eksklusif", "Tempo fleksibel", "Pemandu lokal", "Cocok untuk keluarga"], "it": [["Tempo fleksibel", "Urutan dan lama singgah diatur bersama pemandu sesuai keinginan rombongan"]], "y": ["Satu speedboat untuk rombongan Anda", "Pemandu lokal"], "x": ["Harga dan rincian dikonfirmasi tertulis sebelum Anda memesan"], "img": "", "on": true}, {"n": "Dokumentasi Pribadi", "w": "Tambahan untuk semua paket", "tag": "Tambahan", "ik": "motor", "p": "Tanya harga", "pu": "", "s": "", "r": 0, "d": "Operator drone, GoPro, dan kamera yang khusus mendampingi rombongan Anda sepanjang perjalanan, sehingga Anda bebas menikmati hari tanpa sibuk memegang kamera.", "sp": [["Durasi", "Sepanjang perjalanan"], ["Kapal", "Ikut kapal Anda"], ["Grup", "Khusus rombongan Anda"], ["Destinasi", "Semua destinasi"], ["Dokumentasi", "Drone, GoPro & kamera"], ["Perlengkapan", "Disiapkan operator"]], "f": ["Operator khusus", "Drone", "GoPro", "Kamera"], "it": [["Sepanjang hari", "Operator mendampingi rombongan dari keberangkatan hingga kembali"]], "y": ["Operator dokumentasi pribadi"], "x": ["Harga dikonfirmasi tertulis sebelum Anda memesan"], "img": "", "on": true}];
+var BOAT='<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 40h52l-7 12H15zM18 40V28h26v12M26 28v-8h10v8M44 34h10"/></svg>';
+var SHIP='<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6v36M32 8l18 28H32M32 14L18 36h14M8 46h48l-6 10H14z"/></svg>';
+var current=null,lastFocus=null;
+function $(id){return document.getElementById(id)}
+function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function li(a){return a.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')}
+function fmt(v){if(!v)return '';var d=new Date(v+'T00:00:00');return isNaN(d)?v:d.toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'})}
+function todayStr(){var d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
+function normPhone(v){var d=String(v).replace(/\D/g,'');if(d.indexOf('0')===0)d='62'+d.slice(1);else if(d.indexOf('8')===0)d='62'+d;return /^62\d{8,13}$/.test(d)?d:''}
+function norm(b,i){b.t='t'+((i%3)+1);b.i=b.ik==='phinisi'?SHIP:BOAT;return b}
+function waLink(t){return 'https://wa.me/'+WA+'?text='+encodeURIComponent(t)}
+
+/* ---------- render ---------- */
+function mount(){
+  $('cards').innerHTML=BOATS.map(function(b,i){
+    var th=b.img?' has-photo" style="background-image:url('+b.img+')':'';
+    var sc=String(b.s||'').split(' · ');
+    return '<article class="card" data-i="'+i+'" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Lihat detail '+esc(b.n)+'">'+
+      '<div class="thumb '+b.t+th+'">'+(b.tag?'<span class="tag">'+esc(b.tag)+'</span>':'')+b.i+'</div>'+
+      '<div class="body"><h3>'+esc(b.n)+'</h3><p class="where">'+esc(b.w)+'</p>'+
+      (b.s?'<div class="score"><b>'+esc(sc[0])+'</b> '+esc(sc[1]||'')+(b.r?' · '+esc(b.r)+' ulasan':'')+'</div>':'')+
+      '<div class="meta"><div class="price">'+(b.pu?'<small>mulai dari</small>':'')+'<strong>'+esc(b.p)+'</strong>'+(b.pu?'<em> / '+esc(b.pu)+'</em>':'')+'</div><span class="more">Lihat detail</span></div></div></article>';
+  }).join('');
+  $('h-pkg').innerHTML=BOATS.map(function(b,i){return '<option value="'+i+'">'+esc(b.n)+'</option>'}).join('');
+}
+function applyWA(){
+  document.querySelectorAll('a[data-wa]').forEach(function(a){a.href='https://wa.me/'+WA});
+  var t=$('wa-text');if(t&&/^62\d+$/.test(WA))t.textContent='0'+WA.slice(2);
+}
+function load(d){
+  if(!d||!Array.isArray(d.boats))return;
+  BOATS=d.boats.filter(function(b){return b.on!==false}).map(norm);
+  if(d.wa)WA=String(d.wa);
+  ORDER_URL=/^https:\/\/script\.google\.com\//.test(d.orderUrl||'')?d.orderUrl:'';
+  mount();applyWA();
+}
+
+/* ---------- panel detail ---------- */
+var panel=$('panel'),overlay=$('overlay'),content=$('p-content'),dateSel=$('p-date'),waBtn=$('p-wa');
+function updateWA(){
+  waBtn.href=waLink('Halo Komodo Season Trip, saya tertarik dengan '+current.n+(dateSel.value?' untuk tanggal '+fmt(dateSel.value):'')+'. Mohon info ketersediaan dan harga.');
+}
+function openBoat(i){
+  var b=BOATS[i];current=b;lastFocus=document.activeElement;
+  var sc=String(b.s||'').split(' · ');
+  content.innerHTML=
+    '<div class="p-hero '+b.t+(b.img?' has-photo':'')+'"'+(b.img?' style="background-image:url('+b.img+')"':'')+'>'+b.i+'<button class="p-close" id="p-close" aria-label="Tutup panel">×</button></div>'+
+    '<div class="p-body"><div class="eyebrow">'+esc(b.tag||'')+'</div><h2 id="p-title" style="margin-top:6px">'+esc(b.n)+'</h2><div class="p-sub">'+esc(b.w)+'</div>'+
+    (b.s?'<div class="p-score"><b>'+esc(sc[0])+'</b> '+esc(sc[1]||'')+(b.r?' · '+esc(b.r)+' ulasan':'')+'</div>':'')+
+    '<p class="desc">'+esc(b.d)+'</p>'+
+    '<h3>Ringkasan</h3><div class="spec">'+b.sp.map(function(x){return '<div><small>'+esc(x[0])+'</small><b>'+esc(x[1])+'</b></div>'}).join('')+'</div>'+
+    '<h3>Fasilitas</h3><ul class="chips">'+li(b.f)+'</ul>'+
+    '<h3>Rute perjalanan</h3><ul class="itin">'+b.it.map(function(x){return '<li><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></li>'}).join('')+'</ul>'+
+    '<h3>Termasuk &amp; catatan</h3><div class="pinc"><ul class="y">'+li(b.y)+'</ul><ul class="n">'+li(b.x)+'</ul></div></div>';
+  $('p-from').textContent=b.pu?'mulai dari':'';$('p-price').textContent=b.p;$('p-unit').textContent=b.pu?'/ '+b.pu:'';
+  dateSel.min=todayStr();dateSel.value='';
+  $('p-order').classList.toggle('hide',!ORDER_URL);waBtn.classList.toggle('hide',!!ORDER_URL);
+  updateWA();
+  panel.classList.add('on');overlay.classList.add('on');panel.setAttribute('aria-hidden','false');document.body.classList.add('lock');
+  content.scrollTop=0;$('p-close').focus();$('p-close').onclick=closeBoat;
+}
+function closeBoat(){
+  panel.classList.remove('on');overlay.classList.remove('on');panel.setAttribute('aria-hidden','true');document.body.classList.remove('lock');
+  if(lastFocus)lastFocus.focus();
+}
+dateSel.addEventListener('change',function(){if(current)updateWA()});
+overlay.addEventListener('click',closeBoat);
+function pick(e){var c=e.target.closest('.card[data-i]');return c?+c.dataset.i:null}
+$('cards').addEventListener('click',function(e){var i=pick(e);if(i!==null)openBoat(i)});
+$('cards').addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){var i=pick(e);if(i!==null){e.preventDefault();openBoat(i)}}});
+document.addEventListener('keydown',function(e){
+  if(!panel.classList.contains('on')||$('od').open)return;
+  if(e.key==='Escape')closeBoat();
+  if(e.key==='Tab'){
+    var f=panel.querySelectorAll('button:not(.hide),input,a[href]:not(.hide)'),a=f[0],z=f[f.length-1];
+    if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}
+    else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}
+  }
+});
+
+/* ---------- pesanan -> Google Sheets ---------- */
+var od=$('od'),ofm=$('ofm');
+function startOrder(i,o){
+  o=o||{};current=BOATS[i];
+  if(!ORDER_URL){window.open(waLink('Halo Komodo Season Trip, saya ingin memesan '+current.n+(o.date?' untuk tanggal '+fmt(o.date):'')+(o.guests?' ('+o.guests+' tamu)':'')+'. Mohon info ketersediaan.'),'_blank');return}
+  ofm.reset();
+  $('o-boat').textContent=current.n;
+  $('o-date').min=todayStr();$('o-date').value=o.date||'';
+  if(o.guests)$('o-guests').value=parseInt(o.guests,10)||2;
+  $('o-err').classList.add('hide');$('o-done').classList.add('hide');ofm.classList.remove('hide');
+  od.showModal();
+}
+$('p-order').onclick=function(){startOrder(BOATS.indexOf(current),{date:dateSel.value})};
+$('o-cancel').onclick=$('o-close').onclick=function(){od.close()};
+ofm.addEventListener('submit',function(e){
+  e.preventDefault();
+  var err=$('o-err'),phone=normPhone($('o-phone').value);
+  if(!phone){err.textContent='Nomor WhatsApp tidak valid. Contoh: 085337591753';err.classList.remove('hide');return}
+  var data={boat:current.n,month:$('o-date').value,guests:$('o-guests').value,name:$('o-name').value.trim(),phone:phone,note:$('o-note').value.trim(),hp:$('o-hp').value};
+  var btn=$('o-send');btn.disabled=true;btn.textContent='Mengirim…';err.classList.add('hide');
+  fetch(ORDER_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data)})
+  .then(function(){
+    $('o-wa').href=waLink('Halo Komodo Season Trip, saya '+data.name+' baru saja memesan '+data.boat+' untuk tanggal '+fmt(data.month)+' ('+data.guests+' tamu). Mohon konfirmasinya.');
+    ofm.classList.add('hide');$('o-done').classList.remove('hide');
+  })
+  .catch(function(){err.textContent='Pesanan belum terkirim. Periksa koneksi, atau pesan lewat WhatsApp.';err.classList.remove('hide')})
+  .then(function(){btn.disabled=false;btn.textContent='Kirim pesanan'});
+});
+
+/* ---------- pencarian di hero ---------- */
+(function(){
+  var g='';for(var n=1;n<=10;n++)g+='<option value="'+n+'">'+n+' tamu</option>';
+  $('h-guests').innerHTML=g+'<option value="12">Lebih dari 10</option>';$('h-guests').value='2';
+  $('h-date').min=todayStr();
+})();
+$('cari').addEventListener('submit',function(e){
+  e.preventDefault();
+  startOrder(+$('h-pkg').value||0,{date:$('h-date').value,guests:$('h-guests').value});
+});
+
+/* ---------- mulai ---------- */
+BOATS.forEach(norm);
+mount();
+if(window.fetch){
+  fetch('kapal.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(load).catch(function(){});
+}
+</script>
 </body>
 </html>
