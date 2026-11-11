@@ -233,6 +233,8 @@ footer.foot{border-radius:38px 38px 0 0;margin-top:40px}
 .card .body{padding:20px 14px 14px}
 .thumb{border-radius:0}
 .p-hero{margin:14px 14px 0;border-radius:0;max-height:none}
+/* foto selalu memenuhi frame (menimpa rule .t1/.t2 yang me-reset ukuran latar) */
+.thumb.has-photo,.p-hero.has-photo{background-size:cover;background-position:center;background-repeat:no-repeat}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
