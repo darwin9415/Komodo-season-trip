@@ -277,6 +277,20 @@ html{overflow-x:hidden}
   .cari{grid-template-columns:1fr}
   .cari>div:nth-child(1){border-right:0}
 }
+
+/* ===== semua tombol WhatsApp berwarna hijau ===== */
+a.btn[data-wa],#p-wa,#o-wa{background:#1e8a5f!important;color:#fff!important;border:0!important}
+a.btn[data-wa]:hover,#p-wa:hover,#o-wa:hover{background:#17724f!important}
+/* ===== bar pemesanan di panel: rapi di HP ===== */
+.book .price strong,.book .price em{white-space:nowrap}
+.book .dph{flex:1;min-width:150px}
+.book .dph input[type=date]{width:100%;max-width:none;padding:11px 12px}
+.book .dph span{left:14px}
+@media(max-width:600px){
+  .book{gap:10px}
+  .book .price{flex:1 1 100%}
+  .book .btn{flex:1 1 150px;text-align:center}
+}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -405,7 +419,7 @@ html{overflow-x:hidden}
   <div class="scroll" id="p-content"></div>
   <div class="book">
     <div class="price"><small id="p-from"></small><strong id="p-price"></strong> <em id="p-unit"></em></div>
-    <input type="date" id="p-date" aria-label="Tanggal trip">
+    <div class="dph" id="p-dph"><span>Pilih tanggal</span><input type="date" id="p-date" aria-label="Tanggal trip"></div>
     <button type="button" class="btn hide" id="p-order">Pesan sekarang</button>
     <a class="btn" id="p-wa" href="#" target="_blank" rel="noopener">Pesan via WhatsApp</a>
   </div>
@@ -493,7 +507,7 @@ function openBoat(i){
     '<h3>Rute perjalanan</h3><ul class="itin">'+b.it.map(function(x){return '<li><b>'+esc(x[0])+'</b><span>'+esc(x[1])+'</span></li>'}).join('')+'</ul>'+
     '<h3>Termasuk &amp; catatan</h3><div class="pinc"><ul class="y">'+li(b.y)+'</ul><ul class="n">'+li(b.x)+'</ul></div></div>';
   $('p-from').textContent=b.pu?'mulai dari':'';$('p-price').textContent=b.p;$('p-unit').textContent=b.pu?'/ '+b.pu:'';
-  dateSel.min=todayStr();dateSel.value='';
+  dateSel.min=todayStr();dateSel.value='';$('p-dph').classList.remove('has');
   $('p-order').classList.toggle('hide',!ORDER_URL);waBtn.classList.toggle('hide',!!ORDER_URL);
   updateWA();
   panel.classList.add('on');overlay.classList.add('on');panel.setAttribute('aria-hidden','false');document.body.classList.add('lock');
@@ -503,7 +517,7 @@ function closeBoat(){
   panel.classList.remove('on');overlay.classList.remove('on');panel.setAttribute('aria-hidden','true');document.body.classList.remove('lock');
   if(lastFocus)lastFocus.focus();
 }
-dateSel.addEventListener('change',function(){if(current)updateWA()});
+['input','change'].forEach(function(ev){dateSel.addEventListener(ev,function(){$('p-dph').classList.toggle('has',!!dateSel.value);if(current)updateWA()})});
 overlay.addEventListener('click',closeBoat);
 function pick(e){var c=e.target.closest('.card[data-i]');return c?+c.dataset.i:null}
 $('cards').addEventListener('click',function(e){var i=pick(e);if(i!==null)openBoat(i)});
