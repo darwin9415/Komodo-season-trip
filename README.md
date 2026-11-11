@@ -6,3 +6,5 @@
 Hosting: GitHub Pages (Settings → Pages → Deploy from branch → main / root).
 
 `kapal.json` juga memuat `orderUrl` (alamat Google Apps Script). Selama kosong, tombol pesan membuka WhatsApp. Setelah diisi lewat web admin, muncul form pesanan yang menyimpan ke Google Sheets.
+
+Galeri foto: file `pukaya-01.webp` sampai `pukaya-09.webp` harus berada di folder yang sama dengan `index.html`. Daftar dan keterangan fotonya ada di `kapal.json` (kolom `gal`), atau diatur lewat admin (Paket → Edit → Galeri foto).
