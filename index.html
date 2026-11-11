@@ -253,6 +253,30 @@ details{border-bottom-color:rgba(255,255,255,.24)}
 /* tombol Cek ketersediaan: hijau */
 .cari .btn{background:#1e8a5f;color:#fff}
 .cari .btn:hover{background:#17724f}
+
+/* ===== kotak pencarian di hero: tampil penuh & rapi di HP ===== */
+html{overflow-x:hidden}
+.hs{height:70px}
+.cari>div{min-width:0}
+.cari input,.cari select{min-width:0;max-width:100%}
+.dph{position:relative}
+.dph span{position:absolute;left:0;top:50%;transform:translateY(-50%);pointer-events:none;color:var(--muted);font-weight:500}
+.dph.has span,.dph:focus-within span{display:none}
+.dph:not(.has) input:not(:focus){color:transparent}
+@media(max-width:900px){
+  .hero{padding-top:150px}
+  .hs{height:40px}
+  .cari{grid-template-columns:1fr 1fr;margin-top:40px;margin-bottom:0;padding:8px;border-radius:26px}
+  .cari>div{padding:10px 14px;border-right:0;border-bottom:1px solid var(--line)}
+  .cari>div:nth-child(1){border-right:1px solid var(--line)}
+  .cari>div:nth-child(3){grid-column:1/-1}
+  .cari .btn{grid-column:1/-1;margin-top:8px;padding:16px;border-radius:20px}
+  .pillars{padding-top:60px}
+}
+@media(max-width:520px){
+  .cari{grid-template-columns:1fr}
+  .cari>div:nth-child(1){border-right:0}
+}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -276,13 +300,13 @@ details{border-bottom-color:rgba(255,255,255,.24)}
     <div class="facts"><div><b>6</b><span>Destinasi</span></div><div><b>1</b><span>Hari penuh</span></div><div><b>Kecil</b><span>Ukuran grup</span></div></div>
 
     <form class="cari" id="cari" aria-label="Cek ketersediaan">
-      <div><label for="h-date">Tanggal trip</label><input type="date" id="h-date" required></div>
+      <div><label for="h-date">Tanggal trip</label><div class="dph"><span>Pilih tanggal</span><input type="date" id="h-date" required></div></div>
       <div><label for="h-guests">Jumlah tamu</label><select id="h-guests"></select></div>
       <div><label for="h-pkg">Pilihan paket</label><select id="h-pkg"></select></div>
       <button class="btn" type="submit">Cek ketersediaan</button>
     </form>
   </div>
-  <div style="height:70px"></div>
+  <div class="hs"></div>
 </div>
 
 <main>
@@ -528,6 +552,7 @@ ofm.addEventListener('submit',function(e){
   var g='';for(var n=1;n<=10;n++)g+='<option value="'+n+'">'+n+' tamu</option>';
   $('h-guests').innerHTML=g+'<option value="12">Lebih dari 10</option>';$('h-guests').value='2';
   $('h-date').min=todayStr();
+  ['input','change'].forEach(function(ev){$('h-date').addEventListener(ev,function(){this.parentNode.classList.toggle('has',!!this.value)})});
 })();
 $('cari').addEventListener('submit',function(e){
   e.preventDefault();
