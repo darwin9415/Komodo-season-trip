@@ -1,10 +1,15 @@
-# Komodo Season Trip – Web Publik
+# Komodo Season Trip – Web Publik (9 bahasa)
 
-- `index.html` : halaman web (satu file).
-- `kapal.json` : data kapal dan nomor WhatsApp. File ini diperbarui oleh repo admin.
+Halaman per bahasa (semua ada di folder yang sama, tanpa subfolder):
+index.html (Indonesia), en.html, zh.html, ms.html, ru.html, es.html, pt.html, it.html, de.html
 
-Hosting: GitHub Pages (Settings → Pages → Deploy from branch → main / root).
+Berkas lain:
+- kapal.json : data paket, harga, nomor WhatsApp, dan terjemahan paket. Diperbarui lewat admin.
+- hero.webp, bg.webp : foto latar.
+- pukaya-*.webp, halfday-*.webp, citytour-*.webp, charter-*.webp : foto galeri paket.
+- robots.txt : mengizinkan mesin pencari.
 
-`kapal.json` juga memuat `orderUrl` (alamat Google Apps Script). Selama kosong, tombol pesan membuka WhatsApp. Setelah diisi lewat web admin, muncul form pesanan yang menyimpan ke Google Sheets.
-
-Galeri foto: file `pukaya-01.webp` sampai `pukaya-09.webp`, `citytour-01.webp` sampai `citytour-08.webp`, `charter-01.webp` sampai `charter-05.webp`, dan `halfday-01.webp` sampai `halfday-09.webp` harus berada di folder yang sama dengan `index.html`. Daftar dan keterangan fotonya ada di `kapal.json` (kolom `gal`), atau diatur lewat admin (Paket → Edit → Galeri foto).
+Catatan SEO:
+1. Daftarkan situs di Google Search Console, lalu kirim alamat setiap halaman (atau sitemap.xml).
+2. Tag canonical dan hreflang dibuat otomatis oleh skrip sesuai alamat situs.
+3. Paket baru yang ditambah lewat admin tampil dalam bahasa Indonesia di halaman bahasa lain sampai terjemahannya ditambahkan.
