@@ -141,87 +141,6 @@
      "n": "One Day Trip Komodo · Luxury Speedboat",
      "w": "Labuan Bajo · Komodo National Park",
      "pu": "per person",
-     "d": "An open (shared) full-day trip to six destinations in Komodo National Park by tourist speedboat from Labuan Bajo: Padar Island, Pink Beach, Komodo Island, Manta Point, Taka Makassar and Siaba or Sebayur. Hotel pickup in the Labuan Bajo area, lunch and a local guide are included.",
-     "sp": [
-      [
-       "Duration",
-       "Full day"
-      ],
-      [
-       "Trip type",
-       "Open trip or shared trip with other guests on the same speedboat"
-      ],
-      [
-       "Minimum booking",
-       "1 person"
-      ],
-      [
-       "Boat",
-       "Tourist speedboat. Boat name and type may vary depending on availability. Boat details are confirmed before departure."
-      ],
-      [
-       "Capacity",
-       "Depends on the type of speedboat available on the travel date"
-      ],
-      [
-       "Destinations",
-       "6 destinations"
-      ],
-      [
-       "Pickup",
-       "Hotel or meeting point in the Labuan Bajo area, around 06.00–06.30 WITA"
-      ]
-     ],
-     "it": [
-      [
-       "06.00–06.30 WITA",
-       "Guests are picked up from their hotel or a meeting point in the Labuan Bajo area."
-      ],
-      [
-       "06.30–07.00 WITA",
-       "Transfer to the harbour, check-in and preparation to board the speedboat."
-      ],
-      [
-       "07.00 WITA",
-       "The speedboat departs from Labuan Bajo."
-      ],
-      [
-       "Approx. 08.30–09.00 WITA",
-       "Arrival at Padar Island. Light trek to the viewpoint and photo time."
-      ],
-      [
-       "Approx. 10.00–10.30 WITA",
-       "Visit Pink Beach to swim, snorkel or relax, depending on conditions."
-      ],
-      [
-       "Approx. 12.00 WITA",
-       "Visit Komodo Island and follow the trekking route set together with the ranger."
-      ],
-      [
-       "Approx. 13.00 WITA",
-       "Lunch or rest time according to the package facilities."
-      ],
-      [
-       "Approx. 14.00 WITA",
-       "Visit Manta Point for snorkelling if sea conditions allow."
-      ],
-      [
-       "Approx. 15.00 WITA",
-       "Visit Taka Makassar if tides and weather allow."
-      ],
-      [
-       "Approx. 15.30–16.00 WITA",
-       "Visit Siaba or Sebayur to snorkel or enjoy the surrounding waters, depending on conditions."
-      ],
-      [
-       "Approx. 16.30–17.30 WITA",
-       "Journey back to Labuan Bajo."
-      ],
-      [
-       "Approx. 17.00–18.00 WITA",
-       "Arrival in Labuan Bajo and end of the trip."
-      ]
-     ],
      "itn": "The schedule above is an estimate. Arrival times, the time spent at each destination and the order of the route may change depending on the weather, waves, currents, tides, how busy each location is, ranger instructions, harbour schedules and safety considerations. There is no guarantee that all destinations can be visited if conditions do not allow.",
      "warn": "Important: Komodo National Park entrance tickets and other official fees are not included in the package price, unless stated otherwise on the invoice or booking confirmation. Fee details are provided before payment.",
      "rt": "Estimated schedule",
@@ -229,6 +148,7 @@
       {
        "t": "Included facilities",
        "open": true,
+       "k": "yes",
        "b": [
         [
          "ul",
@@ -253,6 +173,7 @@
       {
        "t": "Not included",
        "open": true,
+       "k": "no",
        "b": [
         [
          "ul",
@@ -453,93 +374,93 @@
        "Is drone footage always available?",
        "Drone footage depends on weather, wind, location, permits and operational conditions. Drone footage may be unavailable if flying is unsafe or not allowed in certain areas."
       ]
+     ],
+     "d": "An open (shared) full-day trip to six destinations in Komodo National Park by tourist speedboat from Labuan Bajo: Padar Island, Pink Beach, Komodo Island, Manta Point, Taka Makassar and Siaba or Sebayur. Hotel pickup in the Labuan Bajo area, lunch and a local guide are included.",
+     "sp": [
+      [
+       "Duration",
+       "Full day"
+      ],
+      [
+       "Trip type",
+       "Open trip or shared trip with other guests on the same speedboat"
+      ],
+      [
+       "Minimum booking",
+       "1 person"
+      ],
+      [
+       "Boat",
+       "Tourist speedboat. Boat name and type may vary depending on availability. Boat details are confirmed before departure."
+      ],
+      [
+       "Capacity",
+       "Depends on the type of speedboat available on the travel date"
+      ],
+      [
+       "Destinations",
+       "6 destinations"
+      ],
+      [
+       "Pickup",
+       "Hotel or meeting point in the Labuan Bajo area, around 06.00–06.30 WITA"
+      ]
+     ],
+     "it": [
+      [
+       "06.00–06.30 WITA",
+       "Guests are picked up from their hotel or a meeting point in the Labuan Bajo area."
+      ],
+      [
+       "06.30–07.00 WITA",
+       "Transfer to the harbour, check-in and preparation to board the speedboat."
+      ],
+      [
+       "07.00 WITA",
+       "The speedboat departs from Labuan Bajo."
+      ],
+      [
+       "Approx. 08.30–09.00 WITA",
+       "Arrival at Padar Island. Light trek to the viewpoint and photo time."
+      ],
+      [
+       "Approx. 10.00–10.30 WITA",
+       "Visit Pink Beach to swim, snorkel or relax, depending on conditions."
+      ],
+      [
+       "Approx. 12.00 WITA",
+       "Visit Komodo Island and follow the trekking route set together with the ranger."
+      ],
+      [
+       "Approx. 13.00 WITA",
+       "Lunch or rest time according to the package facilities."
+      ],
+      [
+       "Approx. 14.00 WITA",
+       "Visit Manta Point for snorkelling if sea conditions allow."
+      ],
+      [
+       "Approx. 15.00 WITA",
+       "Visit Taka Makassar if tides and weather allow."
+      ],
+      [
+       "Approx. 15.30–16.00 WITA",
+       "Visit Siaba or Sebayur to snorkel or enjoy the surrounding waters, depending on conditions."
+      ],
+      [
+       "Approx. 16.30–17.30 WITA",
+       "Journey back to Labuan Bajo."
+      ],
+      [
+       "Approx. 17.00–18.00 WITA",
+       "Arrival in Labuan Bajo and end of the trip."
+      ]
      ]
     },
     "zh": {
      "n": "科莫多一日游 · 豪华快艇",
      "w": "拉布安巴霍 · 科莫多国家公园",
      "pu": "每人",
-     "d": "开放式拼团一日游：乘坐旅游快艇从拉布安巴霍出发，前往科莫多国家公园的六个目的地：帕达尔岛、粉红沙滩、科莫多岛、蝠鲼点、塔卡马卡萨沙洲，以及西亚巴或塞巴尤尔。包含拉布安巴霍地区的酒店接送、午餐和当地导游。",
-     "sp": [
-      [
-       "时长",
-       "全天"
-      ],
-      [
-       "行程类型",
-       "开放式拼团，与其他游客共乘同一艘快艇"
-      ],
-      [
-       "最少预订人数",
-       "1 人"
-      ],
-      [
-       "船只",
-       "旅游快艇。船名和船型可能因当天供应情况而不同，船只详情将在出发前确认。"
-      ],
-      [
-       "载客量",
-       "视出行当天可用的快艇类型而定"
-      ],
-      [
-       "目的地",
-       "6 个目的地"
-      ],
-      [
-       "接送",
-       "拉布安巴霍地区的酒店或集合点，约 06.00–06.30 WITA"
-      ]
-     ],
-     "it": [
-      [
-       "06.00–06.30 WITA",
-       "从酒店或拉布安巴霍地区的集合点接游客。"
-      ],
-      [
-       "06.30–07.00 WITA",
-       "前往码头、办理登记并准备登上快艇。"
-      ],
-      [
-       "07.00 WITA",
-       "快艇从拉布安巴霍出发。"
-      ],
-      [
-       "约 08.30–09.00 WITA",
-       "抵达帕达尔岛。轻松徒步前往观景区并拍照。"
-      ],
-      [
-       "约 10.00–10.30 WITA",
-       "前往粉红沙滩，可根据情况游泳、浮潜或放松休息。"
-      ],
-      [
-       "约 12.00 WITA",
-       "前往科莫多岛，沿着与护林员共同确定的步道徒步。"
-      ],
-      [
-       "约 13.00 WITA",
-       "午餐或休息时间，按套餐所含服务提供。"
-      ],
-      [
-       "约 14.00 WITA",
-       "如海况允许，前往蝠鲼点浮潜。"
-      ],
-      [
-       "约 15.00 WITA",
-       "如潮汐和天气允许，前往塔卡马卡萨沙洲。"
-      ],
-      [
-       "约 15.30–16.00 WITA",
-       "前往西亚巴或塞巴尤尔，视情况浮潜或欣赏周边海域。"
-      ],
-      [
-       "约 16.30–17.30 WITA",
-       "返回拉布安巴霍。"
-      ],
-      [
-       "约 17.00–18.00 WITA",
-       "抵达拉布安巴霍，行程结束。"
-      ]
-     ],
      "itn": "以上日程仅为预估。抵达时间、各目的地停留时长以及路线顺序，可能因天气、海浪、水流、潮汐、景点拥挤程度、护林员指示、码头班次及安全考虑而调整。如条件不允许，不保证能游览所有目的地。",
      "warn": "重要提示：科莫多国家公园门票及其他官方费用不包含在套餐价格内，除非发票或预订确认另有说明。费用明细将在付款前告知。",
      "rt": "预计日程",
@@ -547,6 +468,7 @@
       {
        "t": "包含的服务",
        "open": true,
+       "k": "yes",
        "b": [
         [
          "ul",
@@ -571,6 +493,7 @@
       {
        "t": "不包含",
        "open": true,
+       "k": "no",
        "b": [
         [
          "ul",
@@ -771,93 +694,93 @@
        "一定有无人机拍摄吗？",
        "无人机拍摄取决于天气、风力、地点、许可及运营条件。如飞行不安全或特定区域不允许飞行，则可能无法提供无人机拍摄。"
       ]
+     ],
+     "d": "开放式拼团一日游：乘坐旅游快艇从拉布安巴霍出发，前往科莫多国家公园的六个目的地：帕达尔岛、粉红沙滩、科莫多岛、蝠鲼点、塔卡马卡萨沙洲，以及西亚巴或塞巴尤尔。包含拉布安巴霍地区的酒店接送、午餐和当地导游。",
+     "sp": [
+      [
+       "时长",
+       "全天"
+      ],
+      [
+       "行程类型",
+       "开放式拼团，与其他游客共乘同一艘快艇"
+      ],
+      [
+       "最少预订人数",
+       "1 人"
+      ],
+      [
+       "船只",
+       "旅游快艇。船名和船型可能因当天供应情况而不同，船只详情将在出发前确认。"
+      ],
+      [
+       "载客量",
+       "视出行当天可用的快艇类型而定"
+      ],
+      [
+       "目的地",
+       "6 个目的地"
+      ],
+      [
+       "接送",
+       "拉布安巴霍地区的酒店或集合点，约 06.00–06.30 WITA"
+      ]
+     ],
+     "it": [
+      [
+       "06.00–06.30 WITA",
+       "从酒店或拉布安巴霍地区的集合点接游客。"
+      ],
+      [
+       "06.30–07.00 WITA",
+       "前往码头、办理登记并准备登上快艇。"
+      ],
+      [
+       "07.00 WITA",
+       "快艇从拉布安巴霍出发。"
+      ],
+      [
+       "约 08.30–09.00 WITA",
+       "抵达帕达尔岛。轻松徒步前往观景区并拍照。"
+      ],
+      [
+       "约 10.00–10.30 WITA",
+       "前往粉红沙滩，可根据情况游泳、浮潜或放松休息。"
+      ],
+      [
+       "约 12.00 WITA",
+       "前往科莫多岛，沿着与护林员共同确定的步道徒步。"
+      ],
+      [
+       "约 13.00 WITA",
+       "午餐或休息时间，按套餐所含服务提供。"
+      ],
+      [
+       "约 14.00 WITA",
+       "如海况允许，前往蝠鲼点浮潜。"
+      ],
+      [
+       "约 15.00 WITA",
+       "如潮汐和天气允许，前往塔卡马卡萨沙洲。"
+      ],
+      [
+       "约 15.30–16.00 WITA",
+       "前往西亚巴或塞巴尤尔，视情况浮潜或欣赏周边海域。"
+      ],
+      [
+       "约 16.30–17.30 WITA",
+       "返回拉布安巴霍。"
+      ],
+      [
+       "约 17.00–18.00 WITA",
+       "抵达拉布安巴霍，行程结束。"
+      ]
      ]
     },
     "ms": {
      "n": "Perjalanan Sehari Komodo · Bot Laju Mewah",
      "w": "Labuan Bajo · Taman Negara Komodo",
      "pu": "seorang",
-     "d": "Perjalanan terbuka (kongsi) sehari penuh ke enam destinasi Taman Negara Komodo dengan bot laju pelancongan dari Labuan Bajo: Pulau Padar, Pink Beach, Pulau Komodo, Manta Point, Taka Makassar dan Siaba atau Sebayur. Penjemputan hotel di kawasan Labuan Bajo, makan tengah hari dan pemandu tempatan sudah termasuk.",
-     "sp": [
-      [
-       "Tempoh",
-       "Sehari penuh"
-      ],
-      [
-       "Jenis perjalanan",
-       "Perjalanan terbuka atau kongsi bersama tetamu lain dalam satu bot laju"
-      ],
-      [
-       "Tempahan minimum",
-       "1 orang"
-      ],
-      [
-       "Bot",
-       "Bot laju pelancongan. Nama dan jenis bot mungkin berbeza mengikut ketersediaan. Butiran bot disahkan sebelum berlepas."
-      ],
-      [
-       "Kapasiti",
-       "Mengikut jenis bot laju yang tersedia pada tarikh perjalanan"
-      ],
-      [
-       "Destinasi",
-       "6 destinasi"
-      ],
-      [
-       "Penjemputan",
-       "Hotel atau tempat berkumpul di kawasan Labuan Bajo, sekitar 06.00–06.30 WITA"
-      ]
-     ],
-     "it": [
-      [
-       "06.00–06.30 WITA",
-       "Peserta dijemput dari hotel atau tempat berkumpul di kawasan Labuan Bajo."
-      ],
-      [
-       "06.30–07.00 WITA",
-       "Perjalanan ke pelabuhan, pendaftaran masuk dan persiapan menaiki bot laju."
-      ],
-      [
-       "07.00 WITA",
-       "Bot laju bertolak dari Labuan Bajo."
-      ],
-      [
-       "Sekitar 08.30–09.00 WITA",
-       "Tiba di Pulau Padar. Trekking ringan ke kawasan pemandangan dan bergambar."
-      ],
-      [
-       "Sekitar 10.00–10.30 WITA",
-       "Singgah di Pink Beach untuk berenang, snorkeling atau berehat mengikut keadaan."
-      ],
-      [
-       "Sekitar 12.00 WITA",
-       "Singgah di Pulau Komodo dan mengikuti laluan trekking yang ditetapkan bersama renjer."
-      ],
-      [
-       "Sekitar 13.00 WITA",
-       "Makan tengah hari atau masa rehat mengikut kemudahan pakej."
-      ],
-      [
-       "Sekitar 14.00 WITA",
-       "Singgah di Manta Point untuk snorkeling jika keadaan laut mengizinkan."
-      ],
-      [
-       "Sekitar 15.00 WITA",
-       "Singgah di Taka Makassar jika keadaan air pasang surut dan cuaca mengizinkan."
-      ],
-      [
-       "Sekitar 15.30–16.00 WITA",
-       "Singgah di Siaba atau Sebayur untuk snorkeling atau menikmati perairan sekitar mengikut keadaan."
-      ],
-      [
-       "Sekitar 16.30–17.30 WITA",
-       "Perjalanan pulang ke Labuan Bajo."
-      ],
-      [
-       "Sekitar 17.00–18.00 WITA",
-       "Tiba di Labuan Bajo dan perjalanan tamat."
-      ]
-     ],
      "itn": "Jadual di atas adalah anggaran. Masa tiba, tempoh di setiap destinasi dan urutan laluan boleh berubah mengikut cuaca, ombak, arus, pasang surut, kesesakan lokasi, arahan renjer, jadual pelabuhan dan pertimbangan keselamatan. Tiada jaminan bahawa semua destinasi dapat dikunjungi jika keadaan tidak mengizinkan.",
      "warn": "Penting: tiket masuk Taman Negara Komodo dan bayaran rasmi lain tidak termasuk dalam harga pakej, melainkan dinyatakan berbeza pada invois atau pengesahan tempahan. Butiran bayaran dimaklumkan sebelum pembayaran.",
      "rt": "Jadual anggaran",
@@ -865,6 +788,7 @@
       {
        "t": "Kemudahan yang termasuk",
        "open": true,
+       "k": "yes",
        "b": [
         [
          "ul",
@@ -889,6 +813,7 @@
       {
        "t": "Tidak termasuk",
        "open": true,
+       "k": "no",
        "b": [
         [
          "ul",
@@ -1089,93 +1014,93 @@
        "Adakah dokumentasi dron sentiasa tersedia?",
        "Dokumentasi dron bergantung pada cuaca, angin, lokasi, kebenaran dan keadaan operasi. Dokumentasi dron mungkin tidak tersedia jika penerbangan tidak selamat atau tidak dibenarkan di kawasan tertentu."
       ]
+     ],
+     "d": "Perjalanan terbuka (kongsi) sehari penuh ke enam destinasi Taman Negara Komodo dengan bot laju pelancongan dari Labuan Bajo: Pulau Padar, Pink Beach, Pulau Komodo, Manta Point, Taka Makassar dan Siaba atau Sebayur. Penjemputan hotel di kawasan Labuan Bajo, makan tengah hari dan pemandu tempatan sudah termasuk.",
+     "sp": [
+      [
+       "Tempoh",
+       "Sehari penuh"
+      ],
+      [
+       "Jenis perjalanan",
+       "Perjalanan terbuka atau kongsi bersama tetamu lain dalam satu bot laju"
+      ],
+      [
+       "Tempahan minimum",
+       "1 orang"
+      ],
+      [
+       "Bot",
+       "Bot laju pelancongan. Nama dan jenis bot mungkin berbeza mengikut ketersediaan. Butiran bot disahkan sebelum berlepas."
+      ],
+      [
+       "Kapasiti",
+       "Mengikut jenis bot laju yang tersedia pada tarikh perjalanan"
+      ],
+      [
+       "Destinasi",
+       "6 destinasi"
+      ],
+      [
+       "Penjemputan",
+       "Hotel atau tempat berkumpul di kawasan Labuan Bajo, sekitar 06.00–06.30 WITA"
+      ]
+     ],
+     "it": [
+      [
+       "06.00–06.30 WITA",
+       "Peserta dijemput dari hotel atau tempat berkumpul di kawasan Labuan Bajo."
+      ],
+      [
+       "06.30–07.00 WITA",
+       "Perjalanan ke pelabuhan, pendaftaran masuk dan persiapan menaiki bot laju."
+      ],
+      [
+       "07.00 WITA",
+       "Bot laju bertolak dari Labuan Bajo."
+      ],
+      [
+       "Sekitar 08.30–09.00 WITA",
+       "Tiba di Pulau Padar. Trekking ringan ke kawasan pemandangan dan bergambar."
+      ],
+      [
+       "Sekitar 10.00–10.30 WITA",
+       "Singgah di Pink Beach untuk berenang, snorkeling atau berehat mengikut keadaan."
+      ],
+      [
+       "Sekitar 12.00 WITA",
+       "Singgah di Pulau Komodo dan mengikuti laluan trekking yang ditetapkan bersama renjer."
+      ],
+      [
+       "Sekitar 13.00 WITA",
+       "Makan tengah hari atau masa rehat mengikut kemudahan pakej."
+      ],
+      [
+       "Sekitar 14.00 WITA",
+       "Singgah di Manta Point untuk snorkeling jika keadaan laut mengizinkan."
+      ],
+      [
+       "Sekitar 15.00 WITA",
+       "Singgah di Taka Makassar jika keadaan air pasang surut dan cuaca mengizinkan."
+      ],
+      [
+       "Sekitar 15.30–16.00 WITA",
+       "Singgah di Siaba atau Sebayur untuk snorkeling atau menikmati perairan sekitar mengikut keadaan."
+      ],
+      [
+       "Sekitar 16.30–17.30 WITA",
+       "Perjalanan pulang ke Labuan Bajo."
+      ],
+      [
+       "Sekitar 17.00–18.00 WITA",
+       "Tiba di Labuan Bajo dan perjalanan tamat."
+      ]
      ]
     },
     "ru": {
      "n": "Однодневный тур на Комодо · Роскошный скоростной катер",
      "w": "Лабуан-Баджо · Национальный парк Комодо",
      "pu": "за человека",
-     "d": "Открытая (групповая) поездка на целый день: шесть мест национального парка Комодо на туристическом скоростном катере из Лабуан-Баджо — остров Падар, Пинк-Бич, остров Комодо, Манта-Пойнт, Така-Макасар и Сиаба или Себаюр. Трансфер от отеля в районе Лабуан-Баджо, обед и местный гид включены.",
-     "sp": [
-      [
-       "Длительность",
-       "Полный день"
-      ],
-      [
-       "Тип поездки",
-       "Открытая (групповая) поездка вместе с другими гостями на одном катере"
-      ],
-      [
-       "Минимум для бронирования",
-       "1 человек"
-      ],
-      [
-       "Катер",
-       "Туристический скоростной катер. Название и тип катера могут отличаться в зависимости от наличия. Подробности о катере подтверждаются до отправления."
-      ],
-      [
-       "Вместимость",
-       "Зависит от типа скоростного катера, доступного на дату поездки"
-      ],
-      [
-       "Места",
-       "6 мест"
-      ],
-      [
-       "Трансфер",
-       "Отель или место сбора в районе Лабуан-Баджо, около 06.00–06.30 WITA"
-      ]
-     ],
-     "it": [
-      [
-       "06.00–06.30 WITA",
-       "Забираем гостей из отеля или с места сбора в районе Лабуан-Баджо."
-      ],
-      [
-       "06.30–07.00 WITA",
-       "Дорога в порт, регистрация и подготовка к посадке на катер."
-      ],
-      [
-       "07.00 WITA",
-       "Катер отправляется из Лабуан-Баджо."
-      ],
-      [
-       "Около 08.30–09.00 WITA",
-       "Прибытие на остров Падар. Лёгкий трекинг к смотровой площадке и время для фото."
-      ],
-      [
-       "Около 10.00–10.30 WITA",
-       "Посещение Пинк-Бич: купание, снорклинг или отдых — в зависимости от условий."
-      ],
-      [
-       "Около 12.00 WITA",
-       "Посещение острова Комодо и прогулка по маршруту, определённому вместе с рейнджером."
-      ],
-      [
-       "Около 13.00 WITA",
-       "Обед или время отдыха в соответствии с услугами пакета."
-      ],
-      [
-       "Около 14.00 WITA",
-       "Посещение Манта-Пойнт для снорклинга, если позволяют условия на море."
-      ],
-      [
-       "Около 15.00 WITA",
-       "Посещение Така-Макасар, если позволяют приливы и погода."
-      ],
-      [
-       "Около 15.30–16.00 WITA",
-       "Посещение Сиаба или Себаюр для снорклинга или отдыха у воды — в зависимости от условий."
-      ],
-      [
-       "Около 16.30–17.30 WITA",
-       "Возвращение в Лабуан-Баджо."
-      ],
-      [
-       "Около 17.00–18.00 WITA",
-       "Прибытие в Лабуан-Баджо, окончание поездки."
-      ]
-     ],
      "itn": "Приведённое расписание является ориентировочным. Время прибытия, продолжительность пребывания в каждом месте и порядок маршрута могут меняться из-за погоды, волн, течений, приливов, загруженности мест, указаний рейнджеров, расписания порта и соображений безопасности. Нет гарантии, что удастся посетить все места, если условия этого не позволяют.",
      "warn": "Важно: входные билеты в национальный парк Комодо и другие официальные сборы не включены в стоимость пакета, если иное не указано в счёте или подтверждении бронирования. Подробности по сборам сообщаются до оплаты.",
      "rt": "Ориентировочное расписание",
@@ -1183,6 +1108,7 @@
       {
        "t": "Что включено",
        "open": true,
+       "k": "yes",
        "b": [
         [
          "ul",
@@ -1207,6 +1133,7 @@
       {
        "t": "Не включено",
        "open": true,
+       "k": "no",
        "b": [
         [
          "ul",
@@ -1407,93 +1334,93 @@
        "Всегда ли доступна съёмка дроном?",
        "Съёмка дроном зависит от погоды, ветра, места, разрешений и условий работы. Съёмка дроном может быть недоступна, если полёт небезопасен или запрещён в некоторых зонах."
       ]
+     ],
+     "d": "Открытая (групповая) поездка на целый день: шесть мест национального парка Комодо на туристическом скоростном катере из Лабуан-Баджо — остров Падар, Пинк-Бич, остров Комодо, Манта-Пойнт, Така-Макасар и Сиаба или Себаюр. Трансфер от отеля в районе Лабуан-Баджо, обед и местный гид включены.",
+     "sp": [
+      [
+       "Длительность",
+       "Полный день"
+      ],
+      [
+       "Тип поездки",
+       "Открытая (групповая) поездка вместе с другими гостями на одном катере"
+      ],
+      [
+       "Минимум для бронирования",
+       "1 человек"
+      ],
+      [
+       "Катер",
+       "Туристический скоростной катер. Название и тип катера могут отличаться в зависимости от наличия. Подробности о катере подтверждаются до отправления."
+      ],
+      [
+       "Вместимость",
+       "Зависит от типа скоростного катера, доступного на дату поездки"
+      ],
+      [
+       "Места",
+       "6 мест"
+      ],
+      [
+       "Трансфер",
+       "Отель или место сбора в районе Лабуан-Баджо, около 06.00–06.30 WITA"
+      ]
+     ],
+     "it": [
+      [
+       "06.00–06.30 WITA",
+       "Забираем гостей из отеля или с места сбора в районе Лабуан-Баджо."
+      ],
+      [
+       "06.30–07.00 WITA",
+       "Дорога в порт, регистрация и подготовка к посадке на катер."
+      ],
+      [
+       "07.00 WITA",
+       "Катер отправляется из Лабуан-Баджо."
+      ],
+      [
+       "Около 08.30–09.00 WITA",
+       "Прибытие на остров Падар. Лёгкий трекинг к смотровой площадке и время для фото."
+      ],
+      [
+       "Около 10.00–10.30 WITA",
+       "Посещение Пинк-Бич: купание, снорклинг или отдых — в зависимости от условий."
+      ],
+      [
+       "Около 12.00 WITA",
+       "Посещение острова Комодо и прогулка по маршруту, определённому вместе с рейнджером."
+      ],
+      [
+       "Около 13.00 WITA",
+       "Обед или время отдыха в соответствии с услугами пакета."
+      ],
+      [
+       "Около 14.00 WITA",
+       "Посещение Манта-Пойнт для снорклинга, если позволяют условия на море."
+      ],
+      [
+       "Около 15.00 WITA",
+       "Посещение Така-Макасар, если позволяют приливы и погода."
+      ],
+      [
+       "Около 15.30–16.00 WITA",
+       "Посещение Сиаба или Себаюр для снорклинга или отдыха у воды — в зависимости от условий."
+      ],
+      [
+       "Около 16.30–17.30 WITA",
+       "Возвращение в Лабуан-Баджо."
+      ],
+      [
+       "Около 17.00–18.00 WITA",
+       "Прибытие в Лабуан-Баджо, окончание поездки."
+      ]
      ]
     },
     "es": {
      "n": "Excursión de un día a Komodo · Lancha rápida de lujo",
      "w": "Labuan Bajo · Parque Nacional de Komodo",
      "pu": "por persona",
-     "d": "Excursión abierta (compartida) de día completo a seis destinos del Parque Nacional de Komodo en lancha rápida turística desde Labuan Bajo: isla Padar, Pink Beach, isla de Komodo, Manta Point, Taka Makassar y Siaba o Sebayur. Incluye recogida en el hotel en la zona de Labuan Bajo, almuerzo y guía local.",
-     "sp": [
-      [
-       "Duración",
-       "Día completo"
-      ],
-      [
-       "Tipo de viaje",
-       "Excursión abierta o compartida con otros viajeros en la misma lancha rápida"
-      ],
-      [
-       "Reserva mínima",
-       "1 persona"
-      ],
-      [
-       "Embarcación",
-       "Lancha rápida turística. El nombre y el tipo de embarcación pueden variar según la disponibilidad. Los detalles de la embarcación se confirman antes de la salida."
-      ],
-      [
-       "Capacidad",
-       "Depende del tipo de lancha rápida disponible en la fecha del viaje"
-      ],
-      [
-       "Destinos",
-       "6 destinos"
-      ],
-      [
-       "Recogida",
-       "Hotel o punto de encuentro en la zona de Labuan Bajo, sobre las 06.00–06.30 WITA"
-      ]
-     ],
-     "it": [
-      [
-       "06.00–06.30 WITA",
-       "Recogida de los participantes en su hotel o en un punto de encuentro de la zona de Labuan Bajo."
-      ],
-      [
-       "06.30–07.00 WITA",
-       "Traslado al puerto, registro y preparación para subir a la lancha rápida."
-      ],
-      [
-       "07.00 WITA",
-       "La lancha rápida sale de Labuan Bajo."
-      ],
-      [
-       "Aprox. 08.30–09.00 WITA",
-       "Llegada a la isla Padar. Caminata ligera hasta el mirador y tiempo para fotos."
-      ],
-      [
-       "Aprox. 10.00–10.30 WITA",
-       "Visita a Pink Beach para nadar, hacer snorkel o relajarse, según las condiciones."
-      ],
-      [
-       "Aprox. 12.00 WITA",
-       "Visita a la isla de Komodo y recorrido por el sendero definido junto con el guardabosques."
-      ],
-      [
-       "Aprox. 13.00 WITA",
-       "Almuerzo o tiempo de descanso según los servicios del paquete."
-      ],
-      [
-       "Aprox. 14.00 WITA",
-       "Visita a Manta Point para hacer snorkel si las condiciones del mar lo permiten."
-      ],
-      [
-       "Aprox. 15.00 WITA",
-       "Visita a Taka Makassar si las mareas y el tiempo lo permiten."
-      ],
-      [
-       "Aprox. 15.30–16.00 WITA",
-       "Visita a Siaba o Sebayur para hacer snorkel o disfrutar de las aguas cercanas, según las condiciones."
-      ],
-      [
-       "Aprox. 16.30–17.30 WITA",
-       "Regreso a Labuan Bajo."
-      ],
-      [
-       "Aprox. 17.00–18.00 WITA",
-       "Llegada a Labuan Bajo y fin del viaje."
-      ]
-     ],
      "itn": "El horario anterior es aproximado. Las horas de llegada, el tiempo en cada destino y el orden de la ruta pueden cambiar según el clima, las olas, las corrientes, las mareas, la afluencia en cada lugar, las indicaciones de los guardabosques, los horarios del puerto y razones de seguridad. No se garantiza que se puedan visitar todos los destinos si las condiciones no lo permiten.",
      "warn": "Importante: las entradas al Parque Nacional de Komodo y otras tasas oficiales no están incluidas en el precio del paquete, salvo que la factura o la confirmación de reserva indique lo contrario. El detalle de las tasas se informa antes del pago.",
      "rt": "Horario aproximado",
@@ -1501,6 +1428,7 @@
       {
        "t": "Servicios incluidos",
        "open": true,
+       "k": "yes",
        "b": [
         [
          "ul",
@@ -1525,6 +1453,7 @@
       {
        "t": "No incluido",
        "open": true,
+       "k": "no",
        "b": [
         [
          "ul",
@@ -1725,93 +1654,93 @@
        "¿Siempre hay grabación con dron?",
        "La grabación con dron depende del clima, el viento, el lugar, los permisos y las condiciones operativas. Puede no estar disponible si volar no es seguro o no está permitido en determinadas zonas."
       ]
-     ]
-    },
-    "pt": {
-     "n": "Passeio de um dia em Komodo · Lancha rápida de luxo",
-     "w": "Labuan Bajo · Parque Nacional de Komodo",
-     "pu": "por pessoa",
-     "d": "Excursão aberta (partilhada) de dia inteiro a seis destinos do Parque Nacional de Komodo em lancha rápida turística a partir de Labuan Bajo: ilha Padar, Pink Beach, ilha de Komodo, Manta Point, Taka Makassar e Siaba ou Sebayur. Inclui recolha no hotel na zona de Labuan Bajo, almoço e guia local.",
+     ],
+     "d": "Excursión abierta (compartida) de día completo a seis destinos del Parque Nacional de Komodo en lancha rápida turística desde Labuan Bajo: isla Padar, Pink Beach, isla de Komodo, Manta Point, Taka Makassar y Siaba o Sebayur. Incluye recogida en el hotel en la zona de Labuan Bajo, almuerzo y guía local.",
      "sp": [
       [
-       "Duração",
-       "Dia inteiro"
+       "Duración",
+       "Día completo"
       ],
       [
-       "Tipo de viagem",
-       "Excursão aberta ou partilhada com outros viajantes na mesma lancha rápida"
+       "Tipo de viaje",
+       "Excursión abierta o compartida con otros viajeros en la misma lancha rápida"
       ],
       [
        "Reserva mínima",
-       "1 pessoa"
+       "1 persona"
       ],
       [
-       "Embarcação",
-       "Lancha rápida turística. O nome e o tipo da embarcação podem variar consoante a disponibilidade. Os detalhes da embarcação são confirmados antes da partida."
+       "Embarcación",
+       "Lancha rápida turística. El nombre y el tipo de embarcación pueden variar según la disponibilidad. Los detalles de la embarcación se confirman antes de la salida."
       ],
       [
-       "Capacidade",
-       "Depende do tipo de lancha rápida disponível na data da viagem"
+       "Capacidad",
+       "Depende del tipo de lancha rápida disponible en la fecha del viaje"
       ],
       [
        "Destinos",
        "6 destinos"
       ],
       [
-       "Recolha",
-       "Hotel ou ponto de encontro na zona de Labuan Bajo, por volta das 06.00–06.30 WITA"
+       "Recogida",
+       "Hotel o punto de encuentro en la zona de Labuan Bajo, sobre las 06.00–06.30 WITA"
       ]
      ],
      "it": [
       [
        "06.00–06.30 WITA",
-       "Recolha dos participantes no hotel ou num ponto de encontro na zona de Labuan Bajo."
+       "Recogida de los participantes en su hotel o en un punto de encuentro de la zona de Labuan Bajo."
       ],
       [
        "06.30–07.00 WITA",
-       "Deslocação ao porto, registo e preparação para embarcar na lancha rápida."
+       "Traslado al puerto, registro y preparación para subir a la lancha rápida."
       ],
       [
        "07.00 WITA",
-       "A lancha rápida parte de Labuan Bajo."
+       "La lancha rápida sale de Labuan Bajo."
       ],
       [
-       "Cerca de 08.30–09.00 WITA",
-       "Chegada à ilha Padar. Caminhada leve até ao miradouro e tempo para fotografias."
+       "Aprox. 08.30–09.00 WITA",
+       "Llegada a la isla Padar. Caminata ligera hasta el mirador y tiempo para fotos."
       ],
       [
-       "Cerca de 10.00–10.30 WITA",
-       "Visita a Pink Beach para nadar, fazer snorkel ou relaxar, conforme as condições."
+       "Aprox. 10.00–10.30 WITA",
+       "Visita a Pink Beach para nadar, hacer snorkel o relajarse, según las condiciones."
       ],
       [
-       "Cerca de 12.00 WITA",
-       "Visita à ilha de Komodo e percurso pelo trilho definido em conjunto com o guarda-florestal."
+       "Aprox. 12.00 WITA",
+       "Visita a la isla de Komodo y recorrido por el sendero definido junto con el guardabosques."
       ],
       [
-       "Cerca de 13.00 WITA",
-       "Almoço ou tempo de descanso de acordo com os serviços do pacote."
+       "Aprox. 13.00 WITA",
+       "Almuerzo o tiempo de descanso según los servicios del paquete."
       ],
       [
-       "Cerca de 14.00 WITA",
-       "Visita a Manta Point para snorkel, se as condições do mar o permitirem."
+       "Aprox. 14.00 WITA",
+       "Visita a Manta Point para hacer snorkel si las condiciones del mar lo permiten."
       ],
       [
-       "Cerca de 15.00 WITA",
-       "Visita a Taka Makassar, se as marés e o tempo o permitirem."
+       "Aprox. 15.00 WITA",
+       "Visita a Taka Makassar si las mareas y el tiempo lo permiten."
       ],
       [
-       "Cerca de 15.30–16.00 WITA",
-       "Visita a Siaba ou Sebayur para snorkel ou para desfrutar das águas envolventes, conforme as condições."
+       "Aprox. 15.30–16.00 WITA",
+       "Visita a Siaba o Sebayur para hacer snorkel o disfrutar de las aguas cercanas, según las condiciones."
       ],
       [
-       "Cerca de 16.30–17.30 WITA",
-       "Regresso a Labuan Bajo."
+       "Aprox. 16.30–17.30 WITA",
+       "Regreso a Labuan Bajo."
       ],
       [
-       "Cerca de 17.00–18.00 WITA",
-       "Chegada a Labuan Bajo e fim da viagem."
+       "Aprox. 17.00–18.00 WITA",
+       "Llegada a Labuan Bajo y fin del viaje."
       ]
-     ],
+     ]
+    },
+    "pt": {
+     "n": "Passeio de um dia em Komodo · Lancha rápida de luxo",
+     "w": "Labuan Bajo · Parque Nacional de Komodo",
+     "pu": "por pessoa",
      "itn": "O horário acima é aproximado. As horas de chegada, o tempo em cada destino e a ordem do percurso podem mudar consoante o tempo, as ondas, as correntes, as marés, a afluência em cada local, as indicações dos guardas, os horários do porto e questões de segurança. Não há garantia de que todos os destinos possam ser visitados se as condições não o permitirem.",
      "warn": "Importante: os bilhetes de entrada no Parque Nacional de Komodo e outras taxas oficiais não estão incluídos no preço do pacote, salvo indicação em contrário na fatura ou na confirmação da reserva. Os detalhes das taxas são comunicados antes do pagamento.",
      "rt": "Horário aproximado",
@@ -1819,6 +1748,7 @@
       {
        "t": "Serviços incluídos",
        "open": true,
+       "k": "yes",
        "b": [
         [
          "ul",
@@ -1843,6 +1773,7 @@
       {
        "t": "Não incluído",
        "open": true,
+       "k": "no",
        "b": [
         [
          "ul",
@@ -2043,93 +1974,93 @@
        "As imagens de drone estão sempre disponíveis?",
        "As imagens de drone dependem do tempo, do vento, do local, das autorizações e das condições operacionais. Podem não estar disponíveis se voar não for seguro ou não for permitido em determinadas zonas."
       ]
+     ],
+     "d": "Excursão aberta (partilhada) de dia inteiro a seis destinos do Parque Nacional de Komodo em lancha rápida turística a partir de Labuan Bajo: ilha Padar, Pink Beach, ilha de Komodo, Manta Point, Taka Makassar e Siaba ou Sebayur. Inclui recolha no hotel na zona de Labuan Bajo, almoço e guia local.",
+     "sp": [
+      [
+       "Duração",
+       "Dia inteiro"
+      ],
+      [
+       "Tipo de viagem",
+       "Excursão aberta ou partilhada com outros viajantes na mesma lancha rápida"
+      ],
+      [
+       "Reserva mínima",
+       "1 pessoa"
+      ],
+      [
+       "Embarcação",
+       "Lancha rápida turística. O nome e o tipo da embarcação podem variar consoante a disponibilidade. Os detalhes da embarcação são confirmados antes da partida."
+      ],
+      [
+       "Capacidade",
+       "Depende do tipo de lancha rápida disponível na data da viagem"
+      ],
+      [
+       "Destinos",
+       "6 destinos"
+      ],
+      [
+       "Recolha",
+       "Hotel ou ponto de encontro na zona de Labuan Bajo, por volta das 06.00–06.30 WITA"
+      ]
+     ],
+     "it": [
+      [
+       "06.00–06.30 WITA",
+       "Recolha dos participantes no hotel ou num ponto de encontro na zona de Labuan Bajo."
+      ],
+      [
+       "06.30–07.00 WITA",
+       "Deslocação ao porto, registo e preparação para embarcar na lancha rápida."
+      ],
+      [
+       "07.00 WITA",
+       "A lancha rápida parte de Labuan Bajo."
+      ],
+      [
+       "Cerca de 08.30–09.00 WITA",
+       "Chegada à ilha Padar. Caminhada leve até ao miradouro e tempo para fotografias."
+      ],
+      [
+       "Cerca de 10.00–10.30 WITA",
+       "Visita a Pink Beach para nadar, fazer snorkel ou relaxar, conforme as condições."
+      ],
+      [
+       "Cerca de 12.00 WITA",
+       "Visita à ilha de Komodo e percurso pelo trilho definido em conjunto com o guarda-florestal."
+      ],
+      [
+       "Cerca de 13.00 WITA",
+       "Almoço ou tempo de descanso de acordo com os serviços do pacote."
+      ],
+      [
+       "Cerca de 14.00 WITA",
+       "Visita a Manta Point para snorkel, se as condições do mar o permitirem."
+      ],
+      [
+       "Cerca de 15.00 WITA",
+       "Visita a Taka Makassar, se as marés e o tempo o permitirem."
+      ],
+      [
+       "Cerca de 15.30–16.00 WITA",
+       "Visita a Siaba ou Sebayur para snorkel ou para desfrutar das águas envolventes, conforme as condições."
+      ],
+      [
+       "Cerca de 16.30–17.30 WITA",
+       "Regresso a Labuan Bajo."
+      ],
+      [
+       "Cerca de 17.00–18.00 WITA",
+       "Chegada a Labuan Bajo e fim da viagem."
+      ]
      ]
     },
     "it": {
      "n": "Escursione di un giorno a Komodo · Motoscafo di lusso",
      "w": "Labuan Bajo · Parco Nazionale di Komodo",
      "pu": "a persona",
-     "d": "Escursione aperta (condivisa) di un'intera giornata verso sei destinazioni del Parco Nazionale di Komodo in motoscafo turistico da Labuan Bajo: isola di Padar, Pink Beach, isola di Komodo, Manta Point, Taka Makassar e Siaba o Sebayur. Inclusi ritiro in hotel nell'area di Labuan Bajo, pranzo e guida locale.",
-     "sp": [
-      [
-       "Durata",
-       "Giornata intera"
-      ],
-      [
-       "Tipo di viaggio",
-       "Escursione aperta o condivisa con altri ospiti sullo stesso motoscafo"
-      ],
-      [
-       "Prenotazione minima",
-       "1 persona"
-      ],
-      [
-       "Imbarcazione",
-       "Motoscafo turistico. Nome e tipo dell'imbarcazione possono variare in base alla disponibilità. I dettagli dell'imbarcazione vengono confermati prima della partenza."
-      ],
-      [
-       "Capienza",
-       "Dipende dal tipo di motoscafo disponibile nella data del viaggio"
-      ],
-      [
-       "Destinazioni",
-       "6 destinazioni"
-      ],
-      [
-       "Ritiro",
-       "Hotel o punto di ritrovo nell'area di Labuan Bajo, intorno alle 06.00–06.30 WITA"
-      ]
-     ],
-     "it": [
-      [
-       "06.00–06.30 WITA",
-       "Ritiro dei partecipanti dall'hotel o da un punto di ritrovo nell'area di Labuan Bajo."
-      ],
-      [
-       "06.30–07.00 WITA",
-       "Trasferimento al porto, check-in e preparazione all'imbarco sul motoscafo."
-      ],
-      [
-       "07.00 WITA",
-       "Il motoscafo parte da Labuan Bajo."
-      ],
-      [
-       "Circa 08.30–09.00 WITA",
-       "Arrivo all'isola di Padar. Camminata leggera fino al punto panoramico e tempo per le foto."
-      ],
-      [
-       "Circa 10.00–10.30 WITA",
-       "Visita a Pink Beach per nuotare, fare snorkeling o rilassarsi, a seconda delle condizioni."
-      ],
-      [
-       "Circa 12.00 WITA",
-       "Visita all'isola di Komodo e percorso lungo il sentiero stabilito insieme al ranger."
-      ],
-      [
-       "Circa 13.00 WITA",
-       "Pranzo o pausa secondo i servizi del pacchetto."
-      ],
-      [
-       "Circa 14.00 WITA",
-       "Visita a Manta Point per lo snorkeling, se le condizioni del mare lo consentono."
-      ],
-      [
-       "Circa 15.00 WITA",
-       "Visita a Taka Makassar, se maree e meteo lo consentono."
-      ],
-      [
-       "Circa 15.30–16.00 WITA",
-       "Visita a Siaba o Sebayur per lo snorkeling o per godersi le acque circostanti, a seconda delle condizioni."
-      ],
-      [
-       "Circa 16.30–17.30 WITA",
-       "Rientro a Labuan Bajo."
-      ],
-      [
-       "Circa 17.00–18.00 WITA",
-       "Arrivo a Labuan Bajo e fine dell'escursione."
-      ]
-     ],
      "itn": "Il programma sopra è indicativo. Orari di arrivo, tempo trascorso in ogni destinazione e ordine del percorso possono cambiare in base a meteo, onde, correnti, maree, affollamento dei luoghi, indicazioni dei ranger, orari del porto e motivi di sicurezza. Non è garantito che tutte le destinazioni possano essere visitate se le condizioni non lo consentono.",
      "warn": "Importante: i biglietti d'ingresso al Parco Nazionale di Komodo e le altre tariffe ufficiali non sono inclusi nel prezzo del pacchetto, salvo diversa indicazione nella fattura o nella conferma di prenotazione. I dettagli delle tariffe vengono comunicati prima del pagamento.",
      "rt": "Programma indicativo",
@@ -2137,6 +2068,7 @@
       {
        "t": "Servizi inclusi",
        "open": true,
+       "k": "yes",
        "b": [
         [
          "ul",
@@ -2161,6 +2093,7 @@
       {
        "t": "Non incluso",
        "open": true,
+       "k": "no",
        "b": [
         [
          "ul",
@@ -2361,93 +2294,93 @@
        "Le riprese con drone sono sempre disponibili?",
        "Le riprese con drone dipendono da meteo, vento, luogo, permessi e condizioni operative. Possono non essere disponibili se il volo non è sicuro o non è consentito in determinate aree."
       ]
+     ],
+     "d": "Escursione aperta (condivisa) di un'intera giornata verso sei destinazioni del Parco Nazionale di Komodo in motoscafo turistico da Labuan Bajo: isola di Padar, Pink Beach, isola di Komodo, Manta Point, Taka Makassar e Siaba o Sebayur. Inclusi ritiro in hotel nell'area di Labuan Bajo, pranzo e guida locale.",
+     "sp": [
+      [
+       "Durata",
+       "Giornata intera"
+      ],
+      [
+       "Tipo di viaggio",
+       "Escursione aperta o condivisa con altri ospiti sullo stesso motoscafo"
+      ],
+      [
+       "Prenotazione minima",
+       "1 persona"
+      ],
+      [
+       "Imbarcazione",
+       "Motoscafo turistico. Nome e tipo dell'imbarcazione possono variare in base alla disponibilità. I dettagli dell'imbarcazione vengono confermati prima della partenza."
+      ],
+      [
+       "Capienza",
+       "Dipende dal tipo di motoscafo disponibile nella data del viaggio"
+      ],
+      [
+       "Destinazioni",
+       "6 destinazioni"
+      ],
+      [
+       "Ritiro",
+       "Hotel o punto di ritrovo nell'area di Labuan Bajo, intorno alle 06.00–06.30 WITA"
+      ]
+     ],
+     "it": [
+      [
+       "06.00–06.30 WITA",
+       "Ritiro dei partecipanti dall'hotel o da un punto di ritrovo nell'area di Labuan Bajo."
+      ],
+      [
+       "06.30–07.00 WITA",
+       "Trasferimento al porto, check-in e preparazione all'imbarco sul motoscafo."
+      ],
+      [
+       "07.00 WITA",
+       "Il motoscafo parte da Labuan Bajo."
+      ],
+      [
+       "Circa 08.30–09.00 WITA",
+       "Arrivo all'isola di Padar. Camminata leggera fino al punto panoramico e tempo per le foto."
+      ],
+      [
+       "Circa 10.00–10.30 WITA",
+       "Visita a Pink Beach per nuotare, fare snorkeling o rilassarsi, a seconda delle condizioni."
+      ],
+      [
+       "Circa 12.00 WITA",
+       "Visita all'isola di Komodo e percorso lungo il sentiero stabilito insieme al ranger."
+      ],
+      [
+       "Circa 13.00 WITA",
+       "Pranzo o pausa secondo i servizi del pacchetto."
+      ],
+      [
+       "Circa 14.00 WITA",
+       "Visita a Manta Point per lo snorkeling, se le condizioni del mare lo consentono."
+      ],
+      [
+       "Circa 15.00 WITA",
+       "Visita a Taka Makassar, se maree e meteo lo consentono."
+      ],
+      [
+       "Circa 15.30–16.00 WITA",
+       "Visita a Siaba o Sebayur per lo snorkeling o per godersi le acque circostanti, a seconda delle condizioni."
+      ],
+      [
+       "Circa 16.30–17.30 WITA",
+       "Rientro a Labuan Bajo."
+      ],
+      [
+       "Circa 17.00–18.00 WITA",
+       "Arrivo a Labuan Bajo e fine dell'escursione."
+      ]
      ]
     },
     "de": {
      "n": "Komodo-Tagesausflug · Luxus-Speedboot",
      "w": "Labuan Bajo · Komodo-Nationalpark",
      "pu": "pro Person",
-     "d": "Offener (geteilter) Tagesausflug zu sechs Zielen im Komodo-Nationalpark mit einem Ausflugs-Speedboot ab Labuan Bajo: Insel Padar, Pink Beach, Insel Komodo, Manta Point, Taka Makassar und Siaba oder Sebayur. Hotelabholung im Raum Labuan Bajo, Mittagessen und ein lokaler Guide sind inklusive.",
-     "sp": [
-      [
-       "Dauer",
-       "Ganzer Tag"
-      ],
-      [
-       "Tourart",
-       "Offene Tour bzw. geteilte Tour mit anderen Gästen auf demselben Speedboot"
-      ],
-      [
-       "Mindestbuchung",
-       "1 Person"
-      ],
-      [
-       "Boot",
-       "Ausflugs-Speedboot. Name und Typ des Bootes können je nach Verfügbarkeit variieren. Details zum Boot werden vor der Abfahrt bestätigt."
-      ],
-      [
-       "Kapazität",
-       "Richtet sich nach dem am Reisetag verfügbaren Speedboot-Typ"
-      ],
-      [
-       "Ziele",
-       "6 Ziele"
-      ],
-      [
-       "Abholung",
-       "Hotel oder Treffpunkt im Raum Labuan Bajo, etwa 06.00–06.30 WITA"
-      ]
-     ],
-     "it": [
-      [
-       "06.00–06.30 WITA",
-       "Abholung der Teilnehmer am Hotel oder an einem Treffpunkt im Raum Labuan Bajo."
-      ],
-      [
-       "06.30–07.00 WITA",
-       "Fahrt zum Hafen, Check-in und Vorbereitung zum Einsteigen ins Speedboot."
-      ],
-      [
-       "07.00 WITA",
-       "Das Speedboot fährt von Labuan Bajo ab."
-      ],
-      [
-       "Ca. 08.30–09.00 WITA",
-       "Ankunft auf der Insel Padar. Leichter Trek zum Aussichtspunkt und Zeit für Fotos."
-      ],
-      [
-       "Ca. 10.00–10.30 WITA",
-       "Besuch von Pink Beach zum Schwimmen, Schnorcheln oder Entspannen, je nach Bedingungen."
-      ],
-      [
-       "Ca. 12.00 WITA",
-       "Besuch der Insel Komodo und Wanderung auf der gemeinsam mit dem Ranger festgelegten Route."
-      ],
-      [
-       "Ca. 13.00 WITA",
-       "Mittagessen oder Pause gemäß den Leistungen des Pakets."
-      ],
-      [
-       "Ca. 14.00 WITA",
-       "Besuch von Manta Point zum Schnorcheln, sofern die Seebedingungen es zulassen."
-      ],
-      [
-       "Ca. 15.00 WITA",
-       "Besuch von Taka Makassar, sofern Gezeiten und Wetter es zulassen."
-      ],
-      [
-       "Ca. 15.30–16.00 WITA",
-       "Besuch von Siaba oder Sebayur zum Schnorcheln oder um die umliegenden Gewässer zu genießen, je nach Bedingungen."
-      ],
-      [
-       "Ca. 16.30–17.30 WITA",
-       "Rückfahrt nach Labuan Bajo."
-      ],
-      [
-       "Ca. 17.00–18.00 WITA",
-       "Ankunft in Labuan Bajo und Ende der Tour."
-      ]
-     ],
      "itn": "Der obige Zeitplan ist eine Schätzung. Ankunftszeiten, Aufenthaltsdauer an den einzelnen Zielen und die Reihenfolge der Route können sich je nach Wetter, Wellen, Strömungen, Gezeiten, Andrang an den Orten, Anweisungen der Ranger, Hafenfahrplänen und Sicherheitsgründen ändern. Es gibt keine Garantie, dass alle Ziele besucht werden können, wenn die Bedingungen dies nicht zulassen.",
      "warn": "Wichtig: Eintrittskarten für den Komodo-Nationalpark und andere offizielle Gebühren sind nicht im Paketpreis enthalten, sofern auf der Rechnung oder Buchungsbestätigung nichts anderes angegeben ist. Die Gebührendetails werden vor der Zahlung mitgeteilt.",
      "rt": "Voraussichtlicher Zeitplan",
@@ -2455,6 +2388,7 @@
       {
        "t": "Inklusive Leistungen",
        "open": true,
+       "k": "yes",
        "b": [
         [
          "ul",
@@ -2479,6 +2413,7 @@
       {
        "t": "Nicht inklusive",
        "open": true,
+       "k": "no",
        "b": [
         [
          "ul",
@@ -2679,6 +2614,87 @@
        "Gibt es immer Drohnenaufnahmen?",
        "Drohnenaufnahmen hängen von Wetter, Wind, Ort, Genehmigungen und betrieblichen Bedingungen ab. Sie sind möglicherweise nicht verfügbar, wenn ein Flug unsicher ist oder in bestimmten Gebieten nicht erlaubt ist."
       ]
+     ],
+     "d": "Offener (geteilter) Tagesausflug zu sechs Zielen im Komodo-Nationalpark mit einem Ausflugs-Speedboot ab Labuan Bajo: Insel Padar, Pink Beach, Insel Komodo, Manta Point, Taka Makassar und Siaba oder Sebayur. Hotelabholung im Raum Labuan Bajo, Mittagessen und ein lokaler Guide sind inklusive.",
+     "sp": [
+      [
+       "Dauer",
+       "Ganzer Tag"
+      ],
+      [
+       "Tourart",
+       "Offene Tour bzw. geteilte Tour mit anderen Gästen auf demselben Speedboot"
+      ],
+      [
+       "Mindestbuchung",
+       "1 Person"
+      ],
+      [
+       "Boot",
+       "Ausflugs-Speedboot. Name und Typ des Bootes können je nach Verfügbarkeit variieren. Details zum Boot werden vor der Abfahrt bestätigt."
+      ],
+      [
+       "Kapazität",
+       "Richtet sich nach dem am Reisetag verfügbaren Speedboot-Typ"
+      ],
+      [
+       "Ziele",
+       "6 Ziele"
+      ],
+      [
+       "Abholung",
+       "Hotel oder Treffpunkt im Raum Labuan Bajo, etwa 06.00–06.30 WITA"
+      ]
+     ],
+     "it": [
+      [
+       "06.00–06.30 WITA",
+       "Abholung der Teilnehmer am Hotel oder an einem Treffpunkt im Raum Labuan Bajo."
+      ],
+      [
+       "06.30–07.00 WITA",
+       "Fahrt zum Hafen, Check-in und Vorbereitung zum Einsteigen ins Speedboot."
+      ],
+      [
+       "07.00 WITA",
+       "Das Speedboot fährt von Labuan Bajo ab."
+      ],
+      [
+       "Ca. 08.30–09.00 WITA",
+       "Ankunft auf der Insel Padar. Leichter Trek zum Aussichtspunkt und Zeit für Fotos."
+      ],
+      [
+       "Ca. 10.00–10.30 WITA",
+       "Besuch von Pink Beach zum Schwimmen, Schnorcheln oder Entspannen, je nach Bedingungen."
+      ],
+      [
+       "Ca. 12.00 WITA",
+       "Besuch der Insel Komodo und Wanderung auf der gemeinsam mit dem Ranger festgelegten Route."
+      ],
+      [
+       "Ca. 13.00 WITA",
+       "Mittagessen oder Pause gemäß den Leistungen des Pakets."
+      ],
+      [
+       "Ca. 14.00 WITA",
+       "Besuch von Manta Point zum Schnorcheln, sofern die Seebedingungen es zulassen."
+      ],
+      [
+       "Ca. 15.00 WITA",
+       "Besuch von Taka Makassar, sofern Gezeiten und Wetter es zulassen."
+      ],
+      [
+       "Ca. 15.30–16.00 WITA",
+       "Besuch von Siaba oder Sebayur zum Schnorcheln oder um die umliegenden Gewässer zu genießen, je nach Bedingungen."
+      ],
+      [
+       "Ca. 16.30–17.30 WITA",
+       "Rückfahrt nach Labuan Bajo."
+      ],
+      [
+       "Ca. 17.00–18.00 WITA",
+       "Ankunft in Labuan Bajo und Ende der Tour."
+      ]
      ]
     }
    },
@@ -2689,6 +2705,7 @@
     {
      "t": "Fasilitas yang termasuk",
      "open": true,
+     "k": "yes",
      "b": [
       [
        "ul",
@@ -2713,6 +2730,7 @@
     {
      "t": "Tidak termasuk",
      "open": true,
+     "k": "no",
      "b": [
       [
        "ul",
