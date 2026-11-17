@@ -365,6 +365,24 @@ ol.ilist li::before{content:counter(o);left:0;top:6px;width:20px;height:20px;bor
 .qa p{color:var(--muted);margin:0 0 14px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
+/* ===== Tentang kami ===== */
+.about{padding:150px 0 10px;color:#f6f3ed}
+.pillars{padding:46px 0 70px}
+.ab-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.ab-text h2{margin:10px 0 18px;max-width:20ch;color:#fff}
+.ab-text p{color:rgba(246,243,237,.88);margin:0 0 14px;max-width:60ch;line-height:1.7}
+.ab-facts{display:flex;gap:30px;flex-wrap:wrap;margin:24px 0 26px;padding-top:20px;border-top:1px solid rgba(220,192,140,.4)}
+.ab-facts b{display:block;font-family:var(--serif);font-size:1.6rem;color:var(--gold2);line-height:1.1}
+.ab-facts span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.78)}
+.ab-card{background:rgba(8,21,31,.64);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(220,192,140,.35);border-radius:28px;padding:26px 26px 12px}
+.ab-card h3{font-family:var(--serif);font-size:1.3rem;color:#fff;margin:0 0 8px}
+.ab-card ul{list-style:none;margin:0;padding:0}
+.ab-card li{display:flex;gap:14px;padding:16px 0;border-top:1px solid rgba(255,255,255,.14)}
+.ab-card .ck{flex:none;width:28px;height:28px;border-radius:50%;background:#1e8a5f;color:#fff;display:grid;place-items:center;font-weight:700;font-size:.9rem;margin-top:2px}
+.ab-card li b{display:block;font-family:var(--serif);font-size:1.05rem;color:#fff;margin-bottom:3px}
+.ab-card li p{margin:0;font-size:.9rem;color:rgba(246,243,237,.84);line-height:1.55}
+@media(max-width:900px){.about{padding-top:60px}.ab-grid{grid-template-columns:1fr;gap:30px}.pillars{padding-top:34px}}
+
 /* ===== multi bahasa ===== */
 .hr{display:flex;align-items:center;gap:10px}
 .lang{position:relative}
@@ -391,7 +409,7 @@ html[lang="zh"] .eyebrow,html[lang="zh"] .more,html[lang="zh"] .btn{letter-spaci
   <div class="wrap">
     <a class="logo" href="#"><i></i>Komodo Season Trip</a>
     <nav class="menu" aria-label="Main menu">
-      <a href="#paket">Packages</a><a href="#rute">Route</a><a href="#cara">How to book</a><a href="#faq">FAQ</a>
+      <a href="#tentang">About us</a><a href="#paket">Packages</a><a href="#rute">Route</a><a href="#cara">How to book</a><a href="#faq">FAQ</a>
     </nav>
     <div class="hr"><details class="lang"><summary aria-label="Language / Bahasa"><svg class="fl" viewBox="0 0 30 20" aria-hidden="true"><use href="#f-en"/></svg><span>EN</span></summary><ul><li><a href="index.html" hreflang="id" lang="id"><svg class="fl" viewBox="0 0 30 20" aria-hidden="true"><use href="#f-id"/></svg><span>Bahasa Indonesia</span></a></li><li><a href="en.html" hreflang="en" lang="en" aria-current="true"><svg class="fl" viewBox="0 0 30 20" aria-hidden="true"><use href="#f-en"/></svg><span>English</span></a></li><li><a href="zh.html" hreflang="zh" lang="zh"><svg class="fl" viewBox="0 0 30 20" aria-hidden="true"><use href="#f-zh"/></svg><span>中文（简体）</span></a></li><li><a href="ms.html" hreflang="ms" lang="ms"><svg class="fl" viewBox="0 0 30 20" aria-hidden="true"><use href="#f-ms"/></svg><span>Bahasa Melayu</span></a></li><li><a href="ru.html" hreflang="ru" lang="ru"><svg class="fl" viewBox="0 0 30 20" aria-hidden="true"><use href="#f-ru"/></svg><span>Русский</span></a></li><li><a href="es.html" hreflang="es" lang="es"><svg class="fl" viewBox="0 0 30 20" aria-hidden="true"><use href="#f-es"/></svg><span>Español</span></a></li><li><a href="pt.html" hreflang="pt" lang="pt"><svg class="fl" viewBox="0 0 30 20" aria-hidden="true"><use href="#f-pt"/></svg><span>Português</span></a></li><li><a href="it.html" hreflang="it" lang="it"><svg class="fl" viewBox="0 0 30 20" aria-hidden="true"><use href="#f-it"/></svg><span>Italiano</span></a></li><li><a href="de.html" hreflang="de" lang="de"><svg class="fl" viewBox="0 0 30 20" aria-hidden="true"><use href="#f-de"/></svg><span>Deutsch</span></a></li></ul></details><a class="btn ghost" data-wa href="https://wa.me/6285337591753" target="_blank" rel="noopener">WhatsApp</a></div>
   </div>
@@ -415,6 +433,26 @@ html[lang="zh"] .eyebrow,html[lang="zh"] .more,html[lang="zh"] .btn{letter-spaci
 </div>
 
 <main>
+<section class="about" id="tentang">
+  <div class="wrap"><div class="ab-grid">
+    <div class="ab-text">
+      <div class="eyebrow">About us</div>
+      <h2>Komodo trips that are honest, organised and free of surprises</h2>
+      <p>Komodo Season Trip is a tour service in Labuan Bajo for trips to Komodo National Park and the surrounding islands: a speedboat one day trip, a half day sunset trip, a private charter and a city tour.</p><p>We believe guests have the right to know what they are paying for. That is why every trip is explained in writing from the start: the estimated schedule, what is included, what is not, and the safety rules. We do not promise anything we cannot be sure of, including wildlife and weather.</p><p>Have a question before booking? Ask us on WhatsApp. We help you choose the trip that suits your time, group size and comfort.</p>
+      <div class="ab-facts"><div><b>4</b><span>Trip options</span></div><div><b>9</b><span>Languages on this site</span></div><div><b>Labuan Bajo</b><span>Departure point</span></div></div>
+      <a class="btn" data-wa href="https://wa.me/6285337591753" target="_blank" rel="noopener">Contact us on WhatsApp</a>
+    </div>
+    <aside class="ab-card" aria-label="How we work">
+      <h3>How we work</h3>
+      <ul>
+        <li><span class="ck" aria-hidden="true">✓</span><div><b>Written confirmation</b><p>We confirm availability, price, facilities and terms via WhatsApp before you pay.</p></div></li>
+        <li><span class="ck" aria-hidden="true">✓</span><div><b>A clear invoice</b><p>Payment follows the amount and deadline on the invoice. The final price is the one on the latest invoice.</p></div></li>
+        <li><span class="ck" aria-hidden="true">✓</span><div><b>Honest about wildlife and weather</b><p>Komodo dragons, manta rays and flying foxes are wild animals. Sightings and routes can change with conditions, and we explain that from the start.</p></div></li>
+        <li><span class="ck" aria-hidden="true">✓</span><div><b>Safety first</b><p>The route and the order of destinations can be adjusted for safety. Guides and crew give instructions throughout the trip.</p></div></li>
+      </ul>
+    </aside>
+  </div></div>
+</section>
 <div class="pillars"><div class="wrap">
   <div class="pgrid">
     <div class="pil"><b>01</b><h3>Luxury speedboat</h3><p>We confirm the boat class and its name before departure, so there are no surprises at the pier.</p></div>
