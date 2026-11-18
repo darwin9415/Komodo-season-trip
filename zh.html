@@ -379,6 +379,8 @@ a.btn[data-wa]:hover,#p-wa:hover,#o-wa:hover{background:#17724f!important}
 /* Desktop: make the gallery span the full modal width. */
 @media(min-width:701px){
   .p-hero.gal{height:clamp(280px,32vw,340px);aspect-ratio:auto;max-height:none}
+  /* Tampilkan foto utuh di desktop; hindari pemotongan objek utama. */
+  .gal figure img{object-fit:contain;background:#0a1620}
 }
 @media(hover:none){.gal .nav{display:none}}
 
