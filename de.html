@@ -243,7 +243,8 @@ footer.foot{background:#050e15;color:rgba(255,255,255,.7);padding:46px 0 30px;fo
     max-height:min(94vh,100%);
     border-radius:20px;
   }
-  .p-hero,.p-hero.gal{max-height:220px}
+  /* Keep the 16:9 ratio on photo slides on small screens. */
+  .p-hero,.p-hero.gal{max-height:none}
   .book input[type=date]{flex:1;max-width:none}
   .p-body{padding:18px 18px 8px}
   .p-body h2{font-size:1.4rem}
