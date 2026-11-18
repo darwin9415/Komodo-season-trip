@@ -116,6 +116,14 @@ section{padding-block:80px}
 .stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
 .stops h3{font-size:1.25rem}
 .stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
+.route-slides{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:34px;padding:2px 2px 10px}
+.route-slides::-webkit-scrollbar{display:none}
+.route-slide{flex:0 0 min(300px,82vw);scroll-snap-align:start;background:var(--ivory);border:1px solid var(--line);border-radius:18px;padding:20px}
+.route-slide .eyebrow{font-size:.66rem;color:var(--gold);margin-bottom:8px}
+.route-slide h3{font-size:1.18rem;margin-bottom:6px;color:var(--ink)}
+.route-slide p{color:var(--muted);font-size:.9rem;line-height:1.5}
+@media(min-width:861px){.route-slides{grid-column:1/-1;overflow:visible}.route-slide{flex:1 1 0}}
+
 
 /* termasuk */
 .inc{background:var(--navy);color:#fff}
@@ -498,7 +506,10 @@ body.nav-open{overflow:hidden}
   .cari-micro{margin-bottom:8px}
 }
 /* trust strip */
-.trust{padding:70px 0 20px;background:var(--ivory)}
+.trust{padding:70px 0 20px;background:var(--ivory);color:var(--ink)}
+.trust .sec-head h2{color:var(--ink)}
+.trust .sec-head p{color:var(--muted)}
+.trust .eyebrow{color:var(--gold)}
 .trust .sec-head{margin-bottom:28px}
 .tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 @media(max-width:900px){.tgrid{grid-template-columns:1fr 1fr}}
@@ -585,6 +596,11 @@ body.nav-open{overflow:hidden}
       <li><b>05</b><div><h3>Taka Makassar</h3><p>Beting pasir putih di tengah laut, dikelilingi air biru yang tenang.</p></div></li>
       <li><b>06</b><div><h3>Siaba / Sebayur</h3><p>Penutup hari dengan snorkeling di terumbu yang tenang, dengan peluang bertemu penyu.</p></div></li>
     </ol>
+  </div>
+  <div class="route-slides" aria-label="Pilihan perjalanan lain">
+    <article class="route-slide"><div class="eyebrow">Perjalanan Separuh Hari</div><h3>Perjalanan Separuh Hari</h3><p>Kelor, Manjarite & Kalong · bertolak petang.</p></article>
+    <article class="route-slide"><div class="eyebrow">Sewa Persendirian</div><h3>Sewa Persendirian</h3><p>Bot laju persendirian dengan rentak dan laluan fleksibel.</p></article>
+    <article class="route-slide"><div class="eyebrow">Lawatan Bandar</div><h3>Lawatan Bandar</h3><p>Gua, kolam Rangko dan matahari terbenam di Bukit Sylvia.</p></article>
   </div>
 </section>
 
