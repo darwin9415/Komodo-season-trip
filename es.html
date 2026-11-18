@@ -107,10 +107,11 @@ section{padding-block:80px}
 .stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
 .stops h3{font-size:1.25rem}
 .stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
+.route-swipe-hint{display:flex;align-items:center;justify-content:center;gap:10px;width:max-content;max-width:100%;margin:14px auto 0;padding:7px 14px;border:1px solid rgba(184,149,90,.3);border-radius:999px;background:rgba(255,255,255,.74);color:var(--muted);font-size:.8rem;line-height:1.4;text-align:center}.route-swipe-hint span{color:var(--gold);font-size:1.15rem;font-weight:700}
 .route-slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:0;padding:0}
 .route-slides::-webkit-scrollbar{display:none}
 .route-slide{flex:0 0 100%;scroll-snap-align:start;background:transparent;border:0;border-radius:0;padding:0}
-.route-slide-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.route-slide-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start;background:rgba(255,255,255,.84);border:1px solid rgba(224,217,202,.72);border-radius:22px;padding:30px 34px;box-shadow:0 10px 28px rgba(8,21,31,.045)}
 .route-slide .sec-head{margin-bottom:0}
 .route-slide .sec-head h2{margin-top:10px;color:var(--ink)}
 .route-slide .sec-head p{color:var(--muted);margin-top:12px}
@@ -121,7 +122,7 @@ section{padding-block:80px}
 .route-stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
 .route-stops h3{font-size:1.25rem;margin:0;color:var(--ink)}
 .route-stops p{color:var(--muted);font-size:.96rem;margin-top:4px;line-height:1.55}
-@media(max-width:860px){.route-slide{padding:28px 22px}.route-slide-grid{grid-template-columns:1fr;gap:28px}.route-stops li{grid-template-columns:58px 1fr}}
+@media(max-width:860px){.route-slide{padding:0}.route-slide-grid{grid-template-columns:1fr;gap:28px;padding:24px 20px}.route-stops li{grid-template-columns:58px 1fr}}
 
 
 
@@ -559,7 +560,7 @@ body.nav-open{overflow:hidden}
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Medio día</div><h2>Medio día</h2><p>Una tarde tranquila desde Labuan Bajo con tres experiencias costeras.</p></div><ol class="route-stops"><li><b>01</b><div><h3>14:00</h3><p>Salida de Labuan Bajo hacia la isla Kelor.</p></div></li><li><b>02</b><div><h3>16:00</h3><p>Snorkel y baño en Manjarite.</p></div></li><li><b>03</b><div><h3>18:00</h3><p>Atardecer y murciélagos en la isla Kalong.</p></div></li><li><b>04</b><div><h3>19:00</h3><p>Regreso a Labuan Bajo y traslado al hotel.</p></div></li></ol></div></article>
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Chárter privado</div><h2>Chárter privado</h2><p>La ruta principal con ritmo y tiempo en cada parada acordados con el grupo.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Elegir la ruta</h3><p>Según los destinos principales y el estado del mar.</p></div></li><li><b>02</b><div><h3>Marcar el ritmo</h3><p>Más flexibilidad en cada parada.</p></div></li><li><b>03</b><div><h3>Barco privado</h3><p>Una lancha para su familia o grupo.</p></div></li><li><b>04</b><div><h3>Regreso</h3><p>Hora de regreso acordada con el guía.</p></div></li></ol></div></article>
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">City tour</div><h2>City tour</h2><p>Un día completo por tierra con cuevas, piscina natural y atardecer.</p></div><ol class="route-stops"><li><b>01</b><div><h3>10:00</h3><p>Recogida en el hotel y visita a la cueva Batu Cermin.</p></div></li><li><b>02</b><div><h3>12:15</h3><p>Visita a la cueva y piscina de Rangko.</p></div></li><li><b>03</b><div><h3>15:15</h3><p>Pausa y almuerzo.</p></div></li><li><b>04</b><div><h3>16:30</h3><p>Atardecer en la colina Sylvia.</p></div></li></ol></div></article>
-</div></div>
+</div><p class="route-swipe-hint"><span aria-hidden="true">←</span> Desliza a izquierda o derecha para ver las rutas <span aria-hidden="true">→</span></p></div>
 
 
 </section>
