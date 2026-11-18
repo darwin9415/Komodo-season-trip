@@ -96,7 +96,7 @@ section{padding-block:80px}
 .note{margin-top:22px;font-size:.88rem;color:var(--muted)}
 
 /* rute */
-.rute{background:transparent;border:0}
+.rute{background:#fff;border:0}
 .rgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}
 @media(max-width:860px){.rgrid{grid-template-columns:1fr;gap:30px}}
 .rgrid .sec-head{position:sticky;top:40px;align-self:start}
@@ -109,7 +109,7 @@ section{padding-block:80px}
 .stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
 .route-swipe-hint{display:flex;align-items:center;justify-content:center;gap:10px;width:max-content;max-width:100%;margin:14px auto 0;padding:7px 14px;border:1px solid rgba(184,149,90,.3);border-radius:999px;background:rgba(255,255,255,.74);color:var(--muted);font-size:.8rem;line-height:1.4;text-align:center}.route-swipe-hint span{color:var(--gold);font-size:1.15rem;font-weight:700}
 .route-time{font-weight:700;color:var(--gold);white-space:nowrap}
-.route-slides{display:block;width:100%;max-width:100%;margin:0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible}
+.route-slides{display:block;width:100%;max-width:100%;height:min(62vh,620px);min-height:320px;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--gold) rgba(224,217,202,.45);margin:0;padding:24px 28px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 24px rgba(8,21,31,.06)}.route-slides::-webkit-scrollbar{width:8px}.route-slides::-webkit-scrollbar-thumb{background:var(--gold);border:2px solid rgba(255,255,255,.75);border-radius:8px}.route-slides::-webkit-scrollbar-track{background:rgba(224,217,202,.35);border-radius:8px}
 
 .route-slide{display:block;width:100%;background:transparent;border:0;border-radius:0;padding:0}.route-slide+.route-slide{margin-top:30px;padding-top:30px;border-top:1px solid var(--line)}
 .route-slide-grid{display:block;width:100%;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}
@@ -124,6 +124,7 @@ section{padding-block:80px}
 .route-stops h3{font-size:1.25rem;margin:0;color:var(--ink)}
 .route-stops p{color:var(--muted);font-size:.96rem;margin-top:4px;line-height:1.55}
 @media(max-width:860px){.route-stops li{grid-template-columns:58px 1fr}}
+@media(max-width:700px){.route-slides{height:min(58vh,520px);min-height:240px;padding:18px 16px;border-radius:16px}}
 
 
 
@@ -561,7 +562,7 @@ body.nav-open{overflow:hidden}
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">半日游</div><h2>半日游</h2><p>从拉布安巴霍出发，轻松体验三个海滨目的地。</p></div><ol class="route-stops"><li><b>01</b><div><h3>凯洛岛</h3><p><span class="route-time">14:00</span> · 从拉布安巴霍出发前往凯洛岛。</p></div></li><li><b>02</b><div><h3>曼贾里特</h3><p><span class="route-time">16:00</span> · 在曼贾里特浮潜和游泳。</p></div></li><li><b>03</b><div><h3>卡龙岛</h3><p><span class="route-time">18:00</span> · 在卡龙岛欣赏日落和果蝠。</p></div></li><li><b>04</b><div><h3>返回拉布安巴霍</h3><p><span class="route-time">19:00</span> · 返回拉布安巴霍并送回酒店。</p></div></li></ol></div></article>
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">私人包船</div><h2>私人包船</h2><p>沿用主路线，停留节奏和时间可与团队协商。</p></div><ol class="route-stops"><li><b>01</b><div><h3>选择路线</h3><p>根据主要目的地和海况安排。</p></div></li><li><b>02</b><div><h3>调整节奏</h3><p>每个停靠点拥有更灵活的时间。</p></div></li><li><b>03</b><div><h3>专属船只</h3><p>一艘快艇服务您的家人或团队。</p></div></li><li><b>04</b><div><h3>返回时间</h3><p>与导游协商返程时间。</p></div></li></ol></div></article>
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">城市游</div><h2>城市游</h2><p>一日陆地体验，探索洞穴、天然水池并欣赏日落。</p></div><ol class="route-stops"><li><b>01</b><div><h3>镜子洞</h3><p><span class="route-time">10:00</span> · 酒店接送，前往镜子洞。</p></div></li><li><b>02</b><div><h3>朗科洞</h3><p><span class="route-time">12:15</span> · 参观朗科洞及天然水池。</p></div></li><li><b>03</b><div><h3>休息 / 午餐</h3><p><span class="route-time">15:15</span> · 休息和午餐。</p></div></li><li><b>04</b><div><h3>西尔维亚山</h3><p><span class="route-time">16:30</span> · 在西尔维亚山欣赏日落。</p></div></li></ol></div></article>
-</div><p class="route-swipe-hint"><span aria-hidden="true">↓</span> 向下滚动页面以查看所有路线 <span aria-hidden="true">↓</span></p></div>
+</div><p class="route-swipe-hint"><span aria-hidden="true">↓</span>在此面板内向下滚动以查看所有路线<span aria-hidden="true">↓</span></p></div>
 
 
 </section>

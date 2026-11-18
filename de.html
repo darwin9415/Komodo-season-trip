@@ -96,7 +96,7 @@ section{padding-block:80px}
 .note{margin-top:22px;font-size:.88rem;color:var(--muted)}
 
 /* rute */
-.rute{background:transparent;border:0}
+.rute{background:#fff;border:0}
 .rgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}
 @media(max-width:860px){.rgrid{grid-template-columns:1fr;gap:30px}}
 .rgrid .sec-head{position:sticky;top:40px;align-self:start}
@@ -109,7 +109,7 @@ section{padding-block:80px}
 .stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
 .route-swipe-hint{display:flex;align-items:center;justify-content:center;gap:10px;width:max-content;max-width:100%;margin:14px auto 0;padding:7px 14px;border:1px solid rgba(184,149,90,.3);border-radius:999px;background:rgba(255,255,255,.74);color:var(--muted);font-size:.8rem;line-height:1.4;text-align:center}.route-swipe-hint span{color:var(--gold);font-size:1.15rem;font-weight:700}
 .route-time{font-weight:700;color:var(--gold);white-space:nowrap}
-.route-slides{display:block;width:100%;max-width:100%;margin:0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible}
+.route-slides{display:block;width:100%;max-width:100%;height:min(62vh,620px);min-height:320px;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--gold) rgba(224,217,202,.45);margin:0;padding:24px 28px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 24px rgba(8,21,31,.06)}.route-slides::-webkit-scrollbar{width:8px}.route-slides::-webkit-scrollbar-thumb{background:var(--gold);border:2px solid rgba(255,255,255,.75);border-radius:8px}.route-slides::-webkit-scrollbar-track{background:rgba(224,217,202,.35);border-radius:8px}
 
 .route-slide{display:block;width:100%;background:transparent;border:0;border-radius:0;padding:0}.route-slide+.route-slide{margin-top:30px;padding-top:30px;border-top:1px solid var(--line)}
 .route-slide-grid{display:block;width:100%;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}
@@ -124,6 +124,7 @@ section{padding-block:80px}
 .route-stops h3{font-size:1.25rem;margin:0;color:var(--ink)}
 .route-stops p{color:var(--muted);font-size:.96rem;margin-top:4px;line-height:1.55}
 @media(max-width:860px){.route-stops li{grid-template-columns:58px 1fr}}
+@media(max-width:700px){.route-slides{height:min(58vh,520px);min-height:240px;padding:18px 16px;border-radius:16px}}
 
 
 
@@ -561,7 +562,7 @@ body.nav-open{overflow:hidden}
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Halbtagestour</div><h2>Halbtagestour</h2><p>Ein entspannter Nachmittag von Labuan Bajo zu drei Küstenerlebnissen.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Insel Kelor</h3><p><span class="route-time">14:00</span> · Abfahrt von Labuan Bajo zur Insel Kelor.</p></div></li><li><b>02</b><div><h3>Manjarite</h3><p><span class="route-time">16:00</span> · Schnorcheln und Schwimmen in Manjarite.</p></div></li><li><b>03</b><div><h3>Insel Kalong</h3><p><span class="route-time">18:00</span> · Sonnenuntergang und Flughunde auf Kalong.</p></div></li><li><b>04</b><div><h3>Rückkehr nach Labuan Bajo</h3><p><span class="route-time">19:00</span> · Rückkehr nach Labuan Bajo und Hoteltransfer.</p></div></li></ol></div></article>
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Privater Charter</div><h2>Privater Charter</h2><p>Die Hauptroute mit gemeinsam vereinbartem Tempo und Aufenthaltsdauer.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Route wählen</h3><p>Hauptziele und Seebedingungen berücksichtigen.</p></div></li><li><b>02</b><div><h3>Tempo bestimmen</h3><p>Mehr Flexibilität an den einzelnen Stopps.</p></div></li><li><b>03</b><div><h3>Privates Boot</h3><p>Ein Speedboot für Ihre Familie oder Gruppe.</p></div></li><li><b>04</b><div><h3>Rückkehr</h3><p>Rückkehrzeit mit dem Guide vereinbaren.</p></div></li></ol></div></article>
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">City-Tour</div><h2>City-Tour</h2><p>Ein ganzer Tag an Land mit Höhlen, Naturpool und Sonnenuntergang.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Batu-Cermin-Höhle</h3><p><span class="route-time">10:00</span> · Abholung am Hotel und Besuch der Batu-Cermin-Höhle.</p></div></li><li><b>02</b><div><h3>Rangko-Höhle</h3><p><span class="route-time">12:15</span> · Besuch der Rangko-Höhle und ihres Naturpools.</p></div></li><li><b>03</b><div><h3>Pause / Mittagessen</h3><p><span class="route-time">15:15</span> · Pause und Mittagessen.</p></div></li><li><b>04</b><div><h3>Sylvia Hill</h3><p><span class="route-time">16:30</span> · Sonnenuntergang am Sylvia-Hügel.</p></div></li></ol></div></article>
-</div><p class="route-swipe-hint"><span aria-hidden="true">↓</span> Scrollen Sie auf der Seite nach unten, um alle Routen zu sehen <span aria-hidden="true">↓</span></p></div>
+</div><p class="route-swipe-hint"><span aria-hidden="true">↓</span>Scrollen Sie in diesem Feld nach unten, um alle Routen zu sehen<span aria-hidden="true">↓</span></p></div>
 
 
 </section>

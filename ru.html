@@ -96,7 +96,7 @@ section{padding-block:80px}
 .note{margin-top:22px;font-size:.88rem;color:var(--muted)}
 
 /* rute */
-.rute{background:transparent;border:0}
+.rute{background:#fff;border:0}
 .rgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}
 @media(max-width:860px){.rgrid{grid-template-columns:1fr;gap:30px}}
 .rgrid .sec-head{position:sticky;top:40px;align-self:start}
@@ -109,7 +109,7 @@ section{padding-block:80px}
 .stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
 .route-swipe-hint{display:flex;align-items:center;justify-content:center;gap:10px;width:max-content;max-width:100%;margin:14px auto 0;padding:7px 14px;border:1px solid rgba(184,149,90,.3);border-radius:999px;background:rgba(255,255,255,.74);color:var(--muted);font-size:.8rem;line-height:1.4;text-align:center}.route-swipe-hint span{color:var(--gold);font-size:1.15rem;font-weight:700}
 .route-time{font-weight:700;color:var(--gold);white-space:nowrap}
-.route-slides{display:block;width:100%;max-width:100%;margin:0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible}
+.route-slides{display:block;width:100%;max-width:100%;height:min(62vh,620px);min-height:320px;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--gold) rgba(224,217,202,.45);margin:0;padding:24px 28px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 24px rgba(8,21,31,.06)}.route-slides::-webkit-scrollbar{width:8px}.route-slides::-webkit-scrollbar-thumb{background:var(--gold);border:2px solid rgba(255,255,255,.75);border-radius:8px}.route-slides::-webkit-scrollbar-track{background:rgba(224,217,202,.35);border-radius:8px}
 
 .route-slide{display:block;width:100%;background:transparent;border:0;border-radius:0;padding:0}.route-slide+.route-slide{margin-top:30px;padding-top:30px;border-top:1px solid var(--line)}
 .route-slide-grid{display:block;width:100%;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}
@@ -124,6 +124,7 @@ section{padding-block:80px}
 .route-stops h3{font-size:1.25rem;margin:0;color:var(--ink)}
 .route-stops p{color:var(--muted);font-size:.96rem;margin-top:4px;line-height:1.55}
 @media(max-width:860px){.route-stops li{grid-template-columns:58px 1fr}}
+@media(max-width:700px){.route-slides{height:min(58vh,520px);min-height:240px;padding:18px 16px;border-radius:16px}}
 
 
 
@@ -561,7 +562,7 @@ body.nav-open{overflow:hidden}
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Тур на полдня</div><h2>Тур на полдня</h2><p>Спокойный день из Лабуан-Баджо с тремя морскими остановками.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Остров Келор</h3><p><span class="route-time">14:00</span> · Отправление из Лабуан-Баджо на остров Келор.</p></div></li><li><b>02</b><div><h3>Манджарите</h3><p><span class="route-time">16:00</span> · Снорклинг и купание в Манджарите.</p></div></li><li><b>03</b><div><h3>Остров Калонг</h3><p><span class="route-time">18:00</span> · Закат и летучие лисицы на Калонге.</p></div></li><li><b>04</b><div><h3>Возвращение в Лабуан-Баджо</h3><p><span class="route-time">19:00</span> · Возвращение в Лабуан-Баджо и трансфер в отель.</p></div></li></ol></div></article>
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Частный чартер</div><h2>Частный чартер</h2><p>Основной маршрут с темпом и длительностью остановок по договорённости.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Выбрать маршрут</h3><p>С учётом главных целей и состояния моря.</p></div></li><li><b>02</b><div><h3>Задать темп</h3><p>Больше гибкости на остановках.</p></div></li><li><b>03</b><div><h3>Частная лодка</h3><p>Один катер для вашей семьи или группы.</p></div></li><li><b>04</b><div><h3>Возвращение</h3><p>Время возвращения согласуется с гидом.</p></div></li></ol></div></article>
 <article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Городской тур</div><h2>Городской тур</h2><p>День на суше: пещеры, природный бассейн и закат.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Пещера Бату-Чермин</h3><p><span class="route-time">10:00</span> · Трансфер из отеля и пещера Бату-Чермин.</p></div></li><li><b>02</b><div><h3>Пещера Рангко</h3><p><span class="route-time">12:15</span> · Пещера Рангко и природный бассейн.</p></div></li><li><b>03</b><div><h3>Перерыв / обед</h3><p><span class="route-time">15:15</span> · Отдых и обед.</p></div></li><li><b>04</b><div><h3>Холм Сильвия</h3><p><span class="route-time">16:30</span> · Закат на холме Сильвия.</p></div></li></ol></div></article>
-</div><p class="route-swipe-hint"><span aria-hidden="true">↓</span> Прокрутите страницу вниз, чтобы увидеть все маршруты <span aria-hidden="true">↓</span></p></div>
+</div><p class="route-swipe-hint"><span aria-hidden="true">↓</span>Прокрутите эту панель вниз, чтобы увидеть все маршруты<span aria-hidden="true">↓</span></p></div>
 
 
 </section>
