@@ -66,15 +66,6 @@ nav.menu a:hover{opacity:1;border-color:var(--gold)}
 @media(max-width:900px){.cari{grid-template-columns:1fr 1fr;margin-bottom:-90px}.cari > div{border-bottom:1px solid var(--line)}.cari .btn{grid-column:1/-1;padding-block:16px}}
 @media(max-width:520px){.cari{grid-template-columns:1fr}.cari > div{border-right:0}}
 
-/* pilar */
-.pillars{padding:150px 0 70px}
-.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px}
-@media(max-width:900px){.pgrid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.pgrid{grid-template-columns:1fr}}
-.pil{border-top:1px solid var(--gold);padding-top:18px}
-.pil b{font-family:var(--serif);font-size:1rem;color:var(--gold)}
-.pil h3{font-size:1.25rem;margin:6px 0 8px}
-.pil p{color:var(--muted);font-size:.95rem}
 
 section{padding-block:80px}
 .sec-head{max-width:640px;margin-bottom:42px}
@@ -116,15 +107,23 @@ section{padding-block:80px}
 .stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
 .stops h3{font-size:1.25rem}
 .stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
+.route-slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:48px;padding:2px 0 12px}
+.route-slides::-webkit-scrollbar{display:none}
+.route-slide{flex:0 0 100%;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px 38px}
+.route-slide-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.route-slide .sec-head{margin-bottom:0}
+.route-slide .sec-head h2{margin-top:10px;color:var(--ink)}
+.route-slide .sec-head p{color:var(--muted);margin-top:12px}
+.route-slide .eyebrow{font-size:.66rem;color:var(--gold)}
+.route-stops{list-style:none;margin:0;padding:0}
+.route-stops li{display:grid;grid-template-columns:70px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.route-stops li:first-child{padding-top:0}
+.route-stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
+.route-stops h3{font-size:1.25rem;margin:0;color:var(--ink)}
+.route-stops p{color:var(--muted);font-size:.96rem;margin-top:4px;line-height:1.55}
+@media(max-width:860px){.route-slide{padding:28px 22px}.route-slide-grid{grid-template-columns:1fr;gap:28px}.route-stops li{grid-template-columns:58px 1fr}}
 
-/* termasuk */
-.inc{background:var(--navy);color:#fff}
-.igrid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
-@media(max-width:860px){.igrid{grid-template-columns:1fr;gap:34px}}
-.inc ul{list-style:none;margin-top:22px}
-.inc li{padding:14px 0 14px 30px;border-bottom:1px solid rgba(255,255,255,.12);position:relative}
-.inc li::before{content:"";position:absolute;left:2px;top:23px;width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
-.inc p.sub{color:rgba(255,255,255,.7);margin-top:14px;max-width:46ch}
+
 
 /* cara pesan */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
@@ -216,10 +215,7 @@ footer.foot{background:#050e15;color:rgba(255,255,255,.7);padding:46px 0 30px;fo
 .tiers{grid-template-columns:repeat(3,1fr)}.tiers b{font-family:var(--serif);font-size:1.1rem;font-weight:600}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
 .chips li{border:1px solid var(--line);padding:5px 14px;font-size:.84rem;border-radius:999px}
-.itin{list-style:none;border-left:1px solid var(--gold);margin:0 0 0 6px;max-width:100%}
-.itin li{display:grid;grid-template-columns:max-content minmax(0,1fr);align-items:start;column-gap:16px;padding:0 0 10px 20px;position:relative;width:fit-content;max-width:100%}
-.itin li::before{content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
-.itin b{font-weight:700;font-size:.92rem;letter-spacing:.01em;white-space:nowrap}.itin span{color:var(--muted);font-size:.9rem;min-width:0}
+.itin{list-style:none;border-left:1px solid var(--gold);margin:0 0 0 6px;max-width:100%}.itin li{display:grid;grid-template-columns:max-content minmax(0,1fr);align-items:start;column-gap:16px;padding:0 0 10px 20px;position:relative;width:fit-content;max-width:100%}.itin li::before{content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}.itin b{font-weight:700;font-size:.92rem;letter-spacing:.01em;white-space:nowrap}.itin span{color:var(--muted);font-size:.9rem;min-width:0}
 .pinc{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(max-width:480px){.pinc{grid-template-columns:1fr}}
 .pinc ul{list-style:none;font-size:.9rem}
@@ -243,7 +239,8 @@ footer.foot{background:#050e15;color:rgba(255,255,255,.7);padding:46px 0 30px;fo
     max-height:min(94vh,100%);
     border-radius:20px;
   }
-  .p-hero,.p-hero.gal{max-height:220px}
+  /* Keep the 16:9 ratio on photo slides on small screens. */
+  .p-hero,.p-hero.gal{max-height:none}
   .book input[type=date]{flex:1;max-width:none}
   .p-body{padding:18px 18px 8px}
   .p-body h2{font-size:1.4rem}
@@ -290,7 +287,7 @@ nav.menu{gap:28px}nav.menu a,.top .btn{white-space:nowrap}
 .chips li{border-radius:999px}
 .book input[type=date],.od input,.od textarea{border-radius:14px}
 dialog.od{border-radius:30px;overflow:hidden}
-.rute,.inc,.cta{margin-inline:clamp(10px,2.5vw,36px);border-radius:38px}
+.rute,.cta{margin-inline:clamp(10px,2.5vw,36px);border-radius:38px}
 .rute{border:1px solid var(--line)}
 footer.foot{border-radius:38px 38px 0 0;margin-top:40px}
 @media(max-width:600px){.panel{/* bottom sheet radius disabled */}}
@@ -338,7 +335,6 @@ html{overflow-x:hidden}
   .cari>div:nth-child(1){border-right:1px solid var(--line)}
   .cari>div:nth-child(3){grid-column:1/-1}
   .cari .btn{grid-column:1/-1;margin-top:8px;padding:16px;border-radius:20px}
-  .pillars{padding-top:60px}
 }
 @media(max-width:520px){
   .cari{grid-template-columns:1fr}
@@ -361,21 +357,27 @@ a.btn[data-wa]:hover,#p-wa:hover,#o-wa:hover{background:#17724f!important}
 
 /* ===== galeri foto di panel detail ===== */
 .p-hero.gal{display:block;background:#0a1620;overflow:hidden}
-.gal .sl{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.gal .sl{position:absolute;inset:0;width:100%;height:100%;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .gal .sl::-webkit-scrollbar{display:none}
-.gal figure{flex:0 0 100%;scroll-snap-align:center;position:relative;margin:0}
+.gal figure{flex:0 0 100%;width:100%;min-width:100%;scroll-snap-align:center;position:relative;margin:0}
 .gal figure img{width:100%;height:100%;object-fit:cover;display:block}
 .gal figure.ct{background:#fff}
 .gal figure.ct img{object-fit:contain}
 .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:38px 16px 30px;background:linear-gradient(transparent,rgba(8,21,31,.75));color:#fff;font-size:.86rem}
 .gal .cnt{position:absolute;left:14px;top:14px;z-index:2;background:rgba(8,21,31,.6);color:#fff;font-size:.74rem;letter-spacing:.1em;padding:5px 12px;border-radius:999px}
-.gal .swipe-hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);z-index:2;padding:5px 11px;border:1px solid rgba(255,255,255,.3);border-radius:999px;background:rgba(8,21,31,.62);color:#fff;font-size:.72rem;line-height:1.4;white-space:nowrap;pointer-events:none}
 .gal .nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.6);background:rgba(8,21,31,.55);color:#fff;font-size:1.4rem;line-height:1;cursor:pointer}
+.gal .swipe-hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);z-index:2;padding:5px 11px;border:1px solid rgba(255,255,255,.3);border-radius:999px;background:rgba(8,21,31,.62);color:#fff;font-size:.72rem;line-height:1.4;white-space:nowrap;pointer-events:none}
 .gal .prev{left:10px}.gal .next{right:10px}
 .gal .dots{position:absolute;left:0;right:0;bottom:12px;z-index:2;display:flex;justify-content:center;gap:6px}
 .gal .dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);transition:width .2s}
 .gal .dots i.on{background:var(--gold2);width:18px;border-radius:6px}
 .p-close{z-index:3}
+/* Desktop: make the gallery span the full modal width. */
+@media(min-width:701px){
+  /* Desktop mengikuti mode mobile: galeri penuh dengan rasio 16:9. */
+  .p-hero.gal{height:auto;aspect-ratio:16/9;max-height:none}
+  .gal figure img{object-fit:cover}
+}
 @media(hover:none){.gal .nav{display:none}}
 
 /* ===== bagian informasi tambahan paket (aturan, FAQ) ===== */
@@ -427,7 +429,6 @@ ol.ilist li::before{content:counter(o);left:0;top:6px;width:20px;height:20px;bor
 
 /* ===== Tentang kami ===== */
 .about{padding:150px 0 10px;color:#f6f3ed}
-.pillars{padding:46px 0 70px}
 .ab-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
 .ab-text h2{margin:10px 0 18px;max-width:20ch;color:#fff}
 .ab-text p{color:rgba(246,243,237,.88);margin:0 0 14px;max-width:60ch;line-height:1.7}
@@ -441,7 +442,7 @@ ol.ilist li::before{content:counter(o);left:0;top:6px;width:20px;height:20px;bor
 .ab-card .ck{flex:none;width:28px;height:28px;border-radius:50%;background:#1e8a5f;color:#fff;display:grid;place-items:center;font-weight:700;font-size:.9rem;margin-top:2px}
 .ab-card li b{display:block;font-family:var(--serif);font-size:1.05rem;color:#fff;margin-bottom:3px}
 .ab-card li p{margin:0;font-size:.9rem;color:rgba(246,243,237,.84);line-height:1.55}
-@media(max-width:900px){.about{padding-top:60px}.ab-grid{grid-template-columns:1fr;gap:30px}.pillars{padding-top:34px}}
+@media(max-width:900px){.about{padding-top:60px}.ab-grid{grid-template-columns:1fr;gap:30px}}
 
 /* ===== multi bahasa ===== */
 .hr{display:flex;align-items:center;gap:10px}
@@ -492,7 +493,10 @@ body.nav-open{overflow:hidden}
   .cari-micro{margin-bottom:8px}
 }
 /* trust strip */
-.trust{padding:70px 0 20px;background:var(--ivory)}
+.trust{padding:70px 0 20px;background:var(--ivory);color:var(--ink)}
+.trust .sec-head h2{color:var(--ink)}
+.trust .sec-head p{color:var(--muted)}
+.trust .eyebrow{color:var(--gold)}
 .trust .sec-head{margin-bottom:28px}
 .tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 @media(max-width:900px){.tgrid{grid-template-columns:1fr 1fr}}
@@ -542,10 +546,9 @@ body.nav-open{overflow:hidden}
   <div class="wrap"><div class="ab-grid">
     <div class="ab-text">
       <div class="eyebrow">About us</div>
-      <h2>Komodo trips that are honest, organised and free of surprises</h2>
-      <p>Komodo Season Trip is a tour service in Labuan Bajo for trips to Komodo National Park and the surrounding islands: a speedboat one day trip, a half day sunset trip, a private charter and a city tour.</p><p>We believe guests have the right to know what they are paying for. That is why every trip is explained in writing from the start: the estimated schedule, what is included, what is not, and the safety rules. We do not promise anything we cannot be sure of, including wildlife and weather.</p><p>Have a question before booking? Ask us on WhatsApp. We help you choose the trip that suits your time, group size and comfort.</p>
+      <h2>Explore Komodo with clarity, comfort and purpose</h2><p>Komodo Season Trip helps you experience Labuan Bajo in a comfortable and well-organised way. We offer trips to Komodo National Park and the surrounding islands—from one-day and half-day sunset trips to private charters and city tours—with clear information from the start.</p><p>For us, a good trip begins with clarity. Before you pay, you receive written information about the estimated schedule, facilities, excluded costs and safety conditions. We are transparent about weather, route changes and the possibility of seeing wildlife, so you can book with confidence.</p><p>Share your dates, group size and preferred style of travel. Our team will help you choose the right package, check availability and send a written offer through WhatsApp.</p>
       <div class="ab-facts"><div><b>4</b><span>Trip options</span></div><div><b>9</b><span>Languages on this site</span></div><div><b>Labuan Bajo</b><span>Departure point</span></div></div>
-      <a class="btn" data-wa href="https://wa.me/6285337591753" target="_blank" rel="noopener">Contact us on WhatsApp</a>
+      <a class="btn" data-wa href="https://wa.me/6285337591753" target="_blank" rel="noopener">Plan your trip</a>
     </div>
     <aside class="ab-card" aria-label="How we work">
       <h3>How we work</h3>
@@ -558,15 +561,29 @@ body.nav-open{overflow:hidden}
     </aside>
   </div></div>
 </section>
-<div class="pillars"><div class="wrap">
-  <div class="pgrid">
-    <div class="pil"><b>01</b><h3>Luxury speedboat</h3><p>We confirm the boat class and its name before departure, so there are no surprises at the pier.</p></div>
-    <div class="pil"><b>02</b><h3>Small group</h3><p>More room on deck, shorter queues, and every beach feels like your own.</p></div>
-    <div class="pil"><b>03</b><h3>Full photo and video coverage</h3><p>Drone, GoPro and mirrorless camera are included. You enjoy the day, we capture it.</p></div>
-    <div class="pil"><b>04</b><h3>Premium equipment</h3><p>Quality snorkelling gear and a local guide with you all day long.</p></div>
-  </div>
+<section class="rute" id="rute"><div class="wrap"><div aria-label="Other package routes" class="route-slides"><article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">One-day route</div><h2 style="margin-top:10px">Six destinations, one full day</h2><p>The order of stops can be adjusted for weather, currents and tides, for your comfort and safety.</p></div><ol class="stops">
+<li><b>01</b><div><h3>Padar Island</h3><p>A short hike to a viewpoint that frames three sandy bays in a single view.</p></div></li>
+<li><b>02</b><div><h3>Pink Beach</h3><p>A pink-tinged beach with clear water, ideal for swimming and relaxed snorkelling.</p></div></li>
+<li><b>03</b><div><h3>Komodo Island</h3><p>Walk with a ranger to see Komodo dragons in their natural habitat.</p></div></li>
+<li><b>04</b><div><h3>Manta Point</h3><p>Waters where manta rays often glide by. They are wild animals, so sightings cannot be guaranteed.</p></div></li>
+<li><b>05</b><div><h3>Taka Makassar</h3><p>A white sandbar in the middle of the sea, surrounded by calm blue water.</p></div></li>
+<li><b>06</b><div><h3>Siaba / Sebayur</h3><p>A calm snorkelling finale over the reef, with a chance of meeting sea turtles.</p></div></li>
+</ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Half Day Trip</div><h2>Half Day Trip</h2><p>A relaxed afternoon from Labuan Bajo to three coastal experiences.</p></div><ol class="route-stops"><li><b>01</b><div><h3>14:00</h3><p>Depart Labuan Bajo for Kelor Island.</p></div></li><li><b>02</b><div><h3>16:00</h3><p>Snorkel and swim at Manjarite.</p></div></li><li><b>03</b><div><h3>18:00</h3><p>Watch sunset and flying foxes at Kalong Island.</p></div></li><li><b>04</b><div><h3>19:00</h3><p>Return to Labuan Bajo and hotel transfer.</p></div></li></ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Private Charter Boat</div><h2>Private Charter Boat</h2><p>The main route with a pace and stop duration agreed with your group.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Choose the route</h3><p>Follow the main destinations and sea conditions.</p></div></li><li><b>02</b><div><h3>Set the pace</h3><p>Enjoy more flexibility at each stop.</p></div></li><li><b>03</b><div><h3>Private boat</h3><p>One speedboat for your family or group.</p></div></li><li><b>04</b><div><h3>Return</h3><p>Agree the return time with your guide.</p></div></li></ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">City Tour</div><h2>City Tour</h2><p>A full day exploring Labuan Bajo on land and watching the sunset.</p></div><ol class="route-stops"><li><b>01</b><div><h3>10:00</h3><p>Hotel pickup and visit to Batu Cermin Cave.</p></div></li><li><b>02</b><div><h3>12:15</h3><p>Visit Rangko Cave and its natural pool.</p></div></li><li><b>03</b><div><h3>15:15</h3><p>Break and lunch time.</p></div></li><li><b>04</b><div><h3>16:30</h3><p>End the day with sunset at Sylvia Hill.</p></div></li></ol></div></article>
 </div></div>
 
+
+</section>
+
+<section id="paket" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Choose your trip</div><h2 style="margin-top:10px">Choose your trip</h2><p>From a full day to a half day at sunset. Tap a card to see the details.</p></div>
+    <div class="cards" id="cards"></div>
+    <p class="note">Prices are per person and may vary by date and group size; we confirm the exact offer in writing.</p>
+  </div>
+</section>
 
 <section class="trust" id="kepercayaan" aria-labelledby="trust-title">
   <div class="wrap">
@@ -584,43 +601,6 @@ body.nav-open{overflow:hidden}
   </div>
 </section>
 
-<section id="paket" style="padding-top:20px">
-  <div class="wrap">
-    <div class="sec-head"><div class="eyebrow">Choose your trip</div><h2 style="margin-top:10px">Choose your trip</h2><p>From a full day to a half day at sunset. Tap a card to see the details.</p></div>
-    <div class="cards" id="cards"></div>
-    <p class="note">Prices are per person and may vary by date and group size; we confirm the exact offer in writing.</p>
-  </div>
-</section>
-
-<section class="rute" id="rute">
-  <div class="wrap rgrid">
-    <div class="sec-head"><div class="eyebrow">One-day route</div><h2 style="margin-top:10px">Six destinations, one full day</h2><p>The order of stops can be adjusted for weather, currents and tides, for your comfort and safety.</p></div>
-    <ol class="stops">
-      <li><b>01</b><div><h3>Padar Island</h3><p>A short hike to a viewpoint that frames three sandy bays in a single view.</p></div></li>
-      <li><b>02</b><div><h3>Pink Beach</h3><p>A pink-tinged beach with clear water, ideal for swimming and relaxed snorkelling.</p></div></li>
-      <li><b>03</b><div><h3>Komodo Island</h3><p>Walk with a ranger to see Komodo dragons in their natural habitat.</p></div></li>
-      <li><b>04</b><div><h3>Manta Point</h3><p>Waters where manta rays often glide by. They are wild animals, so sightings cannot be guaranteed.</p></div></li>
-      <li><b>05</b><div><h3>Taka Makassar</h3><p>A white sandbar in the middle of the sea, surrounded by calm blue water.</p></div></li>
-      <li><b>06</b><div><h3>Siaba / Sebayur</h3><p>A calm snorkelling finale over the reef, with a chance of meeting sea turtles.</p></div></li>
-    </ol>
-  </div>
-</section>
-
-<section class="inc">
-  <div class="wrap igrid">
-    <div>
-      <div class="eyebrow">Included</div>
-      <h2 style="margin-top:10px">Everything you need on the water</h2>
-      <p class="sub">Costs outside the package are stated in writing before you decide.</p>
-    </div>
-    <ul>
-      <li>Luxury speedboat</li>
-      <li>Experienced local guide</li>
-      <li>Premium snorkelling gear</li>
-      <li>Drone, GoPro and mirrorless camera coverage</li>
-    </ul>
-  </div>
-</section>
 
 <section id="cara">
   <div class="wrap">
