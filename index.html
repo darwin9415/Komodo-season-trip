@@ -378,9 +378,9 @@ a.btn[data-wa]:hover,#p-wa:hover,#o-wa:hover{background:#17724f!important}
 .p-close{z-index:3}
 /* Desktop: make the gallery span the full modal width. */
 @media(min-width:701px){
-  .p-hero.gal{height:clamp(280px,32vw,340px);aspect-ratio:auto;max-height:none}
-  /* Tampilkan foto utuh di desktop; hindari pemotongan objek utama. */
-  .gal figure img{object-fit:contain;background:#0a1620}
+  /* Desktop mengikuti mode mobile: galeri penuh dengan rasio 16:9. */
+  .p-hero.gal{height:auto;aspect-ratio:16/9;max-height:none}
+  .gal figure img{object-fit:cover}
 }
 @media(hover:none){.gal .nav{display:none}}
 
