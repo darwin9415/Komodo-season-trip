@@ -66,15 +66,6 @@ nav.menu a:hover{opacity:1;border-color:var(--gold)}
 @media(max-width:900px){.cari{grid-template-columns:1fr 1fr;margin-bottom:-90px}.cari > div{border-bottom:1px solid var(--line)}.cari .btn{grid-column:1/-1;padding-block:16px}}
 @media(max-width:520px){.cari{grid-template-columns:1fr}.cari > div{border-right:0}}
 
-/* pilar */
-.pillars{padding:150px 0 70px}
-.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px}
-@media(max-width:900px){.pgrid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.pgrid{grid-template-columns:1fr}}
-.pil{border-top:1px solid var(--gold);padding-top:18px}
-.pil b{font-family:var(--serif);font-size:1rem;color:var(--gold)}
-.pil h3{font-size:1.25rem;margin:6px 0 8px}
-.pil p{color:var(--muted);font-size:.95rem}
 
 section{padding-block:80px}
 .sec-head{max-width:640px;margin-bottom:42px}
@@ -347,7 +338,6 @@ html{overflow-x:hidden}
   .cari>div:nth-child(1){border-right:1px solid var(--line)}
   .cari>div:nth-child(3){grid-column:1/-1}
   .cari .btn{grid-column:1/-1;margin-top:8px;padding:16px;border-radius:20px}
-  .pillars{padding-top:60px}
 }
 @media(max-width:520px){
   .cari{grid-template-columns:1fr}
@@ -441,7 +431,6 @@ ol.ilist li::before{content:counter(o);left:0;top:6px;width:20px;height:20px;bor
 
 /* ===== Tentang kami ===== */
 .about{padding:150px 0 10px;color:#f6f3ed}
-.pillars{padding:46px 0 70px}
 .ab-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
 .ab-text h2{margin:10px 0 18px;max-width:20ch;color:#fff}
 .ab-text p{color:rgba(246,243,237,.88);margin:0 0 14px;max-width:60ch;line-height:1.7}
@@ -455,7 +444,7 @@ ol.ilist li::before{content:counter(o);left:0;top:6px;width:20px;height:20px;bor
 .ab-card .ck{flex:none;width:28px;height:28px;border-radius:50%;background:#1e8a5f;color:#fff;display:grid;place-items:center;font-weight:700;font-size:.9rem;margin-top:2px}
 .ab-card li b{display:block;font-family:var(--serif);font-size:1.05rem;color:#fff;margin-bottom:3px}
 .ab-card li p{margin:0;font-size:.9rem;color:rgba(246,243,237,.84);line-height:1.55}
-@media(max-width:900px){.about{padding-top:60px}.ab-grid{grid-template-columns:1fr;gap:30px}.pillars{padding-top:34px}}
+@media(max-width:900px){.about{padding-top:60px}.ab-grid{grid-template-columns:1fr;gap:30px}}
 
 /* ===== multi bahasa ===== */
 .hr{display:flex;align-items:center;gap:10px}
@@ -574,16 +563,6 @@ body.nav-open{overflow:hidden}
     </aside>
   </div></div>
 </section>
-<div class="pillars"><div class="wrap">
-  <div class="pgrid">
-    <div class="pil"><b>01</b><h3>Роскошный скоростной катер</h3><p>Мы подтверждаем класс и название катера до отправления, поэтому на причале вас не ждёт сюрпризов.</p></div>
-    <div class="pil"><b>02</b><h3>Малая группа</h3><p>Больше места на палубе, меньше очередей, и каждый пляж кажется только вашим.</p></div>
-    <div class="pil"><b>03</b><h3>Полная фото- и видеосъёмка</h3><p>Дрон, GoPro и беззеркальная камера включены. Вы наслаждаетесь днём, мы его снимаем.</p></div>
-    <div class="pil"><b>04</b><h3>Качественное снаряжение</h3><p>Качественное снаряжение для снорклинга и местный гид рядом весь день.</p></div>
-  </div>
-</div></div>
-
-
 <section class="rute" id="rute">
   <div class="wrap rgrid">
     <div class="sec-head"><div class="eyebrow">Маршрут на день</div><h2 style="margin-top:10px">Шесть мест, один полный день</h2><p>Порядок остановок может меняться в зависимости от погоды, течений и приливов — ради вашего комфорта и безопасности.</p></div>
