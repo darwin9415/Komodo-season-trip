@@ -362,9 +362,9 @@ a.btn[data-wa]:hover,#p-wa:hover,#o-wa:hover{background:#17724f!important}
 
 /* ===== galeri foto di panel detail ===== */
 .p-hero.gal{display:block;background:#0a1620;overflow:hidden}
-.gal .sl{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.gal .sl{position:absolute;inset:0;width:100%;height:100%;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .gal .sl::-webkit-scrollbar{display:none}
-.gal figure{flex:0 0 100%;scroll-snap-align:center;position:relative;margin:0}
+.gal figure{flex:0 0 100%;width:100%;min-width:100%;scroll-snap-align:center;position:relative;margin:0}
 .gal figure img{width:100%;height:100%;object-fit:cover;display:block}
 .gal figure.ct{background:#fff}
 .gal figure.ct img{object-fit:contain}
@@ -376,6 +376,10 @@ a.btn[data-wa]:hover,#p-wa:hover,#o-wa:hover{background:#17724f!important}
 .gal .dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);transition:width .2s}
 .gal .dots i.on{background:var(--gold2);width:18px;border-radius:6px}
 .p-close{z-index:3}
+/* Desktop: make the gallery span the full modal width. */
+@media(min-width:701px){
+  .p-hero.gal{height:clamp(280px,32vw,340px);aspect-ratio:auto;max-height:none}
+}
 @media(hover:none){.gal .nav{display:none}}
 
 /* ===== bagian informasi tambahan paket (aturan, FAQ) ===== */
