@@ -107,23 +107,23 @@ section{padding-block:80px}
 .stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
 .stops h3{font-size:1.25rem}
 .stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
-.route-slides{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:34px;padding:2px 2px 10px}
+.route-slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:48px;padding:2px 0 12px}
 .route-slides::-webkit-scrollbar{display:none}
-.route-slide{flex:0 0 min(300px,82vw);scroll-snap-align:start;background:var(--ivory);border:1px solid var(--line);border-radius:18px;padding:20px}
-.route-slide .eyebrow{font-size:.66rem;color:var(--gold);margin-bottom:8px}
-.route-slide h3{font-size:1.18rem;margin-bottom:6px;color:var(--ink)}
-.route-slide p{color:var(--muted);font-size:.9rem;line-height:1.5}
-@media(min-width:861px){.route-slides{grid-column:1/-1;overflow:visible}.route-slide{flex:1 1 0}}
+.route-slide{flex:0 0 100%;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px 38px}
+.route-slide-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.route-slide .sec-head{margin-bottom:0}
+.route-slide .sec-head h2{margin-top:10px;color:var(--ink)}
+.route-slide .sec-head p{color:var(--muted);margin-top:12px}
+.route-slide .eyebrow{font-size:.66rem;color:var(--gold)}
+.route-stops{list-style:none;margin:0;padding:0}
+.route-stops li{display:grid;grid-template-columns:70px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.route-stops li:first-child{padding-top:0}
+.route-stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
+.route-stops h3{font-size:1.25rem;margin:0;color:var(--ink)}
+.route-stops p{color:var(--muted);font-size:.96rem;margin-top:4px;line-height:1.55}
+@media(max-width:860px){.route-slide{padding:28px 22px}.route-slide-grid{grid-template-columns:1fr;gap:28px}.route-stops li{grid-template-columns:58px 1fr}}
 
 
-/* termasuk */
-.inc{background:var(--navy);color:#fff}
-.igrid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
-@media(max-width:860px){.igrid{grid-template-columns:1fr;gap:34px}}
-.inc ul{list-style:none;margin-top:22px}
-.inc li{padding:14px 0 14px 30px;border-bottom:1px solid rgba(255,255,255,.12);position:relative}
-.inc li::before{content:"";position:absolute;left:2px;top:23px;width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
-.inc p.sub{color:rgba(255,255,255,.7);margin-top:14px;max-width:46ch}
 
 /* cara pesan */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
@@ -290,7 +290,7 @@ nav.menu{gap:28px}nav.menu a,.top .btn{white-space:nowrap}
 .chips li{border-radius:999px}
 .book input[type=date],.od input,.od textarea{border-radius:14px}
 dialog.od{border-radius:30px;overflow:hidden}
-.rute,.inc,.cta{margin-inline:clamp(10px,2.5vw,36px);border-radius:38px}
+.rute,.cta{margin-inline:clamp(10px,2.5vw,36px);border-radius:38px}
 .rute{border:1px solid var(--line)}
 footer.foot{border-radius:38px 38px 0 0;margin-top:40px}
 @media(max-width:600px){.panel{/* bottom sheet radius disabled */}}
@@ -563,23 +563,20 @@ body.nav-open{overflow:hidden}
     </aside>
   </div></div>
 </section>
-<section class="rute" id="rute">
-  <div class="wrap rgrid">
-    <div class="sec-head"><div class="eyebrow">Ruta de un día</div><h2 style="margin-top:10px">Seis destinos, un día completo</h2><p>El orden de las paradas puede ajustarse según el clima, las corrientes y las mareas, por su comodidad y seguridad.</p></div>
-    <ol class="stops">
-      <li><b>01</b><div><h3>Isla Padar</h3><p>Una breve caminata hasta un mirador que enmarca tres bahías de arena en una sola vista.</p></div></li>
-      <li><b>02</b><div><h3>Pink Beach</h3><p>Una playa de arena rosada con agua cristalina, ideal para nadar y hacer snorkel con calma.</p></div></li>
-      <li><b>03</b><div><h3>Isla de Komodo</h3><p>Camine con un guardabosques para ver dragones de Komodo en su hábitat natural.</p></div></li>
-      <li><b>04</b><div><h3>Manta Point</h3><p>Aguas por donde suelen pasar las mantarrayas. Son animales salvajes, por lo que no se puede garantizar su avistamiento.</p></div></li>
-      <li><b>05</b><div><h3>Taka Makassar</h3><p>Un banco de arena blanca en medio del mar, rodeado de aguas azules y tranquilas.</p></div></li>
-      <li><b>06</b><div><h3>Siaba / Sebayur</h3><p>Un snorkel tranquilo sobre el arrecife para cerrar el día, con posibilidad de ver tortugas marinas.</p></div></li>
-    </ol>
-  </div>
-  <div class="route-slides" aria-label="Más experiencias">
-    <article class="route-slide"><div class="eyebrow">Excursión de medio día</div><h3>Excursión de medio día</h3><p>Kelor, Manjarite y Kalong · salida por la tarde.</p></article>
-    <article class="route-slide"><div class="eyebrow">Chárter privado</div><h3>Chárter privado</h3><p>Lancha privada con ritmo y ruta flexibles.</p></article>
-    <article class="route-slide"><div class="eyebrow">City tour</div><h3>City tour</h3><p>Cuevas, piscina Rangko y atardecer en Sylvia en un día.</p></article>
-  </div>
+<section class="rute" id="rute"><div class="wrap"><div aria-label="Otras rutas" class="route-slides"><article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Ruta de un día</div><h2 style="margin-top:10px">Seis destinos, un día completo</h2><p>El orden de las paradas puede ajustarse según el clima, las corrientes y las mareas, por su comodidad y seguridad.</p></div><ol class="stops">
+<li><b>01</b><div><h3>Isla Padar</h3><p>Una breve caminata hasta un mirador que enmarca tres bahías de arena en una sola vista.</p></div></li>
+<li><b>02</b><div><h3>Pink Beach</h3><p>Una playa de arena rosada con agua cristalina, ideal para nadar y hacer snorkel con calma.</p></div></li>
+<li><b>03</b><div><h3>Isla de Komodo</h3><p>Camine con un guardabosques para ver dragones de Komodo en su hábitat natural.</p></div></li>
+<li><b>04</b><div><h3>Manta Point</h3><p>Aguas por donde suelen pasar las mantarrayas. Son animales salvajes, por lo que no se puede garantizar su avistamiento.</p></div></li>
+<li><b>05</b><div><h3>Taka Makassar</h3><p>Un banco de arena blanca en medio del mar, rodeado de aguas azules y tranquilas.</p></div></li>
+<li><b>06</b><div><h3>Siaba / Sebayur</h3><p>Un snorkel tranquilo sobre el arrecife para cerrar el día, con posibilidad de ver tortugas marinas.</p></div></li>
+</ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Medio día</div><h2>Medio día</h2><p>Una tarde tranquila desde Labuan Bajo con tres experiencias costeras.</p></div><ol class="route-stops"><li><b>01</b><div><h3>14:00</h3><p>Salida de Labuan Bajo hacia la isla Kelor.</p></div></li><li><b>02</b><div><h3>16:00</h3><p>Snorkel y baño en Manjarite.</p></div></li><li><b>03</b><div><h3>18:00</h3><p>Atardecer y murciélagos en la isla Kalong.</p></div></li><li><b>04</b><div><h3>19:00</h3><p>Regreso a Labuan Bajo y traslado al hotel.</p></div></li></ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Chárter privado</div><h2>Chárter privado</h2><p>La ruta principal con ritmo y tiempo en cada parada acordados con el grupo.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Elegir la ruta</h3><p>Según los destinos principales y el estado del mar.</p></div></li><li><b>02</b><div><h3>Marcar el ritmo</h3><p>Más flexibilidad en cada parada.</p></div></li><li><b>03</b><div><h3>Barco privado</h3><p>Una lancha para su familia o grupo.</p></div></li><li><b>04</b><div><h3>Regreso</h3><p>Hora de regreso acordada con el guía.</p></div></li></ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">City tour</div><h2>City tour</h2><p>Un día completo por tierra con cuevas, piscina natural y atardecer.</p></div><ol class="route-stops"><li><b>01</b><div><h3>10:00</h3><p>Recogida en el hotel y visita a la cueva Batu Cermin.</p></div></li><li><b>02</b><div><h3>12:15</h3><p>Visita a la cueva y piscina de Rangko.</p></div></li><li><b>03</b><div><h3>15:15</h3><p>Pausa y almuerzo.</p></div></li><li><b>04</b><div><h3>16:30</h3><p>Atardecer en la colina Sylvia.</p></div></li></ol></div></article>
+</div></div>
+
+
 </section>
 
 <section id="paket" style="padding-top:20px">
@@ -606,21 +603,6 @@ body.nav-open{overflow:hidden}
   </div>
 </section>
 
-<section class="inc">
-  <div class="wrap igrid">
-    <div>
-      <div class="eyebrow">Incluido</div>
-      <h2 style="margin-top:10px">Todo lo que necesita en el agua</h2>
-      <p class="sub">Los costes fuera del paquete se indican por escrito antes de que decida.</p>
-    </div>
-    <ul>
-      <li>Lancha rápida de lujo</li>
-      <li>Guía local con experiencia</li>
-      <li>Equipo de snorkel de calidad</li>
-      <li>Cobertura con dron, GoPro y cámara sin espejo</li>
-    </ul>
-  </div>
-</section>
 
 <section id="cara">
   <div class="wrap">

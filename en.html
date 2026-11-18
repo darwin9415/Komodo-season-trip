@@ -107,23 +107,23 @@ section{padding-block:80px}
 .stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
 .stops h3{font-size:1.25rem}
 .stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
-.route-slides{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:34px;padding:2px 2px 10px}
+.route-slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:48px;padding:2px 0 12px}
 .route-slides::-webkit-scrollbar{display:none}
-.route-slide{flex:0 0 min(300px,82vw);scroll-snap-align:start;background:var(--ivory);border:1px solid var(--line);border-radius:18px;padding:20px}
-.route-slide .eyebrow{font-size:.66rem;color:var(--gold);margin-bottom:8px}
-.route-slide h3{font-size:1.18rem;margin-bottom:6px;color:var(--ink)}
-.route-slide p{color:var(--muted);font-size:.9rem;line-height:1.5}
-@media(min-width:861px){.route-slides{grid-column:1/-1;overflow:visible}.route-slide{flex:1 1 0}}
+.route-slide{flex:0 0 100%;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px 38px}
+.route-slide-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.route-slide .sec-head{margin-bottom:0}
+.route-slide .sec-head h2{margin-top:10px;color:var(--ink)}
+.route-slide .sec-head p{color:var(--muted);margin-top:12px}
+.route-slide .eyebrow{font-size:.66rem;color:var(--gold)}
+.route-stops{list-style:none;margin:0;padding:0}
+.route-stops li{display:grid;grid-template-columns:70px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.route-stops li:first-child{padding-top:0}
+.route-stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
+.route-stops h3{font-size:1.25rem;margin:0;color:var(--ink)}
+.route-stops p{color:var(--muted);font-size:.96rem;margin-top:4px;line-height:1.55}
+@media(max-width:860px){.route-slide{padding:28px 22px}.route-slide-grid{grid-template-columns:1fr;gap:28px}.route-stops li{grid-template-columns:58px 1fr}}
 
 
-/* termasuk */
-.inc{background:var(--navy);color:#fff}
-.igrid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
-@media(max-width:860px){.igrid{grid-template-columns:1fr;gap:34px}}
-.inc ul{list-style:none;margin-top:22px}
-.inc li{padding:14px 0 14px 30px;border-bottom:1px solid rgba(255,255,255,.12);position:relative}
-.inc li::before{content:"";position:absolute;left:2px;top:23px;width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
-.inc p.sub{color:rgba(255,255,255,.7);margin-top:14px;max-width:46ch}
 
 /* cara pesan */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
@@ -290,7 +290,7 @@ nav.menu{gap:28px}nav.menu a,.top .btn{white-space:nowrap}
 .chips li{border-radius:999px}
 .book input[type=date],.od input,.od textarea{border-radius:14px}
 dialog.od{border-radius:30px;overflow:hidden}
-.rute,.inc,.cta{margin-inline:clamp(10px,2.5vw,36px);border-radius:38px}
+.rute,.cta{margin-inline:clamp(10px,2.5vw,36px);border-radius:38px}
 .rute{border:1px solid var(--line)}
 footer.foot{border-radius:38px 38px 0 0;margin-top:40px}
 @media(max-width:600px){.panel{/* bottom sheet radius disabled */}}
@@ -563,23 +563,20 @@ body.nav-open{overflow:hidden}
     </aside>
   </div></div>
 </section>
-<section class="rute" id="rute">
-  <div class="wrap rgrid">
-    <div class="sec-head"><div class="eyebrow">One-day route</div><h2 style="margin-top:10px">Six destinations, one full day</h2><p>The order of stops can be adjusted for weather, currents and tides, for your comfort and safety.</p></div>
-    <ol class="stops">
-      <li><b>01</b><div><h3>Padar Island</h3><p>A short hike to a viewpoint that frames three sandy bays in a single view.</p></div></li>
-      <li><b>02</b><div><h3>Pink Beach</h3><p>A pink-tinged beach with clear water, ideal for swimming and relaxed snorkelling.</p></div></li>
-      <li><b>03</b><div><h3>Komodo Island</h3><p>Walk with a ranger to see Komodo dragons in their natural habitat.</p></div></li>
-      <li><b>04</b><div><h3>Manta Point</h3><p>Waters where manta rays often glide by. They are wild animals, so sightings cannot be guaranteed.</p></div></li>
-      <li><b>05</b><div><h3>Taka Makassar</h3><p>A white sandbar in the middle of the sea, surrounded by calm blue water.</p></div></li>
-      <li><b>06</b><div><h3>Siaba / Sebayur</h3><p>A calm snorkelling finale over the reef, with a chance of meeting sea turtles.</p></div></li>
-    </ol>
-  </div>
-  <div class="route-slides" aria-label="More ways to explore">
-    <article class="route-slide"><div class="eyebrow">Half Day Trip</div><h3>Half Day Trip</h3><p>Kelor, Manjarite & Kalong · afternoon departure.</p></article>
-    <article class="route-slide"><div class="eyebrow">Private Charter</div><h3>Private Charter</h3><p>A private speedboat with a flexible pace and route.</p></article>
-    <article class="route-slide"><div class="eyebrow">City Tour</div><h3>City Tour</h3><p>Caves, Rangko pool and Sylvia Hill sunset in one day.</p></article>
-  </div>
+<section class="rute" id="rute"><div class="wrap"><div aria-label="Other package routes" class="route-slides"><article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">One-day route</div><h2 style="margin-top:10px">Six destinations, one full day</h2><p>The order of stops can be adjusted for weather, currents and tides, for your comfort and safety.</p></div><ol class="stops">
+<li><b>01</b><div><h3>Padar Island</h3><p>A short hike to a viewpoint that frames three sandy bays in a single view.</p></div></li>
+<li><b>02</b><div><h3>Pink Beach</h3><p>A pink-tinged beach with clear water, ideal for swimming and relaxed snorkelling.</p></div></li>
+<li><b>03</b><div><h3>Komodo Island</h3><p>Walk with a ranger to see Komodo dragons in their natural habitat.</p></div></li>
+<li><b>04</b><div><h3>Manta Point</h3><p>Waters where manta rays often glide by. They are wild animals, so sightings cannot be guaranteed.</p></div></li>
+<li><b>05</b><div><h3>Taka Makassar</h3><p>A white sandbar in the middle of the sea, surrounded by calm blue water.</p></div></li>
+<li><b>06</b><div><h3>Siaba / Sebayur</h3><p>A calm snorkelling finale over the reef, with a chance of meeting sea turtles.</p></div></li>
+</ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Half Day Trip</div><h2>Half Day Trip</h2><p>A relaxed afternoon from Labuan Bajo to three coastal experiences.</p></div><ol class="route-stops"><li><b>01</b><div><h3>14:00</h3><p>Depart Labuan Bajo for Kelor Island.</p></div></li><li><b>02</b><div><h3>16:00</h3><p>Snorkel and swim at Manjarite.</p></div></li><li><b>03</b><div><h3>18:00</h3><p>Watch sunset and flying foxes at Kalong Island.</p></div></li><li><b>04</b><div><h3>19:00</h3><p>Return to Labuan Bajo and hotel transfer.</p></div></li></ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Private Charter Boat</div><h2>Private Charter Boat</h2><p>The main route with a pace and stop duration agreed with your group.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Choose the route</h3><p>Follow the main destinations and sea conditions.</p></div></li><li><b>02</b><div><h3>Set the pace</h3><p>Enjoy more flexibility at each stop.</p></div></li><li><b>03</b><div><h3>Private boat</h3><p>One speedboat for your family or group.</p></div></li><li><b>04</b><div><h3>Return</h3><p>Agree the return time with your guide.</p></div></li></ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">City Tour</div><h2>City Tour</h2><p>A full day exploring Labuan Bajo on land and watching the sunset.</p></div><ol class="route-stops"><li><b>01</b><div><h3>10:00</h3><p>Hotel pickup and visit to Batu Cermin Cave.</p></div></li><li><b>02</b><div><h3>12:15</h3><p>Visit Rangko Cave and its natural pool.</p></div></li><li><b>03</b><div><h3>15:15</h3><p>Break and lunch time.</p></div></li><li><b>04</b><div><h3>16:30</h3><p>End the day with sunset at Sylvia Hill.</p></div></li></ol></div></article>
+</div></div>
+
+
 </section>
 
 <section id="paket" style="padding-top:20px">
@@ -606,21 +603,6 @@ body.nav-open{overflow:hidden}
   </div>
 </section>
 
-<section class="inc">
-  <div class="wrap igrid">
-    <div>
-      <div class="eyebrow">Included</div>
-      <h2 style="margin-top:10px">Everything you need on the water</h2>
-      <p class="sub">Costs outside the package are stated in writing before you decide.</p>
-    </div>
-    <ul>
-      <li>Luxury speedboat</li>
-      <li>Experienced local guide</li>
-      <li>Premium snorkelling gear</li>
-      <li>Drone, GoPro and mirrorless camera coverage</li>
-    </ul>
-  </div>
-</section>
 
 <section id="cara">
   <div class="wrap">

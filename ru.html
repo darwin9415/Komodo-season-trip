@@ -107,23 +107,23 @@ section{padding-block:80px}
 .stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
 .stops h3{font-size:1.25rem}
 .stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
-.route-slides{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:34px;padding:2px 2px 10px}
+.route-slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:48px;padding:2px 0 12px}
 .route-slides::-webkit-scrollbar{display:none}
-.route-slide{flex:0 0 min(300px,82vw);scroll-snap-align:start;background:var(--ivory);border:1px solid var(--line);border-radius:18px;padding:20px}
-.route-slide .eyebrow{font-size:.66rem;color:var(--gold);margin-bottom:8px}
-.route-slide h3{font-size:1.18rem;margin-bottom:6px;color:var(--ink)}
-.route-slide p{color:var(--muted);font-size:.9rem;line-height:1.5}
-@media(min-width:861px){.route-slides{grid-column:1/-1;overflow:visible}.route-slide{flex:1 1 0}}
+.route-slide{flex:0 0 100%;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px 38px}
+.route-slide-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.route-slide .sec-head{margin-bottom:0}
+.route-slide .sec-head h2{margin-top:10px;color:var(--ink)}
+.route-slide .sec-head p{color:var(--muted);margin-top:12px}
+.route-slide .eyebrow{font-size:.66rem;color:var(--gold)}
+.route-stops{list-style:none;margin:0;padding:0}
+.route-stops li{display:grid;grid-template-columns:70px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.route-stops li:first-child{padding-top:0}
+.route-stops b{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1;font-weight:500}
+.route-stops h3{font-size:1.25rem;margin:0;color:var(--ink)}
+.route-stops p{color:var(--muted);font-size:.96rem;margin-top:4px;line-height:1.55}
+@media(max-width:860px){.route-slide{padding:28px 22px}.route-slide-grid{grid-template-columns:1fr;gap:28px}.route-stops li{grid-template-columns:58px 1fr}}
 
 
-/* termasuk */
-.inc{background:var(--navy);color:#fff}
-.igrid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
-@media(max-width:860px){.igrid{grid-template-columns:1fr;gap:34px}}
-.inc ul{list-style:none;margin-top:22px}
-.inc li{padding:14px 0 14px 30px;border-bottom:1px solid rgba(255,255,255,.12);position:relative}
-.inc li::before{content:"";position:absolute;left:2px;top:23px;width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
-.inc p.sub{color:rgba(255,255,255,.7);margin-top:14px;max-width:46ch}
 
 /* cara pesan */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
@@ -290,7 +290,7 @@ nav.menu{gap:28px}nav.menu a,.top .btn{white-space:nowrap}
 .chips li{border-radius:999px}
 .book input[type=date],.od input,.od textarea{border-radius:14px}
 dialog.od{border-radius:30px;overflow:hidden}
-.rute,.inc,.cta{margin-inline:clamp(10px,2.5vw,36px);border-radius:38px}
+.rute,.cta{margin-inline:clamp(10px,2.5vw,36px);border-radius:38px}
 .rute{border:1px solid var(--line)}
 footer.foot{border-radius:38px 38px 0 0;margin-top:40px}
 @media(max-width:600px){.panel{/* bottom sheet radius disabled */}}
@@ -563,23 +563,20 @@ body.nav-open{overflow:hidden}
     </aside>
   </div></div>
 </section>
-<section class="rute" id="rute">
-  <div class="wrap rgrid">
-    <div class="sec-head"><div class="eyebrow">Маршрут на день</div><h2 style="margin-top:10px">Шесть мест, один полный день</h2><p>Порядок остановок может меняться в зависимости от погоды, течений и приливов — ради вашего комфорта и безопасности.</p></div>
-    <ol class="stops">
-      <li><b>01</b><div><h3>Остров Падар</h3><p>Короткий подъём к смотровой площадке с видом на три песчаные бухты.</p></div></li>
-      <li><b>02</b><div><h3>Пинк-Бич</h3><p>Пляж с розоватым песком и прозрачной водой — идеально для купания и спокойного снорклинга.</p></div></li>
-      <li><b>03</b><div><h3>Остров Комодо</h3><p>Прогулка с рейнджером, чтобы увидеть комодских варанов в естественной среде.</p></div></li>
-      <li><b>04</b><div><h3>Манта-Пойнт</h3><p>Воды, где часто проплывают скаты манты. Это дикие животные, поэтому встреча не гарантируется.</p></div></li>
-      <li><b>05</b><div><h3>Така-Макасар</h3><p>Белая песчаная коса посреди моря в окружении спокойной синей воды.</p></div></li>
-      <li><b>06</b><div><h3>Сиаба / Себаюр</h3><p>Спокойный снорклинг над рифом в завершение дня, с шансом встретить морских черепах.</p></div></li>
-    </ol>
-  </div>
-  <div class="route-slides" aria-label="Другие варианты">
-    <article class="route-slide"><div class="eyebrow">Тур на полдня</div><h3>Тур на полдня</h3><p>Келор, Манджарите и Калонг · отправление днём.</p></article>
-    <article class="route-slide"><div class="eyebrow">Частный чартер</div><h3>Частный чартер</h3><p>Частный катер с гибким темпом и маршрутом.</p></article>
-    <article class="route-slide"><div class="eyebrow">Городской тур</div><h3>Городской тур</h3><p>Пещеры, бассейн Рангко и закат на холме Сильвия.</p></article>
-  </div>
+<section class="rute" id="rute"><div class="wrap"><div aria-label="Другие маршруты" class="route-slides"><article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Маршрут на день</div><h2 style="margin-top:10px">Шесть мест, один полный день</h2><p>Порядок остановок может меняться в зависимости от погоды, течений и приливов — ради вашего комфорта и безопасности.</p></div><ol class="stops">
+<li><b>01</b><div><h3>Остров Падар</h3><p>Короткий подъём к смотровой площадке с видом на три песчаные бухты.</p></div></li>
+<li><b>02</b><div><h3>Пинк-Бич</h3><p>Пляж с розоватым песком и прозрачной водой — идеально для купания и спокойного снорклинга.</p></div></li>
+<li><b>03</b><div><h3>Остров Комодо</h3><p>Прогулка с рейнджером, чтобы увидеть комодских варанов в естественной среде.</p></div></li>
+<li><b>04</b><div><h3>Манта-Пойнт</h3><p>Воды, где часто проплывают скаты манты. Это дикие животные, поэтому встреча не гарантируется.</p></div></li>
+<li><b>05</b><div><h3>Така-Макасар</h3><p>Белая песчаная коса посреди моря в окружении спокойной синей воды.</p></div></li>
+<li><b>06</b><div><h3>Сиаба / Себаюр</h3><p>Спокойный снорклинг над рифом в завершение дня, с шансом встретить морских черепах.</p></div></li>
+</ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Тур на полдня</div><h2>Тур на полдня</h2><p>Спокойный день из Лабуан-Баджо с тремя морскими остановками.</p></div><ol class="route-stops"><li><b>01</b><div><h3>14:00</h3><p>Отправление из Лабуан-Баджо на остров Келор.</p></div></li><li><b>02</b><div><h3>16:00</h3><p>Снорклинг и купание в Манджарите.</p></div></li><li><b>03</b><div><h3>18:00</h3><p>Закат и летучие лисицы на Калонге.</p></div></li><li><b>04</b><div><h3>19:00</h3><p>Возвращение в Лабуан-Баджо и трансфер в отель.</p></div></li></ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Частный чартер</div><h2>Частный чартер</h2><p>Основной маршрут с темпом и длительностью остановок по договорённости.</p></div><ol class="route-stops"><li><b>01</b><div><h3>Выбрать маршрут</h3><p>С учётом главных целей и состояния моря.</p></div></li><li><b>02</b><div><h3>Задать темп</h3><p>Больше гибкости на остановках.</p></div></li><li><b>03</b><div><h3>Частная лодка</h3><p>Один катер для вашей семьи или группы.</p></div></li><li><b>04</b><div><h3>Возвращение</h3><p>Время возвращения согласуется с гидом.</p></div></li></ol></div></article>
+<article class="route-slide"><div class="route-slide-grid"><div class="sec-head"><div class="eyebrow">Городской тур</div><h2>Городской тур</h2><p>День на суше: пещеры, природный бассейн и закат.</p></div><ol class="route-stops"><li><b>01</b><div><h3>10:00</h3><p>Трансфер из отеля и пещера Бату-Чермин.</p></div></li><li><b>02</b><div><h3>12:15</h3><p>Пещера Рангко и природный бассейн.</p></div></li><li><b>03</b><div><h3>15:15</h3><p>Отдых и обед.</p></div></li><li><b>04</b><div><h3>16:30</h3><p>Закат на холме Сильвия.</p></div></li></ol></div></article>
+</div></div>
+
+
 </section>
 
 <section id="paket" style="padding-top:20px">
@@ -606,21 +603,6 @@ body.nav-open{overflow:hidden}
   </div>
 </section>
 
-<section class="inc">
-  <div class="wrap igrid">
-    <div>
-      <div class="eyebrow">Включено</div>
-      <h2 style="margin-top:10px">Всё необходимое на воде</h2>
-      <p class="sub">О расходах вне пакета мы сообщаем письменно до того, как вы примете решение.</p>
-    </div>
-    <ul>
-      <li>Роскошный скоростной катер</li>
-      <li>Опытный местный гид</li>
-      <li>Качественное снаряжение для снорклинга</li>
-      <li>Съёмка дроном, GoPro и беззеркальной камерой</li>
-    </ul>
-  </div>
-</section>
 
 <section id="cara">
   <div class="wrap">
