@@ -106,7 +106,7 @@ section{padding-block:80px}
 .note{margin-top:22px;font-size:.88rem;color:var(--muted)}
 
 /* rute */
-.rute{background:#fff;border:0}
+.rute{background:linear-gradient(135deg,#fbfaf5 0%,#f7f5ed 48%,#eef5f2 100%);border:1px solid rgba(184,149,90,.22);box-shadow:0 18px 44px rgba(8,21,31,.10)}
 .rgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}
 @media(max-width:860px){.rgrid{grid-template-columns:1fr;gap:30px}}
 .rgrid .sec-head{position:sticky;top:40px;align-self:start}
@@ -119,7 +119,7 @@ section{padding-block:80px}
 .stops p{color:var(--muted);font-size:.96rem;margin-top:4px}
 .route-swipe-hint{display:flex;align-items:center;justify-content:center;gap:10px;width:max-content;max-width:100%;margin:14px auto 0;padding:7px 14px;border:1px solid rgba(184,149,90,.3);border-radius:999px;background:rgba(255,255,255,.74);color:var(--muted);font-size:.8rem;line-height:1.4;text-align:center}.route-swipe-hint span{color:var(--gold);font-size:1.15rem;font-weight:700}
 .route-time{font-weight:700;color:var(--gold);white-space:nowrap}
-.route-slides{display:block;width:100%;max-width:100%;height:auto;max-height:min(62vh,620px);min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:auto;touch-action:pan-y;scrollbar-width:thin;scrollbar-color:var(--gold) transparent;margin:0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}.route-slides::-webkit-scrollbar{width:8px}.route-slides::-webkit-scrollbar-thumb{background:var(--gold);border:2px solid rgba(255,255,255,.75);border-radius:8px}.route-slides::-webkit-scrollbar-track{background:rgba(224,217,202,.35);border-radius:8px}
+.route-slides{display:block;width:100%;max-width:100%;height:auto;max-height:min(62vh,620px);min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:auto;touch-action:pan-y;scrollbar-width:thin;scrollbar-color:var(--gold) transparent;margin:0;padding:0;background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(239,246,242,.78));border:1px solid rgba(184,149,90,.18);border-radius:28px;box-shadow:inset 0 1px 0 rgba(255,255,255,.9)}.route-slides::-webkit-scrollbar{width:8px}.route-slides::-webkit-scrollbar-thumb{background:var(--gold);border:2px solid rgba(255,255,255,.75);border-radius:8px}.route-slides::-webkit-scrollbar-track{background:rgba(224,217,202,.35);border-radius:8px}
 
 .route-slide{display:block;width:100%;background:transparent;border:0;border-radius:0;padding:0}.route-slide+.route-slide{margin-top:30px;padding-top:30px;border-top:1px solid var(--line)}
 .route-slide-grid{display:block;width:100%;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}
@@ -710,6 +710,32 @@ function load(d){
   ORDER_URL=/^https:\/\/script\.google\.com\//.test(d.orderUrl||'')?d.orderUrl:'';
   mount();applyWA();
 }
+
+/* Gulir berantai kartu rute: teruskan gerakan di batas atas/bawah ke halaman. */
+(function(){
+  var boxes=document.querySelectorAll('.route-slides');
+  boxes.forEach(function(box){
+    var lastY=0;
+    function atTop(){return box.scrollTop<=1}
+    function atBottom(){return box.scrollTop+box.clientHeight>=box.scrollHeight-1}
+    box.addEventListener('touchstart',function(e){if(e.touches.length)lastY=e.touches[0].clientY},{passive:true});
+    box.addEventListener('touchmove',function(e){
+      if(!e.touches.length)return;
+      var y=e.touches[0].clientY,dy=y-lastY;
+      if((atBottom()&&dy<0)||(atTop()&&dy>0)){
+        e.preventDefault();
+        window.scrollBy(0,-dy);
+      }
+      lastY=y;
+    },{passive:false});
+    box.addEventListener('wheel',function(e){
+      if((atBottom()&&e.deltaY>0)||(atTop()&&e.deltaY<0)){
+        e.preventDefault();
+        window.scrollBy(0,e.deltaY);
+      }
+    },{passive:false});
+  });
+})();
 
 /* ---------- panel detail ---------- */
 var panel=$('panel'),overlay=$('overlay'),content=$('p-content'),dateSel=$('p-date'),waBtn=$('p-wa');
