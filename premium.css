@@ -362,3 +362,41 @@ footer.foot { border-top: 1px solid rgba(226, 199, 143, .2); }
   .route-tabs { gap: 7px; }
   .route-tabs button { padding-inline: 8px; font-size: .76rem; }
 }
+
+/* Deep teal itinerary cards inspired by the supplied color reference. */
+.rute {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.route-slide,
+.route-slide + .route-slide {
+  background: #15394a;
+  border-color: rgba(239, 246, 247, .2);
+  color: #f7f5ef;
+  box-shadow: 0 12px 28px rgba(4, 18, 26, .24), inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+.route-slide .sec-head h2,
+.route-slide .route-stops h3,
+.route-slide .stops h3 { color: #f7f5ef; }
+.route-slide .sec-head p,
+.route-slide .route-stops p,
+.route-slide .stops p { color: #dce6e8; }
+.route-slide .eyebrow,
+.route-slide .route-stops b,
+.route-slide .stops b { color: #e2c78f; }
+.route-slide .route-stops li,
+.route-slide .stops li { border-bottom-color: rgba(239, 246, 247, .2); }
+@media (max-width: 760px) {
+  .route-tabs button {
+    border-color: rgba(21, 57, 74, .24);
+    background: #15394a;
+    color: #f7f5ef;
+  }
+  .route-tabs button:hover { background: #204d61; }
+  .route-tabs button[aria-selected="true"] {
+    border-color: #1b8067;
+    background: #1b8067;
+    color: #fff;
+  }
+}
