@@ -286,3 +286,79 @@ footer.foot { border-top: 1px solid rgba(226, 199, 143, .2); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+
+/* Route itinerary: two-column overview on desktop, compact route tabs on mobile. */
+.route-slides {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+  padding: 0;
+  overflow: visible !important;
+  max-height: none !important;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.route-slide,
+.route-slide + .route-slide {
+  min-width: 0;
+  margin: 0;
+  padding: 22px 22px 14px;
+  border: 1px solid rgba(16, 35, 45, .08);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(4, 18, 26, .08);
+}
+.route-slide[hidden] { display: none !important; }
+.route-slide .sec-head { margin-bottom: 18px; }
+.route-slide .sec-head h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); }
+.route-slide .sec-head p { line-height: 1.55; }
+.route-stops li,
+.stops li { grid-template-columns: 48px minmax(0, 1fr); gap: 12px; padding-block: 15px; }
+.route-stops b,
+.stops b { font-size: 1.55rem; }
+.route-stops h3,
+.stops h3 { font-size: 1.08rem; }
+.route-stops p,
+.stops p { font-size: .88rem; line-height: 1.48; }
+.route-tabs { display: none; }
+@media (max-width: 760px) {
+  .route-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0 0 12px;
+  }
+  .route-tabs button {
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid rgba(184, 149, 90, .38);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .82);
+    color: var(--ink);
+    font: 700 .82rem/1.3 var(--sans);
+    text-align: center;
+    cursor: pointer;
+    transition: background .18s, border-color .18s, color .18s;
+  }
+  .route-tabs button[aria-selected="true"] {
+    border-color: var(--sea);
+    background: var(--sea);
+    color: #fff;
+  }
+  .route-tabs button:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+  }
+  .route-slides { display: block; }
+  .route-slide,
+  .route-slide + .route-slide { padding: 18px 16px 12px; border-radius: 18px; }
+  .route-slide .sec-head { margin-bottom: 12px; }
+}
+@media (max-width: 390px) {
+  .route-tabs { gap: 7px; }
+  .route-tabs button { padding-inline: 8px; font-size: .76rem; }
+}
