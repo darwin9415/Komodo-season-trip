@@ -1,7 +1,7 @@
-# Komodo Season Trip – Web Publik (9 bahasa)
+# Komodo Season Trip – Web Publik (11 bahasa)
 
 Halaman per bahasa (semua ada di folder yang sama, tanpa subfolder):
-index.html (Indonesia), en.html, zh.html, ms.html, ru.html, es.html, pt.html, it.html, de.html
+index.html (Indonesia), en.html, zh.html, ms.html, ru.html, es.html, pt.html, it.html, de.html, fr.html, ar.html
 
 Berkas lain:
 - kapal.json : data paket, harga, nomor WhatsApp, dan terjemahan paket. Diperbarui lewat admin.
